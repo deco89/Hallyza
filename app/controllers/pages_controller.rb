@@ -4,4 +4,11 @@ class PagesController < ApplicationController
   def home
   end
 
+  def specialties
+  end
+
+  def institute
+
+  end
+
 end
