@@ -1,12 +1,13 @@
 class ArticlesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
+  before_action :set_article, only: [:show, :edit, :update, :destroy]
+
   def index
     @articles = Article.all
   end
 
   def show
-    @article = Article.find(params[:id])
   end
 
   def new
@@ -20,16 +21,17 @@ class ArticlesController < ApplicationController
     redirect_to article_path(@article)
   end
 
+  def edit
+  end
+
   def update
-    @article = Article.find(params[:id]) # find the article by id
     @article.update(article_params) # update the article with the params from the form
     redirect_to article_path(@article) # redirect to the show page
   end
 
   def destroy
-    @article = Article.find(params[:id])
     @article.destroy
-    redirect_to article_path
+    redirect_to articles_path
   end
 
   private
@@ -37,5 +39,9 @@ class ArticlesController < ApplicationController
   # Strong params: white list of sanitized input that can be used to update database records.
   def article_params
     params.require(:article).permit(:name, :text)
+  end
+
+  def set_article
+    @article = Article.find(params[:id])
   end
 end
