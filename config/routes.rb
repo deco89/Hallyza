@@ -20,7 +20,7 @@ Rails.application.routes.draw do
   # Faz o update do artigo
   patch 'articles/:id', to: 'articles#update'
 
-  # Delete um artico
+  # Delete um artigo
 
   delete 'articles/:id', to: 'articles#destroy', as: 'delete_article'
 
