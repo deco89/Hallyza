@@ -2,6 +2,12 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
+  get 'specialties', to: 'pages#specialties'
+
+  get 'institute', to: 'pages#institute'
+
+  get 'contact', to: 'pages#contact'
+
   # Lista de todos os artigos
   get 'articles', to: 'articles#index'
 
@@ -23,6 +29,8 @@ Rails.application.routes.draw do
   # Delete um artigo
 
   delete 'articles/:id', to: 'articles#destroy', as: 'delete_article'
+
+
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
