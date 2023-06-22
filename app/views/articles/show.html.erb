@@ -2,3 +2,7 @@
 
 <p>Nome do artigo:  <%= @article.name %></p>
 <p>Texto do artigo: <%= @article.text %></p>
+
+<p><%= link_to "Editar artigo", edit_article_path %></p>
+<p><%= link_to "Voltar para artigos", articles_path %></p>
+<p><%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
