@@ -38,7 +38,7 @@ class ArticlesController < ApplicationController
 
   # Strong params: white list of sanitized input that can be used to update database records.
   def article_params
-    params.require(:article).permit(:name, :text)
+    params.require(:article).permit(:name, :text, :title, :rich_body, :description, :body, photos: [])
   end
 
   def set_article
