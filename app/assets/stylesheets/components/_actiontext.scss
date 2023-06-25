@@ -15,7 +15,7 @@
 .trix-content .attachment-gallery > .attachment {
   flex: 1 0 33%;
   padding: 0 0.5em;
-  max-width: 33%;
+  max-width: 40%;
 }
 
 .trix-content .attachment-gallery.attachment-gallery--2 > action-text-attachment,
@@ -28,4 +28,10 @@
 .trix-content action-text-attachment .attachment {
   padding: 0 !important;
   max-width: 100% !important;
+  min-height: 10em !important;
+}
+
+.trix-custom {
+  min-height: 10em !important;
+  margin-bottom: 1em;
 }

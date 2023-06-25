@@ -1,15 +1,16 @@
 <h1>Detalhes do artigo</h1>
 
-<a href="<%= article_path(@article) %>">
-  <% if @article.photos.attached? %>
-    <%= cl_image_tag @article.photos.first.key, crop: "fit", class: "img-cl" %>
-  <% else %>
-    <%= image_tag 'img1.jpeg', crop: "fit", class: "img-cl" %>
-  <% end %>
-</a>
-<p>Nome do artigo:  <%= @article.name %></p>
-<p>Texto do artigo: <%= @article.rich_body %></p>
-
+<div class="card card-show">
+  <a href="<%= article_path(@article) %>">
+    <% if @article.photos.attached? %>
+      <%= cl_image_tag @article.photos.first.key, :width => 600, :height => 400, :crop => :fill, class: "img-cl-show" %>
+    <% else %>
+      <%= image_tag 'img1.jpeg', crop: "fit", class: "img-cl" %>
+    <% end %>
+  </a>
+  <p>Nome do artigo:  <%= @article.name %></p>
+  <p>Texto do artigo: <%= @article.rich_body %></p>
+</div>
 <p><%= link_to "Editar artigo", edit_article_path %></p>
 <p><%= link_to "Voltar para artigos", articles_path %></p>
 <p><%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
