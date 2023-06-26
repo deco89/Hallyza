@@ -1,5 +1,4 @@
 <h1>Detalhes do artigo</h1>
-
 <div class="card card-show">
   <a href="<%= article_path(@article) %>">
     <% if @article.photos.attached? %>
@@ -10,7 +9,8 @@
   </a>
   <p>Nome do artigo:  <%= @article.name %></p>
   <p>Texto do artigo: <%= @article.rich_body %></p>
+  <p><%= link_to "Editar artigo", edit_article_path %></p>
+  <p><%= link_to "Voltar para artigos", articles_path %></p>
+  <p><%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
+  <p><%= link_to "Home", root_path %></p>
 </div>
-<p><%= link_to "Editar artigo", edit_article_path %></p>
-<p><%= link_to "Voltar para artigos", articles_path %></p>
-<p><%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
