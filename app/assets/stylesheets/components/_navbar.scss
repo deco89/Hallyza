@@ -1,14 +1,15 @@
-.navbar-hallyza {
-  width: 1920px;
-  height: 100px;
+.navbar-lewagon {
+  width: auto;
+  height: 128px;
   justify-content: space-between;
   background: #F7F2EC;
+  padding: 44px;
 }
 
-.navbar-hallyza .navbar-collapse {
+.navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-hallyza .navbar-brand img {
-  width: 182px;
+.navbar-brand {
+  border: 0px;
 }
