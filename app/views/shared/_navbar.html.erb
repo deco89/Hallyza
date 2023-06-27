@@ -1,9 +1,11 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-hallyza">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <div class="container-fluid">
-    <%= link_to root_path, class: "navbar-brand" do %>
-      <%= image_tag 'logo.png' %>
-      <%= image_tag 'logo_nome.png', width: 250 , height: 170 %>
-    <% end %>
+    <div class="d-flex flex-row pl-5">
+      <%= link_to root_path, class: "navbar-brand" do %>
+        <%= image_tag 'logo2.png', width: 80, height: 72 %>
+        <%= image_tag 'logo_nome2.png', width: 288, height: 56 %>
+      <% end %>
+    </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,12 +27,12 @@
           <%= link_to "Contato", contact_path, class: "nav-link" %>
         </li>
         <% if user_signed_in? %>
-          <li class = "nav-link">
+          <li class="nav-link">
             <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
           </li>
         <% else %>
-          <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+          <li class="nav-link">
+            <%= link_to "Login", new_user_session_path, class: "dropdown-item" %>
           </li>
         <% end %>
       </ul>
