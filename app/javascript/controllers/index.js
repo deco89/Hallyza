@@ -7,5 +7,3 @@ import { application } from "./application"
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-import Slideshow2Controller from "./slideshow2_controller"
-application.register("slideshow2", Slideshow2Controller)
