@@ -31,35 +31,25 @@
     </div>
   </div>
 
-<div class="carousel" data-flickity='{ "autoPlay": true }'>
-  <% if @articles.present? %>
-    <% @articles.each do |article| %>
-      <% if article.photos.attached? %>
-        <% image_url = cl_image_path(article.photos.first.key, :width => 600, :height => 400, :crop => :fill) %>
-        <div class="carousel-cell">
-          <%= link_to article_path(article) do %>
-            <h2><%= article.name %></h2>
-            <img src="<%= image_url %>" alt="" class="img-cl">
-            <p><%= article.rich_body %></p>
-          <% end %>
-        </div>
-      <% else %>
-        <div class="carousel-cell">
-          <%= link_to article_path(article) do %>
-            <h2><%= article.name %></h2>
-            <%= image_tag 'img1.jpeg', crop: "fit", class: "img-cl" %>
-            <p><%= article.rich_body %></p>
-          <% end %>
-        </div>
-      <% end %>
+<div id="articleCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <% @articles.each_with_index do |article, index| %>
+      <div class="carousel-item <%= 'active' if index.zero? %>">
+        <%= link_to article_path(article) do %>
+          <%= cl_image_tag article.photos.first.key, width: 600, height: 400, crop: :fill, class: "d-block w-100" %>
+        <% end %>
+      </div>
     <% end %>
-  <% end %>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<div class="carousel" data-flickity='{ "autoPlay": true }'>
-  <% @image_urls.each do |image_url| %>
-    <div class="carousel-cell">
-      <img src="<%= image_url %>" alt="" class="img-cl">
-    </div>
-  <% end %>
-</div>
