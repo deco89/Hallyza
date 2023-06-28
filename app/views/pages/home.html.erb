@@ -30,20 +30,36 @@
       </div>
     </div>
   </div>
- <div class="cards">
+
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
   <% if @articles.present? %>
     <% @articles.each do |article| %>
-      <%= link_to article_path(article) do %>
-        <div class="card">
-          <h2><%= article.name %></h2>
-          <% if article.photos.attached? %>
-            <%= cl_image_tag article.photos.first.key, :width => 600, :height => 400, :crop => :fill, class: "img-cl" %>
-            <% else %>
-              <%= image_tag 'img1.jpeg', crop: "fit", class: "img-cl" %>
-            <% end %>
-          <p><%= article.rich_body %></p>
+      <% if article.photos.attached? %>
+        <% image_url = cl_image_path(article.photos.first.key, :width => 600, :height => 400, :crop => :fill) %>
+        <div class="carousel-cell">
+          <%= link_to article_path(article) do %>
+            <h2><%= article.name %></h2>
+            <img src="<%= image_url %>" alt="" class="img-cl">
+            <p><%= article.rich_body %></p>
+          <% end %>
+        </div>
+      <% else %>
+        <div class="carousel-cell">
+          <%= link_to article_path(article) do %>
+            <h2><%= article.name %></h2>
+            <%= image_tag 'img1.jpeg', crop: "fit", class: "img-cl" %>
+            <p><%= article.rich_body %></p>
+          <% end %>
         </div>
       <% end %>
     <% end %>
+  <% end %>
+</div>
+
+<div class="carousel" data-flickity='{ "autoPlay": true }'>
+  <% @image_urls.each do |image_url| %>
+    <div class="carousel-cell">
+      <img src="<%= image_url %>" alt="" class="img-cl">
+    </div>
   <% end %>
 </div>
