@@ -1,13 +1,15 @@
 class ArticlesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
-
   before_action :set_article, only: [:show, :edit, :update, :destroy]
+  include CloudinaryHelper
 
   def index
     @articles = Article.all
   end
 
   def show
+    @article = Article.find(params[:id])
+    @image_urls = @article.photos.map { |photo| cl_image_path(photo.key, width: 600, height: 400, crop: :fill) }
   end
 
   def new
