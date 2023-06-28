@@ -20,3 +20,16 @@
   box-shadow: 0 0 5px #ccc;
   transition: all 0.5s ease;
 }
+
+.articles-card {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+h1 {
+  border-top: 64px;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #B58169;
+  display: flex;
+  justify-content: center;
+}
