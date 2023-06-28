@@ -4,7 +4,7 @@
     <% if @article.photos.attached? %>
       <%= cl_image_tag @article.photos.first.key, :width => 600, :height => 400, :crop => :fill, class: "img-cl-show" %>
     <% else %>
-      <%= image_tag 'img1.jpeg', crop: "fit", class: "img-cl" %>
+      <%= image_tag 'img1.jpeg', :width => 600, :height => 400, :crop => :fill, class: "img-cl" %>
     <% end %>
   </a>
   <p>Nome do artigo:  <%= @article.name %></p>
