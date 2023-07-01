@@ -29,12 +29,10 @@
       </div>
     </div>
   </div>
-
 <div id="articleCarousel" class="carousel slide py-5">
   <div class="carousel-inner">
-    <% @articles.each_with_index do |article, index| %>
+    <% @articles.each_slice(3).each_with_index do |article_group, index| %>
       <div class="carousel-item <%= 'active' if index.zero? %>">
-
         <div class="cards-wrapper d-flex justify-content-around">
           <% article_group.each do |article| %>
             <%= link_to article_path(article) do %>
@@ -61,12 +59,15 @@
       </div>
     <% end %>
   </div>
+
   <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
+
   <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
