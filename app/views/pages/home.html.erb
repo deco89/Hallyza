@@ -40,7 +40,7 @@
               <div class="card-article" style="width: 30%;">
                 <div class="card-article-image">
                   <% if article.photos.attached? %>
-                    <%= cl_image_tag article.photos.first.key, width: 600, height: 400, crop: :fill, class: "card-img-top" %>
+                    <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img-top" %>
                   <% else %>
                     <%= render "shared/sampleimg" %>
                   <% end %>
@@ -70,4 +70,3 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-

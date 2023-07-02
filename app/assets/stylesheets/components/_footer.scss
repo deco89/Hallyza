@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #F7F2EC;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Center horizontally */
+  height: 80px;
+  padding: 0px 50px;
+  color: rgba(0, 0, 0, 0.3);
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $medium-beige;
+}
+
+.politica-color {
+  color: $medium-beige;
+}
+
+.politica-color:hover {
+  color: $orange;
+}
+
+// .footer-copyright {
+//   display: flex;
+//   justify-content: center; /* Center horizontally */
+//   align-items: center;
+//   color: $medium-beige;
+// }
+
+// .footer-links {
+//   display: flex;
+//   align-items: center;
+// }
+// .footer-links a {
+//   color: black;
+//   opacity: 0.15;
+//   text-decoration: none;
+//   font-size: 24px;
+//   padding: 0px 10px;
+// }
+// .footer-links a:hover {
+//   opacity: 1;
+// }
+// .footer .fa-heart {
+//   color: #D23333;
+// }

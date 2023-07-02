@@ -1,8 +1,8 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
 
 .hal-first-pg {
   min-height: 200vh;
@@ -25,7 +25,7 @@ html, body {
   transition: 0.2s;
   border-radius: 0.25rem;
   background-color: #EBE5DF;
-  height: 650px;
+  height: 445px;
   // width: 700px;
   display: flex;
   flex-direction: column;
@@ -89,39 +89,6 @@ font-weight: 500;
   font-weight: 500;
 }
 
-
-// carousel
-
-// * { box-sizing: border-box; }
-
-// body { font-family: sans-serif; }
-
-/* carousel homepage */
-// .cards-wrapper {
-//   display: flex;
-//   justify-content: space-around;
-//   flex-wrap: nowrap;
-// }
-
-// .card img {
-//   width: 100%;
-//   object-fit: cover;
-// }
-
-// .card {
-//   // flex: 1 0 calc(33.3333% - 1em); /* Minus margin */
-//   flex-basis: calc(33% - 1em);
-//   flex-shrink: 1;
-//   // flex: 1;
-//   margin: 0.5em;
-//   box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-//   border: none;
-//   border-radius: 0;
-// }
-
-// .carousel-inner {
-//   padding: 1em;
-// }
 
 .carousel-control-prev,
 .carousel-control-next {
