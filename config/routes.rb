@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: "pages#home"
 
+  get 'privacy', to: 'pages#privacy'
+
   get 'specialties', to: 'pages#specialties'
 
   get 'institute', to: 'pages#institute'
