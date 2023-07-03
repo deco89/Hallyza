@@ -1,3 +1,17 @@
+.f-color {
+  color: #B58169;
+}
+
+.hal-button {
+  color: #ffffff;
+  background-color:#a1766ace;
+}
+
+.hal-button:hover {
+  color: #ffffff;
+  background-color: $half-beige;
+}
+
 .privacy {
   height: 300vh;
   text-align: left;
@@ -6,6 +20,7 @@
 }
 
 .flavors {
+  color: #a1766ace;
   font-family: $body-font;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem ;
@@ -14,7 +29,7 @@
 
 .card {
   overflow: auto;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
   margin: 20px auto;
   padding: 20px;
