@@ -1,16 +1,18 @@
-<h1>Detalhes do artigo</h1>
-<div class="card card-show">
+<div class="card-show">
   <a href="<%= article_path(@article) %>">
     <% if @article.photos.attached? %>
-      <%= cl_image_tag @article.photos.first.key, :width => 600, :height => 400, :crop => :fill, class: "img-cl-show" %>
+      <%= cl_image_tag @article.photos.first.key, :width => 1000, :height => 800, :crop => :fill, class: "img-cl-show" %>
     <% else %>
       <%= render "shared/sampleimg" %>
     <% end %>
   </a>
-  <p>Nome do artigo:  <%= @article.name %></p>
-  <p>Texto do artigo: <%= @article.rich_body %></p>
-  <p><%= link_to "Editar artigo", edit_article_path %></p>
-  <p><%= link_to "Voltar para artigos", articles_path %></p>
-  <p><%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
-  <p><%= link_to "Home", root_path %></p>
+  <h1><%= @article.name %></h1>
+  <div class="container">
+    <p class="card-text"><%= @article.rich_body %></p>
+    <span class="card-date-time" style="color: #B58169;"><%= @article.updated_at.strftime("%d de %B de %Y") %></span>
+    <div><button><%= link_to "Home | ", root_path %></button></div>
+    <p><%= link_to "Editar artigo | ", edit_article_path %></p>
+    <p><%= link_to "Voltar para artigos | ", articles_path %></p>
+    <p><%= link_to "Delete", article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
+  </div>
 </div>
