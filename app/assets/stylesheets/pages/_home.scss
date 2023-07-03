@@ -4,6 +4,12 @@
 //   padding: 0;
 // }
 
+.card {
+  width: 600px;
+  height: 600px;
+  background-color: #EBE5DF;
+}
+
 .hal-first-pg {
   min-height: 200vh;
 }
@@ -26,14 +32,21 @@
   border-radius: 0.25rem;
   background-color: #EBE5DF;
   height: 445px;
-  // width: 700px;
+  width: 500px;
   display: flex;
   flex-direction: column;
   border-radius: 1.75em;
 
+
   a {
     text-decoration: none;
   }
+}
+
+.cards-wrapper {
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 10px;
 }
 
 .card-body {
@@ -45,8 +58,8 @@
   max-height: 100%;
 
   a {
-    justify-self: flex-end;
-    align-self: flex-end;
+    justify-self: flex-start;
+    align-self: flex-start;
   }
 }
 .card-article-image {
@@ -105,6 +118,7 @@ font-weight: 500;
   background-color: #B58169;
   border-radius: 50%;
   scale: 1.5;
+
 }
 
 // @media (min-width: 768px) {
