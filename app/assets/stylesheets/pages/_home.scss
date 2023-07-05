@@ -1,29 +1,33 @@
 // html, body {
-  //   height: 100%;
-  //   margin: 0;
-  //   padding: 0;
-  // }
-  .hal-first-pg { //página inteira
-    min-height: 200vh;
-  }
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
+.hal-first-pg {
+  //página inteira
+  min-height: 200vh;
+}
 
-  .card { //card com informações da Hállyza
-    width: 600px;
-    height: 650px;
-    background-color: #EBE5DF;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.05);
-    border:#B58169
-  }
+.card {
+  //card com informações da Hállyza
+  width: 600px;
+  height: 650px;
+  background-color: #EBE5DF;
+  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
+  border: #B58169;
+  border-radius: 4px;
+}
 
-  .hal-img-pg img { //foto Hállyza
-    // margin-right: -5rem;
-    // margin-top: 8.5rem;
-    // margin-left: 6rem;
-    padding: 30px;
-    margin-left: 200px;
-    width: 670px;
-    height: 840px;
-  }
+.hal-img-pg img {
+  //foto Hállyza
+  // margin-right: -5rem;
+  // margin-top: 8.5rem;
+  // margin-left: 6rem;
+  padding: 30px;
+  margin-left: 200px;
+  width: 670px;
+  height: 840px;
+}
 
 .card-body {
   display: flex;
@@ -59,6 +63,15 @@
 
   a {
     text-decoration: none;
+    font-weight: 300;
+    color: #B58169;
+    line-height: normal;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  a:hover {
+    font-weight: 500;
+    color: #B58169;
   }
 }
 
@@ -66,6 +79,7 @@
   padding-left: 150px;
   padding-right: 150px;
   padding-bottom: 10px;
+  padding-top: 15px;
 }
 
 .card-article-image {
@@ -91,23 +105,22 @@
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 1.8px;
+
+  h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
 }
 
 .card-text {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
 }
-
-.card-title h5 {
-font-size: 1.2rem;
-font-weight: 500;
-}
-
-.card-title h6 {
-  font-size: 1rem;
-  font-weight: 500;
-}
-
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -127,6 +140,74 @@ font-weight: 500;
   border-radius: 50%;
   scale: 1.5;
 }
+
+.specs-wrapper { //especializações
+  padding-left: 190px;
+  padding-right: 190px;
+  padding-top: 20px;
+  height: 490px;
+
+  h5 {
+    display: flex;
+    justify-content: center;
+    width: 275px;
+    height: 100px;
+    flex-direction: column;
+    color: #D7CCC7;
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 10px;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+
+  a {
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    width: 150px;
+    flex-direction: column;
+    border-radius: 10px;
+    background: #EBE5DF;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+    color: #B58169;
+    margin-left: 65px;
+  }
+}
+
+.spec1 img { //imagem 1 das especializações
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 45px;
+  width: 270px;
+  height: 270px;
+}
+
+.spec2 img { //imagem 2 das especializações
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 45px;
+  width: 270px;
+  height: 270px;
+
+  h5 {
+    height: 50px;
+  }
+}
+
+// .carousel-buttom {
+//   position: relative;
+//   display: flex;
+//   margin-left: 150px;
+//   margin-right: 150px;
+// }
 
 
 // @media (min-width: 768px) {

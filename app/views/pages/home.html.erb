@@ -1,5 +1,5 @@
 <div class="hal-first-pg">
-  <div class="row justify-content-center">
+  <div class="row justify-content-center" style="height: 850px">
     <div class="col-12 col-lg-6">
       <div class="row">
         <div class="col-12">
@@ -60,14 +60,29 @@
         </div>
       <% end %>
     </div>
-
     <div class="carousel-buttom">
-    <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+      <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#articleCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="container">
+        <h1>Especializações</h1>
+      <div class="specs-wrapper d-flex justify-content-around">
+        <div class="spec1">
+          <%= image_tag "foto1.jpg", crop: :fill, class: "card-img-top" %>
+          <h5>Ginecologia Regenarativa e Funcional</h5>
+          <a><%= link_to "Leia Mais", specialties_path %></a>
+        </div>
+        <div class="spec2">
+          <%= image_tag "foto2.jpg", crop: :fill, class: "card-img-top" %>
+          <h5>Saúde Vaginal</h5>
+          <a><%= link_to "Leia Mais", specialties_path %></a>
+        </div>
+      </div>
     </div>
