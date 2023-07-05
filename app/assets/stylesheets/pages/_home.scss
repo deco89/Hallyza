@@ -38,6 +38,7 @@
   max-height: 100%;
 
   a {
+
     justify-self: flex-start;
     align-self: flex-start;
   }
@@ -167,6 +168,7 @@
     display: flex;
     text-align: center;
     font-size: 24px;
+    font-weight: 200;
     width: 150px;
     flex-direction: column;
     border-radius: 10px;
@@ -175,6 +177,10 @@
     text-decoration: none;
     color: #B58169;
     margin-left: 65px;
+  }
+
+  a:hover{
+    font-weight: 500;
   }
 }
 
