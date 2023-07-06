@@ -10,11 +10,11 @@
       </div>
     </div>
     <div class="text-hal col-12 col-lg-6">
-      <div class="card">
+      <div class="card-hal">
         <div class="card-body">
           <div class="container card-hal-text">
-            <h5 class="card-title">Dra. Hállyza Rodriges</h5>
-            <ul class="card-text">
+            <h5 class="card-title-hal">Dra. Hállyza Rodriges</h5>
+            <ul class="card-text-hal">
               <p>Ginecologia Degenerativa e Saúde Vaginal<br>
                 CRM-ES 11.1993</p>
               <br>
@@ -47,10 +47,10 @@
                       <%= render "shared/sampleimg" %>
                     <% end %>
                   </div>
-                  <div class="card-body p-4">
+                  <div class="card-body-carousel p-4">
                     <h5 class="card-title"><%= truncate( article.name, length: 50 )%></h5>
                     <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
-                    <p class="card-text"><%= truncate(article.rich_body.to_plain_text, length: 150) %></p>
+                    <p class="card-text"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
                     <a href="<%= article_path(article) %>" class="btn btn-link">Leia Mais</a>
                   </div>
                 </div>
@@ -60,7 +60,7 @@
         </div>
       <% end %>
     </div>
-    <div class="carousel-buttom">
+    <div class="carousel-buttom" class="carousel slide" data-bs-ride="carousel">>
       <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
@@ -75,14 +75,14 @@
         <h1>Especializações</h1>
       <div class="specs-wrapper d-flex justify-content-around">
         <div class="spec1">
-          <%= image_tag "foto1.jpg", crop: :fill, class: "card-img-top" %>
-          <h5>Ginecologia Regenarativa e Funcional</h5>
-          <a><%= link_to "Leia Mais", specialties_path %></a>
+          <%= image_tag "foto1.jpg", crop: :fill %>
+          <h5 class="spec-h5">Ginecologia Regenarativa e Funcional</h5>
+          <a><%= link_to "Leia Mais", specialties_path, class: "a-leia" %></a>
         </div>
         <div class="spec2">
-          <%= image_tag "foto2.jpg", crop: :fill, class: "card-img-top" %>
-          <h5>Saúde Vaginal</h5>
-          <a><%= link_to "Leia Mais", specialties_path %></a>
+          <%= image_tag "foto2.jpg", crop: :fill %>
+          <h5 class="spec-h5 h5-50">Saúde Vaginal</h5>
+          <a><%= link_to "Leia Mais", specialties_path, class: "a-leia" %></a>
         </div>
       </div>
     </div>
