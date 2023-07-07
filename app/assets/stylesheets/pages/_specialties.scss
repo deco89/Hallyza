@@ -1,3 +1,8 @@
+html {
+  min-width: 320px;
+  max-width: 1400px;
+}
+
 .specs-full {
   //página inteira
   min-height: 250vh;
@@ -70,10 +75,9 @@
   text-decoration: none;
   color: #B58169;
   margin-top: 40px;
-  margin-left: auto;
+  margin-left: 1485px;
 
-}
-
-.voltar-btn:hover {
-  font-weight: 500;
+  .voltar-btn:hover {
+    font-weight: 500;
+  }
 }
