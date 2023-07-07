@@ -1,0 +1,166 @@
+h5 {
+  height: 50px;
+  /* flex-direction: row; */
+  color: #B58169;
+  /* text-align: justify; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 10px;
+  padding-left: 100px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.institute-card-1 {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+
+  img {
+    height: 300px;
+    width: 650px;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-right: 70px;
+  }
+}
+
+.institute-card-2 {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  flex-direction: row-reverse;
+
+  img {
+    height: 300px;
+    width: 650px;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-left: 70px;
+  }
+}
+
+.institute-card-3 {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+
+  img {
+    height: 300px;
+    width: 650px;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-right: 70px;
+  }
+}
+
+.institute-card-4 {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  flex-direction: row-reverse;
+
+  img {
+    height: 300px;
+    width: 650px;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-left: 70px;
+  }
+}
+
+.institute-card-5 {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+
+  img {
+    height: 300px;
+    width: 650px;
+    border-radius: 15px;
+    margin-left: 20px;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-right: 70px;
+  }
+}
+
+.institute-card-6 {
+  display: flex;
+  justify-content: center;
+  padding-right: 100px;
+  padding-left: 100px;
+  padding-top: 25px;
+  flex-direction: row-reverse;
+
+  img {
+    height: 300px;
+    width: 650px;
+    border-radius: 15px;
+    margin-right: 20px;
+  }
+
+  p {
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+    padding-left: 70px;
+  }
+}
+
+// .institute-card-1 img {
+//   height: 300px;
+//   width: 650px;
+//   border-radius: 15px;
+// }
+
+// .institute-p {
+//   display: flex;
+//   justify-content: space-between;
+// }
