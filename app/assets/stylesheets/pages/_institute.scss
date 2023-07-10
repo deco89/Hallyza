@@ -20,26 +20,27 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.institute-card-1 {
+.institute-card-1 { // mudar o css sem nestar dentro do card
   display: flex;
   justify-content: center;
   padding-right: 100px;
   padding-left: 100px;
-
-  .card-img-1 {
-    height: 300px;
-    width: 650px;
-    border-radius: 15px;
-    margin-left: 20px;
-  }
-
-  .instituto-p {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    padding-right: 70px;
-  }
 }
+
+.card-img-1 {
+  height: 300px;
+  width: 650px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.instituto-p-1 {
+  display: flex;
+  justify-content: space-between;
+  text-align: justify;
+  padding-right: 70px;
+}
+
 
 .institute-card-2 {
   display: flex;
