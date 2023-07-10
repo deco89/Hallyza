@@ -51,7 +51,7 @@
                     <h5 class="card-title"><%= truncate( article.name, length: 50 )%></h5>
                     <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
                     <p class="card-text"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
-                    <a><%= link_to "Leia Mais", article_path(article), class: "a-leia" %></a>
+                    <%= link_to "Leia Mais", article_path(article), class: "btn-link a-leia" %>
                   </div>
                 </div>
               <% end %>
@@ -60,7 +60,7 @@
         </div>
       <% end %>
     </div>
-      <a><%= link_to "Todos os artigos", articles_path, class: "a-leia" %></a>
+      <%= link_to "Todos os artigos", articles_path, class: "a-leia" %>
     <div class="carousel-buttom" class="carousel slide" data-bs-ride="carousel">
       <button class="carousel-control-prev" type="button" data-bs-target="#articleCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -78,12 +78,12 @@
         <div class="spec1">
           <%= image_tag "foto1.jpg", crop: :fill %>
           <h5 class="spec-h5">Ginecologia Regenarativa e Funcional</h5>
-          <a><%= link_to "Leia Mais", specialties_path, class: "a-leia" %></a>
+          <%= link_to "Leia Mais", specialties_path, class: "a-leia" %>
         </div>
         <div class="spec2">
           <%= image_tag "foto2.jpg", crop: :fill %>
           <h5 class="spec-h5 h5-50">Saúde Vaginal</h5>
-          <a><%= link_to "Leia Mais", specialties_path, class: "a-leia" %></a>
+          <%= link_to "Leia Mais", specialties_path, class: "a-leia" %>
         </div>
       </div>
     </div>
