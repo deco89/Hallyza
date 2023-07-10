@@ -1,4 +1,4 @@
-h5 {
+.about {
   height: 50px;
   /* flex-direction: row; */
   color: #B58169;
@@ -12,7 +12,7 @@ h5 {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-h1 {
+.inst-main {
   font-size: 48px;
   font-style: normal;
   font-weight: 900;
@@ -26,14 +26,14 @@ h1 {
   padding-right: 100px;
   padding-left: 100px;
 
-  img {
+  .card-img-1 {
     height: 300px;
     width: 650px;
     border-radius: 15px;
     margin-left: 20px;
   }
 
-  p {
+  .instituto-p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
@@ -49,14 +49,14 @@ h1 {
   padding-top: 25px;
   flex-direction: row-reverse;
 
-  img {
+  .card-img-2 {
     height: 300px;
     width: 650px;
     border-radius: 15px;
     margin-right: 20px;
   }
 
-  p {
+  .instituto-p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
@@ -71,14 +71,14 @@ h1 {
   padding-left: 100px;
   padding-top: 25px;
 
-  img {
+  .card-img-3 {
     height: 300px;
     width: 650px;
     border-radius: 15px;
     margin-left: 20px;
   }
 
-  p {
+  .instituto-p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
@@ -94,14 +94,14 @@ h1 {
   padding-top: 25px;
   flex-direction: row-reverse;
 
-  img {
+  .card-img-4 {
     height: 300px;
     width: 650px;
     border-radius: 15px;
     margin-right: 20px;
   }
 
-  p {
+  .instituto-p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
@@ -116,14 +116,14 @@ h1 {
   padding-left: 100px;
   padding-top: 25px;
 
-  img {
+  .card-img-5 {
     height: 300px;
     width: 650px;
     border-radius: 15px;
     margin-left: 20px;
   }
 
-  p {
+  .instituto-p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
@@ -139,28 +139,17 @@ h1 {
   padding-top: 25px;
   flex-direction: row-reverse;
 
-  img {
+  .card-img-6 {
     height: 300px;
     width: 650px;
     border-radius: 15px;
     margin-right: 20px;
   }
 
-  p {
+  .instituto-p {
     display: flex;
     justify-content: space-between;
     text-align: justify;
     padding-left: 70px;
   }
 }
-
-// .institute-card-1 img {
-//   height: 300px;
-//   width: 650px;
-//   border-radius: 15px;
-// }
-
-// .institute-p {
-//   display: flex;
-//   justify-content: space-between;
-// }
