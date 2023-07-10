@@ -1,6 +1,6 @@
 .hal-first-pg {
   //página inteira
-  min-height: 250vh;
+  min-height: 230vh;
 }
 
 .card-hal {
@@ -23,29 +23,37 @@
 .card-body {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items: flex-start;
   max-width: 100%;
   max-height: 100%;
-  .a-leia {
-    display: flex;
-    text-align: space-around;
-    font-size: 24px;
-    font-weight: 200;
-    width: 150px;
-    flex-direction: column;
-    border-radius: 10px;
-    background: #EBE5DF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    color: #B58169;
-    margin-left: 65px;
-  }
-
-  .a-leia:hover{
-    font-weight: 500;
-  }
+  position: relative; /* Add this */
 }
+
+.a-leia {
+  display: flex;
+  text-align: space-around;
+  font-size: 24px;
+  font-weight: 200;
+  width: 150px;
+  flex-direction: column;
+  border-radius: 10px;
+  background: #EBE5DF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: #B58169;
+  margin-top: auto; /* Força o leia mais ficar embaixo */
+  margin-left: 0;
+  background: transparent; /* retira o background color do botao */
+  border: none; /* retira a borda */
+  box-shadow: none; /* retira o box shadow */
+}
+
+.a-leia:hover{
+  font-weight: 600; /* melhora a leitura */
+  text-decoration: underline; /* adiciona o underline no hover */
+}
+
 
 .text-hal {
   margin-left: -8.25rem;
