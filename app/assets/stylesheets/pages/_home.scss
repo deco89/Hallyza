@@ -1,13 +1,65 @@
-.hal-first-pg {
-  //página inteira
-  min-height: 230vh;
+body {
+  height: 180vh;
 }
+
+
+.hal-first-pg {
+  // // Isso agora apenas garante que a página ocupe pelo menos a altura total da viewport
+  // min-height: 80vh;
+  // // Adicionado para permitir que o conteúdo interno role se ultrapassar a altura da página
+  // overflow-y: auto;
+  // padding-bottom: 5rem; // coloca o tamanho do footer no final da página
+  /* Equivalent to the Bootstrap class .container */
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.hal-section {
+  position: relative;
+  max-width: 1200px; /* or any value you like */
+  padding-right: 15px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hal-img-container, .card-hal {
+  flex: 1; /* Add this */
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card-hal {
+  //card com informações da Hállyza
+  // position: absolute; removido para o card ficar no lugar certo em relacao ao vh da pagina
+  width: 30vw;
+  height: 50vh;
+  background-color: #EBE5DF;
+  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
+  border: #B58169;
+  border-radius: 4px;
+}
+
+
 .artigos {
   text-align: center;
+  color: #B58169;
 }
 
 .espcs {
   text-align: center;
+  color: #B58169;
 }
 
 .center-todos {
@@ -31,29 +83,33 @@
 }
 
 .a-leia-todos:hover {
-  color: #000;
+  color: #EFE2D4;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
-
-.card-hal {
-  //card com informações da Hállyza
-  position: absolute;
-  width: 600px;
-  height: 650px;
-  background-color: #EBE5DF;
-  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
-  border: #B58169;
-  border-radius: 4px;
+.hal-img-container {
+  /* Equivalent to the Bootstrap classes .col-12 .container */
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.hal-img-pg img {
-  position: relative;
+.hal-img-pg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 30px;
-  margin-left: 200px;
-  width: 670px;
-  height: 840px;
+  // margin-left: 200px;
+  margin: 0;
+}
+
+.hal-img-home {
+  width: 30vw;
+  height: 70vh;
 }
 
 .card-body {
@@ -67,8 +123,8 @@
 }
 
 .text-hal {
-  margin-left: -8.25rem;
-  margin-top: 6rem
+  // margin-left: -8.25rem;
+  // margin-top: 6rem
 }
 
 .card-title-hal {
@@ -90,7 +146,7 @@
   padding-left: 190px;
   padding-right: 190px;
   padding-top: 20px;
-  height: 490px;
+  height: auto;
 
   .spec-h5 {
     display: flex;
