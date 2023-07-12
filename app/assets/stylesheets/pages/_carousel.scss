@@ -7,25 +7,19 @@
 
 .a-leia { // carousel
   display: flex;
-  text-align: space-around;
+  position: relative;
+  justify-content: flex-end;
   font-size: 24px;
   font-weight: 200;
-  width: 150px;
-  flex-direction: column;
+  width: 450px;
+  flex-direction: row;
   border-radius: 10px;
-  background: #EBE5DF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   color: #B58169;
   margin-top: auto; /* Força o leia mais ficar embaixo */
-  margin-left: 0;
-  background: transparent; /* retira o background color do botao */
-  border: none; /* retira a borda */
-  box-shadow: none; /* retira o box shadow */
 }
 
 .a-leia:hover{ //carousel
-  font-weight: 600; /* melhora a leitura */
   text-decoration: underline; /* adiciona o underline no hover */
 }
 

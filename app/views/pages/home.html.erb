@@ -52,7 +52,7 @@
                     <h5 class="card-title"><%= truncate( article.name, length: 50 )%></h5>
                     <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
                     <p class="card-text"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
-                    <%= link_to "Leia Mais", article_path(article), class: "btn-link a-leia" %>
+                    <%= link_to "Leia Mais", article_path(article), class: "a-leia" %>
                   </div>
                 </div>
               <% end %>
@@ -69,18 +69,17 @@
 </div>
 
     <h1 class="espcs">Especializações</h1>
-
     <div class="container">
       <div class="specs-wrapper d-flex justify-content-around">
         <div class="spec1">
           <%= image_tag "foto1.jpg", crop: :fill %>
           <h5 class="spec-h5">Ginecologia Regenarativa e Funcional</h5>
-          <%= link_to "Leia Mais", specialties_path, class: "a-leia" %>
+          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
         </div>
         <div class="spec2">
           <%= image_tag "foto2.jpg", crop: :fill %>
-          <h5 class="spec-h5 h5-50">Saúde Vaginal</h5>
-          <%= link_to "Leia Mais", specialties_path, class: "a-leia" %>
+          <h5 class="spec-h5">Saúde Vaginal</h5>
+          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
         </div>
       </div>
     </div>
