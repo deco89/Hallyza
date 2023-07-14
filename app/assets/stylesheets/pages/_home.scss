@@ -128,10 +128,10 @@ body {
 
 .hal-section {
   border: solid 2px red;
-  position: relative
-  display: flex;
+  position: relative; /* Added the missing semicolon here */
   justify-content: space-between;
   align-items: center;
+  display: flex;
 }
 
 
@@ -443,86 +443,3 @@ body {
   cursor: pointer;
   transition: color 0.3s ease;
 }
-
-// /* For mobile phones: */
-// @media only screen and (max-width: 767px) {
-//   /* Styles for mobile screens */
-//   .card-hal {
-//     width: 80vw;
-//   }
-//   .card-text-hal {
-//     font-size: 3vw;
-//   }
-// }
-
-// /* For tablets: */
-// @media only screen and (min-width: 768px) and (max-width: 1023px) {
-//   /* Styles for tablet screens */
-//   .centered-container {
-//     flex-direction: row;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-
-//   .hal-img-container, .card-hal {
-//     max-width: 60vw; /* Adjust this as needed */
-//     flex-basis: 60vw;
-//   }
-
-//   .card-hal {
-//     width: 100%;
-//     position: relative;
-//     left: 0;
-//   }
-
-// /* For small desktop: */
-// @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-//   /* Styles for small desktop screens */
-//   .hal-img-container, .card-hal {
-//     max-width: 40vw;
-//   }
-
-//   .card-text-hal {
-//     font-size: 1vw;
-//   }
-// }
-
-// /* For tablets and larger */
-// @media only screen and (min-width: 768px) {
-//   .centered-container {
-//     flex-direction: row;
-//     justify-content: space-around;
-//     align-items: center;
-//   }
-
-//   .hal-img-container, .card-hal {
-//     max-width: 40vw; /* Adjust this as needed */
-//     flex-basis: 40vw;
-//   }
-
-//   .hal-img-home {
-//     width: 100%; /* image will take full width of its container */
-//   }
-
-//   .card-hal {
-//     width: 100%; /* card will take full width of its container */
-//     position: relative;
-//     left: 0;
-//   }
-
-//   .card-body {
-//     width: auto;
-//   }
-// }
-
-// /* For large desktop: */
-// @media only screen and (min-width: 1200px) {
-//     .hal-img-container, .card-hal {
-//       max-width: 30vw; /* Controls how much they can grow on larger screens */
-//     }
-
-//     .card-text-hal {
-//       font-size: 0.8vw;
-//     }
-//   }
-// }
