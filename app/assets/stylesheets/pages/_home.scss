@@ -1,9 +1,116 @@
+// body {
+//   padding-bottom: 8rem;
+// }
+
+// .hal-first-pg {
+//   border: solid 2px red;
+//   width: 100%;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+// .centered-container {
+//   border: solid 2px red;
+//   position: relative;
+//   display: flex;
+//   justify-content: center;
+//   flex-wrap: wrap;
+// }
+
+// .hal-section {
+//   border: solid 2px red;
+//   position: relative;
+//   // max-width: 1200px;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   display: flex;
+//   justify-content: space-between;
+// }
+
+// .hal-img-container, .card-hal {
+//   flex: 1; /* Add this */
+//   margin-right: auto;
+//   margin-left: auto;
+// }
+
+
+// .hal-img-container {
+//   // top: 0;
+//   // right: 0;
+//   // left: 0;
+//   /* Equivalent to the Bootstrap classes .col-12 .container */
+//   position: relative;
+//   // width: 100%;
+//   max-width: 80%;
+//   border: solid 2px red;
+//   padding-right: 15px;
+//   padding-left: 15px;
+//   margin-right: auto;
+//   margin-left: auto;
+//   transform: translateX(-45%);
+//   // right: 15rem; // posição do cartao em relação a position relative
+// }
+
+// .hal-img-home {
+//   border: solid 2px red;
+//   margin-top: 2rem;
+//   width: 100%;
+//   // width: 90%;
+//   // height: 90%;
+// }
+
+// .card-hal {
+//   border: solid 2px red;
+//   position: absolute;
+//   //card com informações da Hállyza
+//   display: flex;
+//   width: 30vw;
+//   // height: 75vh;
+//   background-color: #EBE5DF;
+//   box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
+//   border: #B58169;
+//   border-radius: 4px;
+//   margin-top: 4rem;
+//   padding: 0 2rem 2rem 2rem;
+//   left: 47%; // posição do cartao em relação a position absolute
+// }
+
+// .card-body {
+//   border: solid 2px red;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-start;
+//   align-items: flex-start;
+//   max-width: 100%;
+//   max-height: 100%;
+//   position: relative;
+//   width: 40vh;
+// }
+
+// .card-title-hal {
+//   border: solid 2px red;
+//   font-family: 'IBM Plex Sans', sans-serif;
+//   color: #B58169;
+//   font-size: 2.25rem;
+//   letter-spacing: 0.1rem;
+//   margin-top: 1.5em;
+// }
+
+// .card-text-hal {
+//   border: solid 2px red;
+//   font-size: 0.8vw;
+//   font-family: 'IBM Plex Sans', sans-serif;
+//   color: #B58169;
+// }
+
 body {
-  height: 225vh;
-  width: auto;
+  padding-bottom: 8rem;
 }
 
 .hal-first-pg {
+  border: solid 2px red;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -12,31 +119,28 @@ body {
 }
 
 .centered-container {
+  border: solid 2px red;
   position: relative;
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .hal-section {
-  position: relative;
-  max-width: 1200px;
-  /* or any value you like */
-  padding-right: 15px;
-  padding-left: 15px;
+  border: solid 2px red;
+  position: relative
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.hal-img-container,
-.card-hal {
+
+.hal-img-container, .card-hal {
   flex: 1;
-  /* Add this */
   margin-right: auto;
   margin-left: auto;
 }
+
 
 .artigos {
   margin-top: 4rem;
@@ -91,47 +195,39 @@ body {
 }
 
 .hal-img-container {
-  /* Equivalent to the Bootstrap classes .col-12 .container */
+  left:20vw;
   position: relative;
-  width: 100%;
+  max-width: 80%;
+  border: solid 2px red;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  right: 15rem; // posição do cartao em relação a position relative
+  transform: translateX(-45%);
+}
+
+.hal-img-home {
+  border: solid 2px red;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 .card-hal {
+  border: solid 2px red;
   position: absolute;
-  //card com informações da Hállyza
   display: flex;
   width: 30vw;
-  height: 65vh;
   background-color: #EBE5DF;
   box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
   border: #B58169;
   border-radius: 4px;
   margin-top: 4rem;
-  padding: 0 2rem 0 2rem;
-  left: 25rem; // posição do cartao em relação a position absolute
-}
-
-.hal-img-pg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px;
-  // margin-left: 200px;
-  margin: 0;
-}
-
-.hal-img-home {
-  margin-top: 2rem;
-  width: 30vw;
-  height: 70vh;
+  padding: 0 2rem 2rem 2rem;
+  left: 47%;
 }
 
 .card-body {
+  border: solid 2px red;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -143,6 +239,7 @@ body {
 }
 
 .card-title-hal {
+  border: solid 2px red;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
   font-size: 2.25rem;
@@ -150,15 +247,122 @@ body {
   margin-top: 1.5em;
 }
 
-
 .card-text-hal {
-  font-size: 1.1rem;
+  border: solid 2px red;
+  font-size: 0.8vw;
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
 }
 
-.specs-wrapper {
-  //especializações
+/* For tablets: */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablet screens */
+  .hal-img-container, .card-hal {
+    max-width: 60vw;
+    transform: translateX(0);
+  }
+
+  .card-hal {
+    width: 40vw;
+    position: relative;
+    left: 0;
+  }
+
+  .card-text-hal {
+    font-size: 1.5vw;
+  }
+}
+
+/* For small desktop: */
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  /* Styles for small desktop screens */
+  .hal-img-container, .card-hal {
+    max-width: 50vw;
+  }
+
+  .card-hal {
+    width: 35vw;
+    position: relative;
+    left: 0;
+  }
+
+  .card-text-hal {
+    font-size: 1vw;
+  }
+}
+
+/* For large desktop: */
+@media only screen and (min-width: 1200px) {
+  /* Styles for large desktop screens */
+  .hal-img-container {
+    left: 20vw;
+    max-width: 60vw; /* Adjust this if needed */
+    transform: translateX(0); /* removed the negative translation */
+  }
+
+  .card-hal {
+    width: 30vw;
+    position: relative;
+    left: 10vw; /* added left offset */
+  }
+
+  .card-text-hal {
+    font-size: 0.8vw;
+  }
+}
+
+ // mudei ate aqui
+
+.artigos {
+  margin-top: 4rem;
+  text-align: center;
+  color: #B58169;
+}
+
+.espcs {
+  text-align: center;
+  color: #B58169;
+}
+
+.center-todos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.a-leia-todos {
+  //botão leia todos
+  font-size: 24px;
+  font-weight: 200;
+  text-decoration: none;
+  color: #B58169;
+  margin-top: auto; /* Força o leia mais ficar embaixo */
+  margin-left: 0;
+  background: transparent; /* retira o background color do botao */
+  border: none; /* retira a borda */
+  box-shadow: none; /* retira o box shadow */
+  margin-bottom: 5rem;
+}
+
+.a-leia-todos:hover {
+  color: #EFE2D4;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+// .hal-img-pg { nao existe mais
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 30px;
+//   // margin-left: 200px;
+//   margin: 0;
+// }
+
+
+.specs-wrapper { //especializações
+  padding-left: 190px;
+  padding-right: 190px;
   padding-top: 20px;
   height: auto;
   flex-direction: row;
@@ -239,3 +443,86 @@ body {
   cursor: pointer;
   transition: color 0.3s ease;
 }
+
+// /* For mobile phones: */
+// @media only screen and (max-width: 767px) {
+//   /* Styles for mobile screens */
+//   .card-hal {
+//     width: 80vw;
+//   }
+//   .card-text-hal {
+//     font-size: 3vw;
+//   }
+// }
+
+// /* For tablets: */
+// @media only screen and (min-width: 768px) and (max-width: 1023px) {
+//   /* Styles for tablet screens */
+//   .centered-container {
+//     flex-direction: row;
+//     justify-content: space-around;
+//     align-items: center;
+//   }
+
+//   .hal-img-container, .card-hal {
+//     max-width: 60vw; /* Adjust this as needed */
+//     flex-basis: 60vw;
+//   }
+
+//   .card-hal {
+//     width: 100%;
+//     position: relative;
+//     left: 0;
+//   }
+
+// /* For small desktop: */
+// @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+//   /* Styles for small desktop screens */
+//   .hal-img-container, .card-hal {
+//     max-width: 40vw;
+//   }
+
+//   .card-text-hal {
+//     font-size: 1vw;
+//   }
+// }
+
+// /* For tablets and larger */
+// @media only screen and (min-width: 768px) {
+//   .centered-container {
+//     flex-direction: row;
+//     justify-content: space-around;
+//     align-items: center;
+//   }
+
+//   .hal-img-container, .card-hal {
+//     max-width: 40vw; /* Adjust this as needed */
+//     flex-basis: 40vw;
+//   }
+
+//   .hal-img-home {
+//     width: 100%; /* image will take full width of its container */
+//   }
+
+//   .card-hal {
+//     width: 100%; /* card will take full width of its container */
+//     position: relative;
+//     left: 0;
+//   }
+
+//   .card-body {
+//     width: auto;
+//   }
+// }
+
+// /* For large desktop: */
+// @media only screen and (min-width: 1200px) {
+//     .hal-img-container, .card-hal {
+//       max-width: 30vw; /* Controls how much they can grow on larger screens */
+//     }
+
+//     .card-text-hal {
+//       font-size: 0.8vw;
+//     }
+//   }
+// }
