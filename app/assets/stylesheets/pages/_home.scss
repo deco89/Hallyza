@@ -128,16 +128,70 @@ body {
 
 .hal-section {
   border: solid 2px red;
-  position: relative;
+  position: relative
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+
 .hal-img-container, .card-hal {
   flex: 1;
   margin-right: auto;
   margin-left: auto;
+}
+
+
+.artigos {
+  margin-top: 4rem;
+  color: rgba(181, 129, 105, 0.65);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-align: center;
+}
+
+.espcs {
+  margin-top: 4rem;
+  color: rgba(181, 129, 105, 0.65);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6.4px;
+  text-align: center;
+}
+
+.center-todos {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.a-leia-todos {
+  //botão leia todos
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  width: 220px;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #EBE5DF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: #B58169;
+  margin-top: 10px;
+  margin-right: 30px;
+}
+
+.a-leia-todos:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 .hal-img-container {
@@ -311,44 +365,54 @@ body {
   padding-right: 190px;
   padding-top: 20px;
   height: auto;
-
-  .spec-h5 {
-    display: flex;
-    justify-content: center;
-    width: 275px;
-    height: 100px;
-    flex-direction: column;
-    color: #D7CCC7;
-    text-align: center;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    padding-top: 10px;
-    font-family: 'IBM Plex Sans', sans-serif;
-  }
-
-  .a-leia {
-    display: flex;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 200;
-    width: 150px;
-    flex-direction: column;
-    border-radius: 10px;
-    background: #EBE5DF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    color: #B58169;
-    margin-left: 65px;
-  }
-
-  .a-leia:hover{
-    font-weight: 500;
-  }
+  flex-direction: row;
+  width: auto;
 }
 
-.spec1 img { //imagem 1 das especializações
+.spec-h5 {
+  display: flex;
+  justify-content: center;
+  width: 275px;
+  height: 100px;
+  flex-direction: column;
+  color: #D7CCC7;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-top: 10px;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.spec1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spec2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+
+.spec1 img {
+  //imagem 1 das especializações
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  border-radius: 45px;
+  width: 270px;
+  height: 270px;
+}
+
+.spec2 img {
+  //imagem 2 das especializações
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -358,19 +422,26 @@ body {
   height: 270px;
 }
 
-.spec2 img { //imagem 2 das especializações
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  border-radius: 45px;
-  width: 270px;
-  height: 270px;
 
-  .h5-50 {
-    height: 50px;
-    line-height: 50px;
-  }
+.a-leia-spec {
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  width: 130px;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #EBE5DF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: #B58169;
+  margin-top: 10px;
+}
+
+.a-leia-spec:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 
 // /* For mobile phones: */

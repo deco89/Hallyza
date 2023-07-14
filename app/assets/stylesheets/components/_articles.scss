@@ -1,105 +1,60 @@
-.img-cl-show {
-  display: flex;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  box-shadow: 0 0 5px #ccc;
-  transition: all 0.5s ease;
+.card-show-img {
+  width: 100%;
+  height: 650px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-// .card-show {
-  //   position: relative;
-  //   border: 1px solid #dadada;
-  //   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
-  //   transition: 0.2s;
-  //   border-radius: 0.25rem;
-  //   background-color: #EBE5DF;
-  //   height: 445px;
-  //   width: 500px;
-  //   flex-direction: column;
-  //   border-radius: 1.75em;
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: flex-start;
-  //   align-items: flex-start;
+.banner__titulo {
+  color: white;
+  font-family: IBM Plex Sans, sans-serif;
+  font-size: 5.0625rem;
+  position: absolute;
+  left: 50%;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
 
-  //   a {
-    //     display: flex;
-    //     justify-content: space-around;
-    //     text-decoration: none;
-    //     font-weight: 300;
-    //     color: #B58169;
-    //     line-height: normal;
-    //     font-family: 'IBM Plex Sans', sans-serif;
-    //   }
-    // }
-
-/* Pagina de show de 1 artigo */
-
-.text-card {
-  width: 800px;
-  height: 800px;
-  padding: 20px;
-  border: 1px solid #ccc;  /* Adjust color as needed */
-  border-radius: 5px;      /* Adjust border-radius as needed */
-  overflow-y: auto;        /* Add scrollbar if text exceeds card height */
-  /* Add other styling as needed */
+.text_card {
+  padding-top: 2.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  text-align: justify;
+  color: #000;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .card-date-time {
-  text-align: left;
-  text-decoration: none;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-/* Form */
-
-.card-form {
-  // overflow: auto;
-  border: 1px solid #dddddd;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-  margin: 20px;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 5px;
+  padding: 4rem;
+  color: #000;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
-.voltar-btn {
-    display: flex;
-    text-align: center;
-    font-size: 24px;
-    font-weight: 200;
-    width: 150px;
-    flex-direction: column;
-    border-radius: 5px;
-    background: #EBE5DF;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    text-decoration: none;
-    color: #B58169;
-    margin-top: 40px;
-    margin-left: auto;
-}
-/* Todos os Artigos */
-
-.articles-card {
+.voltar-btn-article {
   display: flex;
-  justify-content: space-evenly;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  width: 150px;
+  flex-direction: column;
+  border-radius: 5px;
+  background: #EBE5DF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: #B58169;
+  margin-left: 1700px;
 }
 
-// h1 {
-//   padding-top: 20px;
-//   margin-bottom: 30px;
-//   font-family: 'IBM Plex Sans', sans-serif;
-//   color: #B58169;
-//   display: flex;
-//   justify-content: center;
-//   text-decoration: none;
-// }
-
-// .container {
-//   padding-bottom: 70px;
-//   margin-bottom: 30px;
-//   display: flex;
-//   flex-direction: column;
-//   font-family: 'IBM Plex Sans', sans-serif;
-// }
+.voltar-btn-article:hover {
+  text-decoration: underline;
+}
