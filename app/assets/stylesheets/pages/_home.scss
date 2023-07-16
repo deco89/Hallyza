@@ -1,6 +1,82 @@
-// body {
-//   padding-bottom: 8rem;
-// }
+body {
+  padding-bottom: 8rem;
+}
+
+// Responsividade telas grandes
+
+/* Extra large devices (large desktops, 1200px and up) */
+/* MacBook Pro 16 M1 Pro */
+@media (min-width: 1440px) {
+  .hal-img-home {
+    width: 40vw;
+    height: 50vw;
+    transform: translateX(4vw);
+  }
+  .card-hal {
+    width: 55vw;
+    height: 52.5vw;
+    transform: translateX(4vw);
+    font-size: 2vw; /* adjust as needed */
+  }
+  .card-body .card-title-hal, .card-body .card-text-hal {
+    font-size: 2vw; /* adjust as needed */
+  }
+}
+
+/* IMac 24" */
+@media (min-width: 1920px) {
+  .hal-img-home {
+    width: 40vw;
+    height: 37.5vw;
+    transform: translateX(0);
+  }
+  .card-hal {
+    width: 40vw;
+    height: 37.5vw;
+    transform: translateX(0);
+    font-size: 2vw; /* adjust as needed */
+  }
+  .card-body .card-title-hal, .card-body .card-text-hal {
+    font-size: 2vw; /* adjust as needed */
+  }
+}
+
+/* IMac 27" */
+@media (min-width: 2560px) {
+  .hal-img-home {
+    width: 35vw;
+    height: 32.5vw;
+    transform: translateX(0);
+  }
+  .card-hal {
+    width: 35vw;
+    height: 32.5vw;
+    transform: translateX(0);
+    font-size: 2.5vw; /* adjust as needed */
+  }
+  .card-body .card-title-hal, .card-body .card-text-hal {
+    font-size: 2.5vw; /* adjust as needed */
+  }
+}
+
+/* Samsung Smart TV */
+@media (min-width: 3840px) {
+  .hal-img-home {
+    width: 30vw;
+    height: 27.5vw;
+    transform: translateX(0);
+  }
+  .card-hal {
+    width: 30vw;
+    height: 27.5vw;
+    transform: translateX(0);
+    font-size: 3vw; /* adjust as needed */
+  }
+  .card-body .card-title-hal, .card-body .card-text-hal {
+    font-size: 3vw; /* adjust as needed */
+  }
+}
+
 
 // .hal-first-pg {
 //   border: solid 2px red;
@@ -15,34 +91,28 @@
 //   border: solid 2px red;
 //   position: relative;
 //   display: flex;
-//   justify-content: center;
+//   // justify-content: center;
 //   flex-wrap: wrap;
 // }
 
 // .hal-section {
 //   border: solid 2px red;
-//   position: relative;
-//   // max-width: 1200px;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   display: flex;
+//   position: relative; /* Added the missing semicolon here */
 //   justify-content: space-between;
+//   align-items: center;
+//   display: flex;
 // }
 
+
 // .hal-img-container, .card-hal {
-//   flex: 1; /* Add this */
+//   flex: 1;
 //   margin-right: auto;
 //   margin-left: auto;
 // }
 
-
 // .hal-img-container {
-//   // top: 0;
-//   // right: 0;
-//   // left: 0;
-//   /* Equivalent to the Bootstrap classes .col-12 .container */
+//   left:20vw;
 //   position: relative;
-//   // width: 100%;
 //   max-width: 80%;
 //   border: solid 2px red;
 //   padding-right: 15px;
@@ -50,35 +120,28 @@
 //   margin-right: auto;
 //   margin-left: auto;
 //   transform: translateX(-45%);
-//   // right: 15rem; // posição do cartao em relação a position relative
 // }
 
 // .hal-img-home {
 //   border: solid 2px red;
 //   margin-top: 2rem;
 //   width: 100%;
-//   // width: 90%;
-//   // height: 90%;
 // }
 
 // .card-hal {
-//   border: solid 2px red;
 //   position: absolute;
-//   //card com informações da Hállyza
 //   display: flex;
 //   width: 30vw;
-//   // height: 75vh;
 //   background-color: #EBE5DF;
 //   box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
 //   border: #B58169;
 //   border-radius: 4px;
 //   margin-top: 4rem;
 //   padding: 0 2rem 2rem 2rem;
-//   left: 47%; // posição do cartao em relação a position absolute
+//   left: 47%;
 // }
 
 // .card-body {
-//   border: solid 2px red;
 //   display: flex;
 //   flex-direction: column;
 //   justify-content: flex-start;
@@ -104,42 +167,6 @@
 //   font-family: 'IBM Plex Sans', sans-serif;
 //   color: #B58169;
 // }
-
-body {
-  padding-bottom: 8rem;
-}
-
-.hal-first-pg {
-  border: solid 2px red;
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.centered-container {
-  border: solid 2px red;
-  position: relative;
-  display: flex;
-  // justify-content: center;
-  flex-wrap: wrap;
-}
-
-.hal-section {
-  border: solid 2px red;
-  position: relative; /* Added the missing semicolon here */
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-
-
-.hal-img-container, .card-hal {
-  flex: 1;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 
 .artigos {
@@ -194,122 +221,62 @@ body {
   transition: color 0.3s ease;
 }
 
-.hal-img-container {
-  left:20vw;
-  position: relative;
-  max-width: 80%;
-  border: solid 2px red;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  transform: translateX(-45%);
-}
+// /* For tablets: */
+// @media only screen and (min-width: 768px) and (max-width: 1023px) {
+//   /* Styles for tablet screens */
+//   .hal-img-container, .card-hal {
+//     max-width: 60vw;
+//     transform: translateX(0);
+//   }
 
-.hal-img-home {
-  border: solid 2px red;
-  margin-top: 2rem;
-  width: 100%;
-}
+//   .card-hal {
+//     width: 40vw;
+//     position: relative;
+//     left: 0;
+//   }
 
-.card-hal {
-  border: solid 2px red;
-  position: absolute;
-  display: flex;
-  width: 30vw;
-  background-color: #EBE5DF;
-  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
-  border: #B58169;
-  border-radius: 4px;
-  margin-top: 4rem;
-  padding: 0 2rem 2rem 2rem;
-  left: 47%;
-}
+//   .card-text-hal {
+//     font-size: 1.5vw;
+//   }
+// }
 
-.card-body {
-  border: solid 2px red;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  max-width: 100%;
-  max-height: 100%;
-  position: relative;
-  width: 40vh;
-}
+// /* For small desktop: */
+// @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+//   /* Styles for small desktop screens */
+//   .hal-img-container, .card-hal {
+//     max-width: 50vw;
+//   }
 
-.card-title-hal {
-  border: solid 2px red;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #B58169;
-  font-size: 2.25rem;
-  letter-spacing: 0.1rem;
-  margin-top: 1.5em;
-}
+//   .card-hal {
+//     width: 35vw;
+//     position: relative;
+//     left: 0;
+//   }
 
-.card-text-hal {
-  border: solid 2px red;
-  font-size: 0.8vw;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #B58169;
-}
+//   .card-text-hal {
+//     font-size: 1vw;
+//   }
+// }
 
-/* For tablets: */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for tablet screens */
-  .hal-img-container, .card-hal {
-    max-width: 60vw;
-    transform: translateX(0);
-  }
+// /* For large desktop: */
+// @media only screen and (min-width: 1200px) {
+//   /* Styles for large desktop screens */
+//   .hal-img-container {
+//     left: 20vw;
+//     max-width: 60vw; /* Adjust this if needed */
+//     transform: translateX(0); /* removed the negative translation */
+//   }
 
-  .card-hal {
-    width: 40vw;
-    position: relative;
-    left: 0;
-  }
+//   .card-hal {
+//     width: 30vw;
+//     position: relative;
+//     left: 10vw; /* added left offset */
+//   }
 
-  .card-text-hal {
-    font-size: 1.5vw;
-  }
-}
-
-/* For small desktop: */
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  /* Styles for small desktop screens */
-  .hal-img-container, .card-hal {
-    max-width: 50vw;
-  }
-
-  .card-hal {
-    width: 35vw;
-    position: relative;
-    left: 0;
-  }
-
-  .card-text-hal {
-    font-size: 1vw;
-  }
-}
-
-/* For large desktop: */
-@media only screen and (min-width: 1200px) {
-  /* Styles for large desktop screens */
-  .hal-img-container {
-    left: 20vw;
-    max-width: 60vw; /* Adjust this if needed */
-    transform: translateX(0); /* removed the negative translation */
-  }
-
-  .card-hal {
-    width: 30vw;
-    position: relative;
-    left: 10vw; /* added left offset */
-  }
-
-  .card-text-hal {
-    font-size: 0.8vw;
-  }
-}
+//   .card-text-hal {
+//     font-size: 0.8vw;
+//   }
+// }
 
  // mudei ate aqui
 
