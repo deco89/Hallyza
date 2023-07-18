@@ -8,75 +8,94 @@ body {
 /* MacBook Pro 16 M1 Pro */
 @media (min-width: 1440px) {
   .hal-img-home {
-    width: 40vw;
-    height: 50vw;
+    max-width: 100%;
+    height: auto;
     transform: translateX(4vw);
   }
+
   .card-hal {
     width: 55vw;
     height: 52.5vw;
     transform: translateX(4vw);
-    font-size: 2vw; /* adjust as needed */
+    font-size: 2vw;
+    /* adjust as needed */
   }
-  .card-body .card-title-hal, .card-body .card-text-hal {
-    font-size: 2vw; /* adjust as needed */
+
+  .card-body .card-title-hal,
+  .card-body .card-text-hal {
+    font-size: 2vw;
+    /* adjust as needed */
   }
 }
 
 /* IMac 24" */
 @media (min-width: 1920px) {
   .hal-img-home {
-    width: 40vw;
-    height: 37.5vw;
+    max-width: 100%;
+    height: auto;
     transform: translateX(0);
   }
+
   .card-hal {
     width: 40vw;
     height: 37.5vw;
     transform: translateX(0);
-    font-size: 2vw; /* adjust as needed */
+    font-size: 2vw;
+    /* adjust as needed */
   }
-  .card-body .card-title-hal, .card-body .card-text-hal {
-    font-size: 2vw; /* adjust as needed */
+
+  .card-body .card-title-hal,
+  .card-body .card-text-hal {
+    font-size: 2vw;
+    /* adjust as needed */
   }
 }
 
 /* IMac 27" */
 @media (min-width: 2560px) {
   .hal-img-home {
-    width: 35vw;
-    height: 32.5vw;
+    max-width: 100%;
+    height: auto;
     transform: translateX(0);
   }
+
   .card-hal {
     width: 35vw;
     height: 32.5vw;
     transform: translateX(0);
-    font-size: 2.5vw; /* adjust as needed */
+    font-size: 2.5vw;
+    /* adjust as needed */
   }
-  .card-body .card-title-hal, .card-body .card-text-hal {
-    font-size: 2.5vw; /* adjust as needed */
+
+  .card-body .card-title-hal,
+  .card-body .card-text-hal {
+    font-size: 2.5vw;
+    /* adjust as needed */
   }
 }
 
 /* Samsung Smart TV */
 @media (min-width: 3840px) {
   .hal-img-home {
-    width: 30vw;
-    height: 27.5vw;
+    max-width: 100%;
+    height: auto;
     transform: translateX(0);
   }
+
   .card-hal {
     width: 30vw;
     height: 27.5vw;
     transform: translateX(0);
-    font-size: 3vw; /* adjust as needed */
+    font-size: 3vw;
+    /* adjust as needed */
   }
-  .card-body .card-title-hal, .card-body .card-text-hal {
-    font-size: 3vw; /* adjust as needed */
+
+  .card-body .card-title-hal,
+  .card-body .card-text-hal {
+    font-size: 3vw;
+    /* adjust as needed */
   }
 }
-
 
 // .hal-first-pg {
 //   border: solid 2px red;
@@ -175,9 +194,9 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 56px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
-  letter-spacing: 6.4px;
+  letter-spacing: 5px;
   text-align: center;
 }
 
@@ -187,9 +206,9 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 56px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   line-height: normal;
-  letter-spacing: 6.4px;
+  letter-spacing: 5px;
   text-align: center;
 }
 
@@ -278,7 +297,7 @@ body {
 //   }
 // }
 
- // mudei ate aqui
+// mudei ate aqui
 
 .artigos {
   margin-top: 4rem;
@@ -303,11 +322,15 @@ body {
   font-weight: 200;
   text-decoration: none;
   color: #B58169;
-  margin-top: auto; /* Força o leia mais ficar embaixo */
+  margin-top: auto;
+  /* Força o leia mais ficar embaixo */
   margin-left: 0;
-  background: transparent; /* retira o background color do botao */
-  border: none; /* retira a borda */
-  box-shadow: none; /* retira o box shadow */
+  background: transparent;
+  /* retira o background color do botao */
+  border: none;
+  /* retira a borda */
+  box-shadow: none;
+  /* retira o box shadow */
   margin-bottom: 5rem;
 }
 
@@ -327,7 +350,8 @@ body {
 // }
 
 
-.specs-wrapper { //especializações
+.specs-wrapper {
+  //especializações
   padding-left: 190px;
   padding-right: 190px;
   padding-top: 20px;

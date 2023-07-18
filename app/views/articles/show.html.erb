@@ -13,6 +13,7 @@
       <%= link_to "Voltar", articles_path, class:"voltar-btn-article"%>
     </div>
 </div>
+
 <%= link_to "Editar artigo | ", edit_article_path %>
 <%= link_to "Voltar para artigos | ", articles_path %>
 <%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %>

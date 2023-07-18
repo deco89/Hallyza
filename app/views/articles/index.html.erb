@@ -1,48 +1,55 @@
-<h1>Artigos</h1>
+<h1 class="article-h1">Artigos</h1>
 <div class="container-fluid">
-  <div class="row row-cols-4 align-items-center">
-    <div class="row w-100 md-center">
-      <div class="articles-card">
-        <% @articles.each do |article| %>
-          <a href="<%= article_path(article) %>">
-            <li><strong><%= article.name %></strong></li>
+  <% @articles.each do |article|  %>
+    <%= link_to article_path(article) do %>
+      <div class="article">
+        <div class="article-image">
           <% if article.photos.attached? %>
-              <%= cl_image_tag(article.photos.first.key, width: 400, height: 400, crop: :fill, class: "img-cl") %></a>
+            <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img-top" %>
           <% else %>
             <%= render "shared/sampleimg" %>
           <% end %>
-        <% end %>
+        </div>
+        <div class="article-body p-4">
+          <h5 class="article-title"><%= truncate( article.name, length: 50 )%></h5>
+          <span class="article-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
+          <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
+          <%= link_to "Leia Mais", article_path(article), class: "a-leia" %>
+        </div>
       </div>
-      <%= link_to "Novo artigo", articles_new_path %>
-    </div>
-  </div>
+    <% end %>
+  <% end %>
 </div>
-
+<div>
+  <%= link_to "Voltar", root_path, class:"voltar-btn-article"%>
+</div>
+</div>
+</div>
 <%#
 <div class="container-fluid">
   <div class="row row-cols-4 align-items-center">
     <div class="row w-100 justify-content-md-center">
       <% @articles.each do |article| %>
-        <%# <div class="col-md-auto col-md-offset crdbig">
+  <%# <div class="col-md-auto col-md-offset crdbig">
           <div class="index-article">
             <div class="index-products">
               <div class="index-infos">
                 <div class="index-infos">
                   <div>
                     <a href="<%= article_path(article) %>
-                      <%# <li><strong><%= article.name</strong></li> %>
-                      <%# <% if article.photos.attached? %>
-                        <%# <%= cl_image_tag(article.photos.first.key, width: 400, height: 400, crop: :fill, class: "img-cl")</a> %>
-                    <%# <% else %>
-                      <%# <%= image_tag('img1.jpeg', width: 400, height: 400, crop: :fill, class: "img-cl")</a>  %>
-                  <%# <% end %>
-                <%# </div> %>
-              <%# </div> %>
-            <%# </div> %>
-          <%# </div> %>
-        <%# </div> %>
-      <%# </div> %>
-    <%# <% end %>
+  <%# <li><strong><%= article.name</strong></li> %>
+  <%# <% if article.photos.attached? %>
+  <%# <%= cl_image_tag(article.photos.first.key, width: 400, height: 400, crop: :fill, class: "img-cl")</a> %>
+  <%# <% else %>
+  <%# <%= image_tag('img1.jpeg', width: 400, height: 400, crop: :fill, class: "img-cl")</a>  %>
+  <%# <% end %>
   <%# </div> %>
-<%# </div> %>
-<%# </div> %>
+  <%# </div> %>
+  <%# </div> %>
+  <%# </div> %>
+  <%# </div> %>
+  <%# </div> %>
+  <%# <% end %>
+  <%# </div> %>
+  <%# </div> %>
+  <%# </div> %>
