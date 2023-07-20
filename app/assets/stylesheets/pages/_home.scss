@@ -240,8 +240,9 @@ body {
   transition: color 0.3s ease;
 }
 
-.splide__slide {
+ul {
   list-style: none;
+  text-decoration: none;
 }
 
 // /* For tablets: */
@@ -355,10 +356,12 @@ body {
 
 .specs-wrapper {
   //especializações
-  padding-top: 20px;
+  padding: 20px;
   height: auto;
   flex-direction: row;
   width: auto;
+  margin-left: 300px;
+  margin-right: 300px;
 }
 
 .spec-h5 {
