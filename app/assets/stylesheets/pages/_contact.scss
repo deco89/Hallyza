@@ -9,7 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  color: rgba(181, 129, 105, 0.65);
+  color: rgba(181, 129, 105, 0.651);
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 32px;
   text-decoration: underline;
@@ -19,17 +19,21 @@
   font-variation-settings:
   'FILL' 0,
   'wght' 700,
-  'GRAD' 0,
+  'GRAD' 200,
   'opsz' 60,
 }
 
 
 .address {
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: justify;
   position: relative;
-  // margin-left: 750px;
-  width: 390px;
+}
+
+.p-address {
+  width: 370px;
+  font-size: 26px;
 }
