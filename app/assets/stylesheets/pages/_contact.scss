@@ -15,15 +15,6 @@
   text-decoration: underline;
 }
 
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 700,
-  'GRAD' 200,
-  'opsz' 60,
-}
-
-
 .address {
   display: flex;
   align-items: center;
@@ -31,9 +22,79 @@
   flex-direction: column;
   text-align: justify;
   position: relative;
+  padding: 50px;
 }
 
 .p-address {
-  width: 400px;
+  width: 500px;
   font-size: 26px;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  padding: 50px;
+}
+
+table {
+  display: flex;
+  text-align: center;
+  padding-top: 10px;
+}
+
+td {
+  font-size: 24px;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  padding: 50px;
+}
+
+.p_whatsapp {
+  font-size: 24px;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  padding: 50px;
+}
+
+.p-email {
+  font-size: 24px;
+}
+
+.instagram {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  padding: 50px;
+}
+
+.p_instagram {
+  font-size: 24px;
 }
