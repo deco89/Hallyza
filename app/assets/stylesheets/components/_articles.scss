@@ -30,7 +30,7 @@
 
 .card-date-time {
   padding: 4rem;
-  color: white;
+  // color: white;
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
@@ -42,6 +42,11 @@
   transform: translate(-50%, -50%);
   width: 100%;
   font-style: italic;
+}
+
+.article-link {
+  text-decoration: none;
+  color: #B58169;
 }
 
 .voltar-btn-article {
