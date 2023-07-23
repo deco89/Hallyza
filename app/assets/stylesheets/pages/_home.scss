@@ -2,94 +2,111 @@ body {
   padding-bottom: 8rem;
 }
 
-// Responsividade telas grandes
 
-/* 2560 x 1440 */
-@media (max-width: 2560px) and (max-height: 1440px) {
-  .hal-img-home {
-    max-width: 120%;
-    height: auto;
-    transform: translateX(-3vw);
-  }
-
-  .card-hal {
-    width: 35vw;
-    transform: translateX(-3vw);
-    font-size: 2.5vw;
-    /* adjust as needed */
-  }
-
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 2.5vw;
-    /* adjust as needed */
-  }
+.hal-section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* MacBook Air 11 */
-@media screen and (max-width: 1366px) and (max-height: 768px) {
-  .hal-img-home {
-    max-width: 80%;
-    height: 60% !important;
-    transform: translateX(4vw);
-  }
+.hal-img-container {
+  width: 100%; /* Full width on small screens */
+}
 
+.hal-img-home {
+  width: 100%;
+  height: auto;
+}
+
+.card-hal {
+  position: relative;
+  z-index: 1;
+  width: 100%; /* Full width on small screens */
+  margin-left: 0; /* No overlap on small screens */
+  height: auto;
+  background-color: #f7f2ec;
+}
+
+.card-title-hal {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.card-text-hal-li {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8vw;
+}
+
+.card-text-hal {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-size: 0.8vw;
+}
+
+/* Breakpoints */
+@media (max-width: 576px) {
   .card-hal {
-    width: 40vw;
-    // height: 40vw;
-    transform: translateX(-2vw);
-    font-size: 1.5vw;
+    margin-left: 0;
+    margin-top: 1rem;
   }
 
-  .card-body .card-title-hal,
-  .card-body .card-text-hal,
+  .card-text-hal,
   .card-text-hal-li {
-    font-size: 1.5vw;
+    font-size: 14px;
   }
 }
 
-/* MacBook Air 13 */
-@media screen and (max-width: 1440px) and (max-height: 900px) {
-  .hal-img-home {
-    max-width: 80%;
-    height: auto;
-    transform: translateX(4vw);
+@media (min-width: 768px) {
+  .hal-img-container,
+  .card-hal {
+    width: 50%; /* Half width on medium screens and up */
   }
 
   .card-hal {
-    width: 43vw !important;
-    // height: 47.5vw;
-    transform: translateX(2vw);
-    font-size: 1.5vw;
+    margin-left: -1rem; /* Overlap on medium screens and up */
   }
 
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 1.5vw;
-  }
-}
-
-/* 1920x1080 - 21" */
-@media screen and (max-width: 1920px) and (max-height: 1080px) {
   .hal-img-home {
     max-width: 90%;
-    height: auto;
-    transform: translateX(2vw);
   }
 
   .card-hal {
-    width: 45vw !important;
-    height: 42.5vw;
-    transform: translateX(2vw);
-    font-size: 1.8vw;
-  }
-
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 1.8vw;
+    transform: translateX(-2.75rem);
   }
 }
 
+@media (min-width: 992px) {
+  .hal-img-home {
+    max-width: 80%;
+    transform: translateX(2.5rem);
+  }
+
+  .card-hal {
+    transform: translateX(1.25rem);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hal-img-home {
+    max-width: 90%;
+    transform: translateX(4.25rem);
+  }
+
+  .card-hal {
+    transform: translateX(-3rem);
+  }
+}
+
+@media (min-width: 1400px) {
+  .hal-img-home {
+    max-width: 110%;
+    transform: translateX(4rem);
+  }
+
+  .card-hal {
+    transform: translateX(-2rem);
+  }
+}
 
 .artigos {
   margin-top: 4rem;
