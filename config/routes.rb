@@ -13,24 +13,26 @@ Rails.application.routes.draw do
   # Lista de todos os artigos
   get 'articles', to: 'articles#index'
 
-  # Form para criação de artigos
-  get 'articles/new', to: 'articles#new'
+  resources :articles
 
-  #Lista um artigo
-  get 'articles/:id', to: 'articles#show', as: 'article'
+  # # Form para criação de artigos
+  # get 'articles/new', to: 'articles#new'
 
-  # Cria o artigo
-  post 'articles', to: 'articles#create'
+  # #Lista um artigo
+  # get 'articles/:id', to: 'articles#show', as: 'article'
 
-  # Form para edição
-  get 'articles/:id/edit', to: 'articles#edit', as: 'edit_article'
+  # # Cria o artigo
+  # post 'articles', to: 'articles#create'
 
-  # Faz o update do artigo
-  patch 'articles/:id', to: 'articles#update'
+  # # Form para edição
+  # get 'articles/:id/edit', to: 'articles#edit', as: 'edit_article'
 
-  # Delete um artigo
+  # # Faz o update do artigo
+  # patch 'articles/:id', to: 'articles#update'
 
-  delete 'articles/:id', to: 'articles#destroy', as: 'delete_article'
+  # # Delete um artigo
+
+  # delete 'articles/:id', to: 'articles#destroy', as: 'delete_article'
 
 
 
