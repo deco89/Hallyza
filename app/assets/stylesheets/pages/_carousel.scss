@@ -40,6 +40,11 @@
   align-items: flex-start;
 }
 
+.card-title-link {
+  text-decoration: none;
+  color: #B58169;
+}
+
 // carousel card body
 .card-body-carousel { // carousel
   position: relative;  /* Added */
@@ -70,7 +75,6 @@
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 1.8px;
-  // margin-top: 1em;
   width: 100%;
   white-space: normal;  /* Updated */
   overflow-wrap: break-word;  /* Updated */
@@ -101,9 +105,7 @@
 }
 
 // carousel card wrapper
-.cards-wrapper { // carousel
-  // padding-left: 150px;
-  // padding-right: 150px;
+.cards-wrapper {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -113,16 +115,8 @@
 
 // carousel splide styles
 .splide__slide {
-  // height: 200px;
-  // background-color: #eee;
   display: flex;
   justify-content: center;
   align-items: center;
-  // font-size: 24px;
   gap: 1rem;
 }
-
-// .carrossel {
-//   padding-right: 105px;
-//   margin-left: 180px;
-// }

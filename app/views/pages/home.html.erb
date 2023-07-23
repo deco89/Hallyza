@@ -41,7 +41,7 @@
         <li class="splide__slide">
           <div class="cards-wrapper">
             <% article_group.each do |article| %>
-              <%= link_to article_path(article) do %>
+              <%= link_to article_path(article), class: "card-title-link" do %>
                 <div class="card-article">
                   <div class="card-article-image">
                     <% if article.photos.attached? %>
