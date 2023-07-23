@@ -4,65 +4,17 @@ body {
 
 // Responsividade telas grandes
 
-/* Extra large devices (large desktops, 1200px and up) */
-/* MacBook Pro 16 M1 Pro */
-@media (min-width: 1440px) {
+/* 2560 x 1440 */
+@media (max-width: 2560px) and (max-height: 1440px) {
   .hal-img-home {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
-    transform: translateX(4vw);
-  }
-
-  .card-hal {
-    width: 55vw;
-    height: 52.5vw;
-    transform: translateX(4vw);
-    font-size: 2vw;
-    /* adjust as needed */
-  }
-
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 2vw;
-    /* adjust as needed */
-  }
-}
-
-/* IMac 24" */
-@media (min-width: 1920px) {
-  .hal-img-home {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(0);
-  }
-
-  .card-hal {
-    width: 40vw;
-    height: 37.5vw;
-    transform: translateX(0);
-    font-size: 2vw;
-    /* adjust as needed */
-  }
-
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 2vw;
-    /* adjust as needed */
-  }
-}
-
-/* IMac 27" */
-@media (min-width: 2560px) {
-  .hal-img-home {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(0);
+    transform: translateX(-3vw);
   }
 
   .card-hal {
     width: 35vw;
-    height: 32.5vw;
-    transform: translateX(0);
+    transform: translateX(-3vw);
     font-size: 2.5vw;
     /* adjust as needed */
   }
@@ -74,118 +26,69 @@ body {
   }
 }
 
-/* Samsung Smart TV */
-@media (min-width: 3840px) {
+/* MacBook Air 11 */
+@media screen and (max-width: 1366px) and (max-height: 768px) {
   .hal-img-home {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(0);
+    max-width: 80%;
+    height: 60% !important;
+    transform: translateX(4vw);
   }
 
   .card-hal {
-    width: 30vw;
-    height: 27.5vw;
-    transform: translateX(0);
-    font-size: 3vw;
-    /* adjust as needed */
+    width: 40vw;
+    // height: 40vw;
+    transform: translateX(-2vw);
+    font-size: 1.5vw;
+  }
+
+  .card-body .card-title-hal,
+  .card-body .card-text-hal,
+  .card-text-hal-li {
+    font-size: 1.5vw;
+  }
+}
+
+/* MacBook Air 13 */
+@media screen and (max-width: 1440px) and (max-height: 900px) {
+  .hal-img-home {
+    max-width: 80%;
+    height: auto;
+    transform: translateX(4vw);
+  }
+
+  .card-hal {
+    width: 43vw !important;
+    // height: 47.5vw;
+    transform: translateX(2vw);
+    font-size: 1.5vw;
   }
 
   .card-body .card-title-hal,
   .card-body .card-text-hal {
-    font-size: 3vw;
-    /* adjust as needed */
+    font-size: 1.5vw;
   }
 }
 
-// .hal-first-pg {
-//   border: solid 2px red;
-//   width: 100%;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
+/* 1920x1080 - 21" */
+@media screen and (max-width: 1920px) and (max-height: 1080px) {
+  .hal-img-home {
+    max-width: 90%;
+    height: auto;
+    transform: translateX(2vw);
+  }
 
-// .centered-container {
-//   border: solid 2px red;
-//   position: relative;
-//   display: flex;
-//   // justify-content: center;
-//   flex-wrap: wrap;
-// }
+  .card-hal {
+    width: 45vw !important;
+    height: 42.5vw;
+    transform: translateX(2vw);
+    font-size: 1.8vw;
+  }
 
-// .hal-section {
-//   border: solid 2px red;
-//   position: relative; /* Added the missing semicolon here */
-//   justify-content: space-between;
-//   align-items: center;
-//   display: flex;
-// }
-
-
-// .hal-img-container, .card-hal {
-//   flex: 1;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
-
-// .hal-img-container {
-//   left:20vw;
-//   position: relative;
-//   max-width: 80%;
-//   border: solid 2px red;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   transform: translateX(-45%);
-// }
-
-// .hal-img-home {
-//   border: solid 2px red;
-//   margin-top: 2rem;
-//   width: 100%;
-// }
-
-// .card-hal {
-//   position: absolute;
-//   display: flex;
-//   width: 30vw;
-//   background-color: #EBE5DF;
-//   box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
-//   border: #B58169;
-//   border-radius: 4px;
-//   margin-top: 4rem;
-//   padding: 0 2rem 2rem 2rem;
-//   left: 47%;
-// }
-
-// .card-body {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   max-width: 100%;
-//   max-height: 100%;
-//   position: relative;
-//   width: 40vh;
-// }
-
-// .card-title-hal {
-//   border: solid 2px red;
-//   font-family: 'IBM Plex Sans', sans-serif;
-//   color: #B58169;
-//   font-size: 2.25rem;
-//   letter-spacing: 0.1rem;
-//   margin-top: 1.5em;
-// }
-
-// .card-text-hal {
-//   border: solid 2px red;
-//   font-size: 0.8vw;
-//   font-family: 'IBM Plex Sans', sans-serif;
-//   color: #B58169;
-// }
+  .card-body .card-title-hal,
+  .card-body .card-text-hal {
+    font-size: 1.8vw;
+  }
+}
 
 
 .artigos {
@@ -244,65 +147,6 @@ ul {
   list-style: none;
   text-decoration: none;
 }
-
-// /* For tablets: */
-// @media only screen and (min-width: 768px) and (max-width: 1023px) {
-//   /* Styles for tablet screens */
-//   .hal-img-container, .card-hal {
-//     max-width: 60vw;
-//     transform: translateX(0);
-//   }
-
-//   .card-hal {
-//     width: 40vw;
-//     position: relative;
-//     left: 0;
-//   }
-
-//   .card-text-hal {
-//     font-size: 1.5vw;
-//   }
-// }
-
-// /* For small desktop: */
-// @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-//   /* Styles for small desktop screens */
-//   .hal-img-container, .card-hal {
-//     max-width: 50vw;
-//   }
-
-//   .card-hal {
-//     width: 35vw;
-//     position: relative;
-//     left: 0;
-//   }
-
-//   .card-text-hal {
-//     font-size: 1vw;
-//   }
-// }
-
-// /* For large desktop: */
-// @media only screen and (min-width: 1200px) {
-//   /* Styles for large desktop screens */
-//   .hal-img-container {
-//     left: 20vw;
-//     max-width: 60vw; /* Adjust this if needed */
-//     transform: translateX(0); /* removed the negative translation */
-//   }
-
-//   .card-hal {
-//     width: 30vw;
-//     position: relative;
-//     left: 10vw; /* added left offset */
-//   }
-
-//   .card-text-hal {
-//     font-size: 0.8vw;
-//   }
-// }
-
-// mudei ate aqui
 
 .artigos {
   margin-top: 4rem;

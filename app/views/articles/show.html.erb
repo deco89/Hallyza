@@ -10,13 +10,8 @@
     <div class="text_card">
       <span><%= @article.rich_body%></span>
     </div>
-    <%= link_to "Voltar", articles_path, class:"voltar-btn-article"%>
+    <div>
+      <%= link_to "Voltar", articles_path, class:"voltar-btn-article"%>
+    </div>
   </div>
 </div>
-<% if user_signed_in? %>
-  <ul>
-    <li><%= link_to "Editar artigo", edit_article_path %></li>
-    <li><%= link_to "Voltar para artigos", articles_path %></li>
-    <li><%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
-  </ul>
-<% end %>

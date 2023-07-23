@@ -1,4 +1,4 @@
-.card-article {
+<!-- .card-article {
   position: relative;
   border: 1px solid #dadada;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -83,3 +83,12 @@
     </div>
   </div>
 </html>
+
+// estava no articles show:
+<% if user_signed_in? %>
+  <ul>
+    <li><%= link_to "Editar artigo", edit_article_path %></li>
+    <li><%= link_to "Voltar para artigos", articles_path %></li>
+    <li><%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
+  </ul>
+<% end %> -->
