@@ -2,111 +2,138 @@ body {
   padding-bottom: 8rem;
 }
 
+/* new card hallyza start com media queries */
 
-.hal-section {
-  position: relative;
+.container-home {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.hal-img-container {
-  width: 100%; /* Full width on small screens */
-}
-
-.hal-img-home {
-  width: 100%;
-  height: auto;
-}
-
-.card-hal {
+.border0 {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
   position: relative;
-  z-index: 1;
-  width: 100%; /* Full width on small screens */
-  margin-left: 0; /* No overlap on small screens */
-  height: auto;
-  background-color: #f7f2ec;
+}
+.border0:hover {
+  border: 1px solid #fff;
 }
 
-.card-title-hal {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.5rem;
-  letter-spacing: 0.1rem;
+.card0 {
+  height: 600px;
+  width: 600px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(image_path("hallyza.png")) left center no-repeat;
+  background-size: 100% 100%;
 }
 
-.card-text-hal-li {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.8vw;
+.card0:hover {
+  background: #f7f2ec;
 }
 
-.card-text-hal {
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 0.8vw;
+.card0:hover .h2-cl, .card0:hover .card-text-hal, .card0:hover .card-text-hal-li {
+  opacity: 1;
 }
 
-/* Breakpoints */
-@media (max-width: 576px) {
-  .card-hal {
-    margin-left: 0;
-    margin-top: 1rem;
+.h2-cl, .card-text-hal, .card-text-hal-li {
+  font-family: 'IBM Plex Mono', sans-serif;
+  color: #000;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Extra small devices (phones, up to 600px) */
+@media only screen and (max-width: 600px) {
+  .container-home {
+    min-height: 100vh;
+    min-width: 100vw;
   }
 
-  .card-text-hal,
+  .card0 {
+    height: 65%;
+    width: 85%;
+    // font-size: 9px; /* Decrease font-size */
+  }
+
+  .h2-cl {
+    font-size: 16px; /* Decrease font-size */
+    justify-content: center;
+  }
+
   .card-text-hal-li {
-    font-size: 14px;
+    font-size: 12px; /* Decrease font-size */
+    justify-content: center;
+  }
+
+  .card-text-hal {
+    font-size: 9px; /* Decrease font-size */
+    justify-content: center;
   }
 }
 
-@media (min-width: 768px) {
-  .hal-img-container,
-  .card-hal {
-    width: 50%; /* Half width on medium screens and up */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container-home {
+    min-height: 800px;
+    min-width: 800px;
   }
 
-  .card-hal {
-    margin-left: -1rem; /* Overlap on medium screens and up */
-  }
-
-  .hal-img-home {
-    max-width: 90%;
-  }
-
-  .card-hal {
-    transform: translateX(-2.75rem);
+  .card0 {
+    height: 90%;
+    width: 70%;
+    font-size: 16px; /* Adjust font-size */
   }
 }
 
-@media (min-width: 992px) {
-  .hal-img-home {
-    max-width: 80%;
-    transform: translateX(2.5rem);
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-home {
+    min-height: 800px;
+    min-width: 1000px;
   }
 
-  .card-hal {
-    transform: translateX(1.25rem);
+  .card0 {
+    height: 600px;
+    width: 600px;
+    font-size: 16px; /* Adjust font-size */
   }
 }
 
-@media (min-width: 1200px) {
-  .hal-img-home {
-    max-width: 90%;
-    transform: translateX(4.25rem);
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-home {
+    max-height: 800px;
+    max-width: 1280px;
   }
 
-  .card-hal {
-    transform: translateX(-3rem);
+  .card0 {
+    height: 700px;
+    width: 600px;
+    font-size: 18px; /* Increase font-size */
   }
 }
 
-@media (min-width: 1400px) {
-  .hal-img-home {
-    max-width: 110%;
-    transform: translateX(4rem);
-  }
 
-  .card-hal {
-    transform: translateX(-2rem);
-  }
-}
+/* new card hallyza start com media queries */
 
 .artigos {
   margin-top: 4rem;
@@ -206,14 +233,6 @@ ul {
   transition: color 0.3s ease;
 }
 
-// .hal-img-pg { nao existe mais
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 30px;
-//   // margin-left: 200px;
-//   margin: 0;
-// }
 
 .specs-wrapper {
   //especializações
