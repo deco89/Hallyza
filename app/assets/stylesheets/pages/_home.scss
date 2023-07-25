@@ -159,38 +159,106 @@ body {
   text-align: center;
 }
 
+
 .center-todos {
   display: flex;
-  justify-content: flex-end;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
 }
 
 .a-leia-todos {
   //botão leia todos
   display: flex;
   text-align: center;
+  // justify-content: flex-end;
   font-size: 24px;
   font-weight: 200;
-  width: 220px;
-  flex-direction: column;
+  width: 250px;
+  // flex-direction: column;
   border-radius: 5px;
   background: #EBE5DF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   color: #B58169;
   margin-top: 10px;
-  margin-right: 30px;
+  flex-direction: column;
 }
 
 .a-leia-todos:hover {
   text-decoration: underline;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.3s linear;
 }
 
 ul {
   list-style: none;
   text-decoration: none;
 }
+
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+// /* For tablets: */
+// @media only screen and (min-width: 768px) and (max-width: 1023px) {
+//   /* Styles for tablet screens */
+//   .hal-img-container, .card-hal {
+//     max-width: 60vw;
+//     transform: translateX(0);
+//   }
+
+//   .card-hal {
+//     width: 40vw;
+//     position: relative;
+//     left: 0;
+//   }
+
+//   .card-text-hal {
+//     font-size: 1.5vw;
+//   }
+// }
+
+// /* For small desktop: */
+// @media only screen and (min-width: 1024px) and (max-width: 1199px) {
+//   /* Styles for small desktop screens */
+//   .hal-img-container, .card-hal {
+//     max-width: 50vw;
+//   }
+
+//   .card-hal {
+//     width: 35vw;
+//     position: relative;
+//     left: 0;
+//   }
+
+//   .card-text-hal {
+//     font-size: 1vw;
+//   }
+// }
+
+// /* For large desktop: */
+// @media only screen and (min-width: 1200px) {
+//   /* Styles for large desktop screens */
+//   .hal-img-container {
+//     left: 20vw;
+//     max-width: 60vw; /* Adjust this if needed */
+//     transform: translateX(0); /* removed the negative translation */
+//   }
+
+//   .card-hal {
+//     width: 30vw;
+//     position: relative;
+//     left: 10vw; /* added left offset */
+//   }
+
+//   .card-text-hal {
+//     font-size: 0.8vw;
+//   }
+// }
+
 
 .artigos {
   margin-top: 4rem;
@@ -201,36 +269,6 @@ ul {
 .espcs {
   text-align: center;
   color: #B58169;
-}
-
-.center-todos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.a-leia-todos {
-  //botão leia todos
-  font-size: 24px;
-  font-weight: 200;
-  text-decoration: none;
-  color: #B58169;
-  margin-top: auto;
-  /* Força o leia mais ficar embaixo */
-  margin-left: 0;
-  background: transparent;
-  /* retira o background color do botao */
-  border: none;
-  /* retira a borda */
-  box-shadow: none;
-  /* retira o box shadow */
-  margin-bottom: 5rem;
-}
-
-.a-leia-todos:hover {
-  color: #EFE2D4;
-  cursor: pointer;
-  transition: color 0.3s ease;
 }
 
 
@@ -316,5 +354,5 @@ ul {
 .a-leia-spec:hover {
   text-decoration: underline;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.3s linear;
 }

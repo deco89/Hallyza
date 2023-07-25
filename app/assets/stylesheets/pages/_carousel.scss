@@ -107,11 +107,14 @@
 // carousel card wrapper
 .cards-wrapper {
   display: flex;
+  background: rgba(247, 245, 242, 0.8);
   justify-content: center;
   gap: 1rem;
   padding-bottom: 10px;
   padding-top: 15px;
-}
+  width: 1900px;
+  height: 500px;
+  }
 
 // carousel splide styles
 .splide__slide {
