@@ -13,7 +13,12 @@ Rails.application.routes.draw do
   # Lista de todos os artigos
   get 'articles', to: 'articles#index'
 
+
+  # Form para criação de artigos
+  get 'articles/new', to: 'articles#new', as: 'new_article'
+
   resources :articles
+
 
   # # Form para criação de artigos
   # get 'articles/new', to: 'articles#new'
