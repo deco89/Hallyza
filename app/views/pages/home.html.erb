@@ -1,31 +1,16 @@
-<div class="hal-first-pg container">
-  <div class="row justify-content-center align-items-center flex-wrap">
-    <div class="hal-section d-flex justify-content-between align-items-center">
-      <div class="col-sm-12 col-md-6 hal-img-container position-relative mx-auto text-center offset-md-1" style="transform: translateX(2rem);">
-        <%= image_tag 'hallyza.png', class: "img-fluid hal-img-home rounded mt-2"%>
-      </div>
-      <div class="col-sm-12 col-md-6 card-hal d-flex flex-column mx-auto shadow-sm border border-1 border-secondary rounded mt-4 p-2 offset-md-1" style="height: 32.5vw; width: 30vw; transform: translateX(-2rem); background-color: #f7f2ec;">
-        <div class="card-body d-flex flex-column justify-content-start align-items-start position-relative">
-          <h5 class="card-title-hal text-secondary mt-4" style="font-family: 'IBM Plex Sans', sans-serif; font-size: 2.25rem; letter-spacing: 0.1rem;">Dra. Hállyza Rodrigues</h5>
-          <p class="card-text-hal-li text-secondary" style="font-family: 'IBM Plex Sans', sans-serif; font-size: 0.8vw;">Ginecologia Degenerativa e Saúde Vaginal<br>CRM-ES 11.1993</p>
-          <ul class="card-text-hal text-secondary" style="font-family: 'IBM Plex Sans', sans-serif; font-size: 0.8vw;">
-            <li>Formada em Medicina pela MULTIVIX - Faculdade Brasileira - Vitória, Espírito Santo</li>
-            &nbsp;
-            <li>Residência Médica em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</li>
-            &nbsp;
-            <li>Residência Médica em Ultrassonografia em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</li>
-            &nbsp;
-            <li>Membra Associada a Academia Brasileira de Ginecologia Regenerativa - ABGREF</li>
-            &nbsp;
-            <li>Membra Associada da Associação Brasileira de Cosmetoginecologia - ABCGIN</li>
-            &nbsp;
-            <li>Especializada em Cirurgia Íntima Hands-On da Academia Brasileira de Ginecologia Regenerativa kkkkkk</li>
-            &nbsp;
-            <li>Especializada em Infecções Vaginais pelo Curso Ginecoacademy LTDA em associação com a Universidade Estadual Paulista - UNESP.BLOG</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+<div class="container-home d-flex justify-content-center align-items-center">
+  <div class="card0 text-white text-start px-3 py-4 d-flex flex-column justify-content-start">
+    <h5 class="h2-cl mt-4">Dra. Hállyza Rodrigues</h5>
+    <p class="card-text-hal-li">Ginecologia Degenerativa e Saúde Vaginal<br>CRM-ES 11.1993</p>
+    <ul class="card-text-hal">
+      <li>Formada em Medicina pela MULTIVIX - Faculdade Brasileira - Vitória, Espírito Santo</li>
+      <li>Residência Médica em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</li>
+      <li>Residência Médica em Ultrassonografia em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</li>
+      <li>Membra Associada a Academia Brasileira de Ginecologia Regenerativa - ABGREF</li>
+      <li>Membra Associada da Associação Brasileira de Cosmetoginecologia - ABCGIN</li>
+      <li>Especializada em Cirurgia Íntima Hands-On da Academia Brasileira de Ginecologia Regenerativa</li>
+      <li>Especializada em Infecções Vaginais pelo Curso Ginecoacademy LTDA em associação com a Universidade Estadual Paulista - UNESP.BLOG</li>
+    </ul>
   </div>
 </div>
 
@@ -38,7 +23,7 @@
         <li class="splide__slide">
           <div class="cards-wrapper">
             <% article_group.each do |article| %>
-              <%= link_to article_path(article) do %>
+              <%= link_to article_path(article), class: "card-title-link" do %>
                 <div class="card-article">
                   <div class="card-article-image">
                     <% if article.photos.attached? %>
@@ -67,9 +52,7 @@
 <div class="center-todos">
   <%= link_to "Todos os artigos", articles_path, class: "a-leia-todos" %>
 </div>
-
   <h1 class="espcs">Especializações</h1>
-
   <div class="container-fuid">
     <div class="specs-wrapper d-flex justify-content-around">
       <div class="spec1">

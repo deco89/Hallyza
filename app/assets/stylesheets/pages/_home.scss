@@ -2,191 +2,138 @@ body {
   padding-bottom: 8rem;
 }
 
-// Responsividade telas grandes
+/* new card hallyza start com media queries */
 
-/* Extra large devices (large desktops, 1200px and up) */
-/* MacBook Pro 16 M1 Pro */
-@media (min-width: 1440px) {
-  .hal-img-home {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(4vw);
+.container-home {
+  height: 100vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.border0 {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+.border0:hover {
+  border: 1px solid #fff;
+}
+
+.card0 {
+  height: 600px;
+  width: 600px;
+  background: #808080;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url(image_path("hallyza.png")) left center no-repeat;
+  background-size: 100% 100%;
+}
+
+.card0:hover {
+  background: #f7f2ec;
+}
+
+.card0:hover .h2-cl, .card0:hover .card-text-hal, .card0:hover .card-text-hal-li {
+  opacity: 1;
+}
+
+.h2-cl, .card-text-hal, .card-text-hal-li {
+  font-family: 'IBM Plex Mono', sans-serif;
+  color: #B58169;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+/* Extra small devices (phones, up to 600px) */
+@media only screen and (max-width: 600px) {
+  .container-home {
+    min-height: 100vh;
+    min-width: 100vw;
   }
 
-  .card-hal {
-    width: 55vw;
-    height: 52.5vw;
-    transform: translateX(4vw);
-    font-size: 2vw;
-    /* adjust as needed */
+  .card0 {
+    height: 65%;
+    width: 85%;
+    // font-size: 9px; /* Decrease font-size */
   }
 
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 2vw;
-    /* adjust as needed */
+  .h2-cl {
+    font-size: 16px; /* Decrease font-size */
+    justify-content: center;
+  }
+
+  .card-text-hal-li {
+    font-size: 12px; /* Decrease font-size */
+    justify-content: center;
+  }
+
+  .card-text-hal {
+    font-size: 9px; /* Decrease font-size */
+    justify-content: center;
   }
 }
 
-/* IMac 24" */
-@media (min-width: 1920px) {
-  .hal-img-home {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(0);
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .container-home {
+    min-height: 800px;
+    min-width: 800px;
   }
 
-  .card-hal {
-    width: 40vw;
-    height: 37.5vw;
-    transform: translateX(0);
-    font-size: 2vw;
-    /* adjust as needed */
-  }
-
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 2vw;
-    /* adjust as needed */
+  .card0 {
+    height: 90%;
+    width: 70%;
+    font-size: 16px; /* Adjust font-size */
   }
 }
 
-/* IMac 27" */
-@media (min-width: 2560px) {
-  .hal-img-home {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(0);
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-home {
+    min-height: 800px;
+    min-width: 1000px;
   }
 
-  .card-hal {
-    width: 35vw;
-    height: 32.5vw;
-    transform: translateX(0);
-    font-size: 2.5vw;
-    /* adjust as needed */
-  }
-
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 2.5vw;
-    /* adjust as needed */
+  .card0 {
+    height: 600px;
+    width: 600px;
+    font-size: 16px; /* Adjust font-size */
   }
 }
 
-/* Samsung Smart TV */
-@media (min-width: 3840px) {
-  .hal-img-home {
-    max-width: 100%;
-    height: auto;
-    transform: translateX(0);
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-home {
+    max-height: 800px;
+    max-width: 1280px;
   }
 
-  .card-hal {
-    width: 30vw;
-    height: 27.5vw;
-    transform: translateX(0);
-    font-size: 3vw;
-    /* adjust as needed */
-  }
-
-  .card-body .card-title-hal,
-  .card-body .card-text-hal {
-    font-size: 3vw;
-    /* adjust as needed */
+  .card0 {
+    height: 700px;
+    width: 600px;
+    font-size: 18px; /* Increase font-size */
   }
 }
 
-// .hal-first-pg {
-//   border: solid 2px red;
-//   width: 100%;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
 
-// .centered-container {
-//   border: solid 2px red;
-//   position: relative;
-//   display: flex;
-//   // justify-content: center;
-//   flex-wrap: wrap;
-// }
-
-// .hal-section {
-//   border: solid 2px red;
-//   position: relative; /* Added the missing semicolon here */
-//   justify-content: space-between;
-//   align-items: center;
-//   display: flex;
-// }
-
-
-// .hal-img-container, .card-hal {
-//   flex: 1;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
-
-// .hal-img-container {
-//   left:20vw;
-//   position: relative;
-//   max-width: 80%;
-//   border: solid 2px red;
-//   padding-right: 15px;
-//   padding-left: 15px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   transform: translateX(-45%);
-// }
-
-// .hal-img-home {
-//   border: solid 2px red;
-//   margin-top: 2rem;
-//   width: 100%;
-// }
-
-// .card-hal {
-//   position: absolute;
-//   display: flex;
-//   width: 30vw;
-//   background-color: #EBE5DF;
-//   box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
-//   border: #B58169;
-//   border-radius: 4px;
-//   margin-top: 4rem;
-//   padding: 0 2rem 2rem 2rem;
-//   left: 47%;
-// }
-
-// .card-body {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: flex-start;
-//   align-items: flex-start;
-//   max-width: 100%;
-//   max-height: 100%;
-//   position: relative;
-//   width: 40vh;
-// }
-
-// .card-title-hal {
-//   border: solid 2px red;
-//   font-family: 'IBM Plex Sans', sans-serif;
-//   color: #B58169;
-//   font-size: 2.25rem;
-//   letter-spacing: 0.1rem;
-//   margin-top: 1.5em;
-// }
-
-// .card-text-hal {
-//   border: solid 2px red;
-//   font-size: 0.8vw;
-//   font-family: 'IBM Plex Sans', sans-serif;
-//   color: #B58169;
-// }
-
+/* new card hallyza start com media queries */
 
 .artigos {
   margin-top: 4rem;
@@ -244,6 +191,7 @@ ul {
   list-style: none;
   text-decoration: none;
 }
+
 
 li {
   list-style: none;
@@ -307,7 +255,6 @@ li {
 //   }
 // }
 
-// mudei ate aqui
 
 .artigos {
   margin-top: 4rem;
@@ -350,14 +297,6 @@ li {
   transition: color 0.3s ease;
 }
 
-// .hal-img-pg { nao existe mais
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   padding: 30px;
-//   // margin-left: 200px;
-//   margin: 0;
-// }
 
 .specs-wrapper {
   //especializações

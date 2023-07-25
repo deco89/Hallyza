@@ -1,7 +1,7 @@
 <h1 class="article-h1">Artigos</h1>
 <div class="container-fluid">
   <% @articles.each do |article|  %>
-    <%= link_to article_path(article) do %>
+    <%= link_to article_path(article), class: "article-link" do %>
       <div class="article">
         <div class="article-image">
           <% if article.photos.attached? %>
@@ -20,10 +20,11 @@
     <% end %>
   <% end %>
 </div>
-
 <div>
   <%= link_to "Voltar", root_path, class:"voltar-btn-article"%>
+  <%= link_to "Novo Artigo", new_article_path, class: "voltar-btn-article" %>
 </div>
+
 <% if user_signed_in? %>
 <li><%= link_to "Novo Artigo", new_article_path %></li>
 <% end %>
@@ -56,3 +57,4 @@
   <%# </div> %>
   <%# </div> %>
   <%# </div> %>
+
