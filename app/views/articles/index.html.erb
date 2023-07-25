@@ -1,3 +1,8 @@
+<div class="container">
+<% if user_signed_in? %>
+  <%= link_to "Novo Artigo", new_article_path, class: "novo-artigo-btn" %>
+<% end %>
+</div>
 <h1 class="article-h1">Artigos</h1>
 <div class="container-fluid">
   <% @articles.each do |article|  %>
@@ -22,12 +27,7 @@
 </div>
 <div>
   <%= link_to "Voltar", root_path, class:"voltar-btn-article"%>
-  <%= link_to "Novo Artigo", new_article_path, class: "voltar-btn-article" %>
 </div>
-
-<% if user_signed_in? %>
-<li><%= link_to "Novo Artigo", new_article_path %></li>
-<% end %>
 
 <%#
 <div class="container-fluid">
@@ -57,4 +57,3 @@
   <%# </div> %>
   <%# </div> %>
   <%# </div> %>
-
