@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get 'articles', to: 'articles#index'
 
   # Form para criação de artigos
-  get 'articles/new', to: 'articles#new'
+  get 'articles/new', to: 'articles#new', as: 'new_article'
 
   #Lista um artigo
   get 'articles/:id', to: 'articles#show', as: 'article'

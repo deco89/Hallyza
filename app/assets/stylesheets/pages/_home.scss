@@ -245,6 +245,11 @@ ul {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
 // /* For tablets: */
 // @media only screen and (min-width: 768px) and (max-width: 1023px) {
 //   /* Styles for tablet screens */
@@ -436,5 +441,5 @@ ul {
 .a-leia-spec:hover {
   text-decoration: underline;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: color 0.3s linear;
 }
