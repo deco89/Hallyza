@@ -83,6 +83,7 @@
 
 // carousel date and time
 .card-date-time span { // carousel
+  font-family: 'Roboto' !important;
   text-decoration: none !important;
   margin-top: 1em;
   width: 100%;  /* Updated */
@@ -156,6 +157,10 @@
   .card-article {
     width: 250px;
     height: 250px;
+  }
+
+  .card-date-time {
+    display: flex;
   }
 
   .card-text {
