@@ -6,7 +6,7 @@
       <%= render "shared/sampleimg" %>
     <% end %>
     <h1 class="banner__titulo"><%= @article.name %></h1>
-    <span class="card-date-time"><%= @article.updated_at.strftime("%d de %B de %Y") %></span>
+    <span class="card_date_time_banner"><%= @article.updated_at.strftime("%d de %B de %Y") %></span>
     <div class="text_card">
       <span><%= @article.rich_body%></span>
     </div>
@@ -21,4 +21,3 @@
     <li><%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
   </ul>
 <% end %>
-
