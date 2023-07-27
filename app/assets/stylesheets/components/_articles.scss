@@ -5,7 +5,7 @@
   position: absolute;
   left: 50%;
   // text-shadow: 0 4px 4px rgba(0, 0, 0, 0.75);
-  top: 50%;
+  top: 45%;
   text-align: center;
   align-items: center;
   transform: translate(-50%, -50%);
@@ -28,9 +28,26 @@
   line-height: normal;
 }
 
+.card_date_time_banner {
+  padding: 4rem;
+  color: white;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: normal;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  font-style: italic;
+}
+
 .card-date-time {
   padding: 4rem;
-  font-family: 'Roboto';
+  // color: white;
+  font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -104,7 +121,6 @@
   flex-direction: column;
   border-radius: 1.75em;
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }

@@ -23,7 +23,8 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.institute-card-1 { // mudar o css sem nestar dentro do card
+.institute-card-1 {
+  // mudar o css sem nestar dentro do card
   display: flex;
   justify-content: center;
   padding-right: 100px;
@@ -31,17 +32,16 @@
 }
 
 .card-img-1 {
-  height: 300px;
-  width: 650px;
+  height: 470px;
+  width: 820px;
   border-radius: 15px;
   margin-left: 20px;
 }
 
 .instituto-p-1 {
   display: flex;
-  justify-content: space-between;
-  text-align: justify;
-  padding-right: 70px;
+  padding-right: 25px;
+  align-items: center;
 }
 
 
@@ -52,21 +52,21 @@
   padding-left: 100px;
   padding-top: 25px;
   flex-direction: row-reverse;
-
-  .card-img-2 {
-    height: 300px;
-    width: 650px;
-    border-radius: 15px;
-    margin-right: 20px;
-  }
-
-  .instituto-p {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    padding-left: 70px;
-  }
 }
+
+.card-img-2 {
+  height: 470px;
+  width: 820px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.instituto-p-2 {
+  display: flex;
+  padding-left: 25px;
+  align-items: center;
+}
+
 
 .institute-card-3 {
   display: flex;
@@ -74,21 +74,21 @@
   padding-right: 100px;
   padding-left: 100px;
   padding-top: 25px;
-
-  .card-img-3 {
-    height: 300px;
-    width: 650px;
-    border-radius: 15px;
-    margin-left: 20px;
-  }
-
-  .instituto-p {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    padding-right: 70px;
-  }
 }
+
+.card-img-3 {
+  height: 470px;
+  width: 820px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.instituto-p-3 {
+  display: flex;
+  padding-right: 25px;
+  align-items: center;
+}
+
 
 .institute-card-4 {
   display: flex;
@@ -97,21 +97,21 @@
   padding-left: 100px;
   padding-top: 25px;
   flex-direction: row-reverse;
-
-  .card-img-4 {
-    height: 300px;
-    width: 650px;
-    border-radius: 15px;
-    margin-right: 20px;
-  }
-
-  .instituto-p {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    padding-left: 70px;
-  }
 }
+
+.card-img-4 {
+  height: 470px;
+  width: 820px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
+
+.instituto-p-4 {
+  display: flex;
+  padding-left: 25px;
+  align-items: center;
+}
+
 
 .institute-card-5 {
   display: flex;
@@ -119,21 +119,21 @@
   padding-right: 100px;
   padding-left: 100px;
   padding-top: 25px;
-
-  .card-img-5 {
-    height: 300px;
-    width: 650px;
-    border-radius: 15px;
-    margin-left: 20px;
-  }
-
-  .instituto-p {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    padding-right: 70px;
-  }
 }
+
+.card-img-5 {
+  height: 470px;
+  width: 820px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+
+.instituto-p-5 {
+  display: flex;
+  padding-right: 25px;
+  align-items: center;
+}
+
 
 .institute-card-6 {
   display: flex;
@@ -142,18 +142,17 @@
   padding-left: 100px;
   padding-top: 25px;
   flex-direction: row-reverse;
+}
 
-  .card-img-6 {
-    height: 300px;
-    width: 650px;
-    border-radius: 15px;
-    margin-right: 20px;
-  }
+.card-img-6 {
+  height: 470px;
+  width: 820px;
+  border-radius: 15px;
+  margin-right: 20px;
+}
 
-  .instituto-p {
-    display: flex;
-    justify-content: space-between;
-    text-align: justify;
-    padding-left: 70px;
-  }
+.instituto-p-6 {
+  display: flex;
+  padding-left: 25px;
+  align-items: center;
 }
