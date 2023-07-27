@@ -51,19 +51,22 @@
   <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
 </div>
 
-  <h1 class="espcs">Especializações</h1>
-  <div class="container-fuid">
-      <div class="specs-wrapper d-flex justify-content-around">
-        <div class="spec1">
-          <%= image_tag "foto1.jpg", crop: :fill %>
-          <h5 class="spec-h5">Ginecologia Regenarativa e Funcional</h5>
-          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
-        </div>
-        <div class="spec2">
-          <%= image_tag "foto2.jpg", crop: :fill %>
-          <h5 class="spec-h5 h5-50">Saúde Vaginal</h5>
-          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
-        </div>
+<h1 class="espcs text-center fs-1 fs-lg-3 fw-bold mt-5">Especializações</h1>
+
+<div class="container-fluid g-5">
+  <div class="row g-5">
+    <div class="col-12 col-md-6">
+      <div class="spec d-flex flex-column align-items-center">
+        <%= image_tag "foto1.jpg", crop: :fill %>
+        <h5 class="spec-h5">Ginecologia Regenarativa e Funcional</h5>
+        <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+      </div>
+    </div>
+    <div class="col-12 col-md-6">
+      <div class="spec d-flex flex-column align-items-center">
+        <%= image_tag "foto2.jpg", crop: :fill %>
+        <h5 class="spec-h5 h5-50">Saúde Vaginal</h5>
+        <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
       </div>
     </div>
   </div>
