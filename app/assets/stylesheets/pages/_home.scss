@@ -165,12 +165,20 @@ body {
   .espcs {
     font-size: 20px;
   }
+
+  .splide__arrow { // esconde botao do carrossel
+    display: none !important;
+  }
 }
 
 /* iPhone 11 (414x896) and iPhone 14 Pro Max (428x926) in portrait */
 @media only screen and (min-width: 376px) and (max-width: 428px) {
   .espcs {
     font-size: 22px;
+  }
+
+  .splide__arrow { // esconde botao do carrossel
+    display: none !important;
   }
 }
 
@@ -194,8 +202,6 @@ body {
     font-size: 32px;
   }
 }
-
-
 
 
 .center-todos {

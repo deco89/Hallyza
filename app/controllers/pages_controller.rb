@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [ :home, :specialties, :institute, :contact ]
+  skip_before_action :authenticate_user!, only: [ :home, :specialties, :institute, :contact, :privacy ]
   include CloudinaryHelper
 
   def home

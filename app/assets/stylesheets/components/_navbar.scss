@@ -1,10 +1,87 @@
+// /* Common styles */
+// .navbar-lewagon {
+//   width: auto;
+//   justify-content: space-between;
+//   background: #F7F2EC;
+//   padding: 20px 44px;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-brand {
+//   border: 0px;
+// }
+
+// .nav-link {
+//   color: #B58169;
+//   font-size: 20px;
+//   font-weight: 400;
+// }
+
+// /* Logo images default size */
+// .logo-img {
+//   width: 80px;
+//   height: 72px;
+// }
+
+// .logo-name-img {
+//   width: 288px;
+//   height: 56px;
+// }
+
+// .custom-toggler:focus {
+//   outline: none;
+//   box-shadow: none;
+// }
+
+// .custom-toggler:focus .navbar-toggler-icon {
+//   outline: none;
+//   box-shadow: none;
+// }
+
+// .custom-toggler:focus {
+//   border-color: #B58169; /* Or any color you prefer */
+// }
+
+// .custom-toggler .navbar-toggler-icon::before,
+// .custom-toggler .navbar-toggler-icon::after {
+//   color: #B58169;
+// }
+
+
+
+// /* Adjust for small screens */
+// @media screen and (max-width: 750px) {
+//   .navbar-lewagon {
+//     padding: 10px;
+//   }
+
+//   .navbar-brand img.logo-img {
+//     width: 42px; /* adjust as needed */
+//     height: 33px; /* maintain aspect ratio */
+//   }
+
+//   .navbar-brand img.logo-name-img {
+//     width: 190px; /* adjust as needed */
+//     height: 40px; /* maintain aspect ratio */
+//   }
+
+//   .navbar-nav {
+//     text-align: center;
+//   }
+
+//   .nav-link {
+//     font-size: 16px;
+//   }
+// }
+/* Common styles */
 .navbar-lewagon {
   width: auto;
-  height: 128px;
   justify-content: space-between;
   background: #F7F2EC;
-  padding: 44px;
-  border-bottom: 64px;
+  padding: 20px 44px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -19,4 +96,92 @@
   color: #B58169;
   font-size: 20px;
   font-weight: 400;
+}
+
+/* Logo images default size */
+.logo-img {
+  width: 80px;
+  height: 72px;
+}
+
+.logo-name-img {
+  width: 288px;
+  height: 56px;
+}
+
+/* Custom Toggler */
+
+.custom-toggler {
+  display: flex;
+  align-items: center; /* Vertically center the contents */
+}
+
+.navbar-toggler-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-toggler:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: none;
+  position: relative;
+}
+
+.custom-toggler .navbar-toggler-icon::before,
+.custom-toggler .navbar-toggler-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 2px;
+  background-color: #B58169;
+  transform: translate(-50%, -50%);
+}
+
+/* Transition effect */
+.custom-toggler .navbar-toggler-icon::before,
+.custom-toggler .navbar-toggler-icon::after {
+  transition: all 0.3s linear;
+}
+
+/* Transform hamburger into X */
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.custom-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Adjust for small screens */
+@media screen and (max-width: 750px) {
+  .navbar-lewagon {
+    padding: 10px;
+  }
+
+  .navbar-brand img.logo-img {
+    width: 42px; /* adjust as needed */
+    height: 33px; /* maintain aspect ratio */
+  }
+
+  .navbar-brand img.logo-name-img {
+    width: 190px; /* adjust as needed */
+    height: 40px; /* maintain aspect ratio */
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
 }

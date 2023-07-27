@@ -1,15 +1,15 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon" data-controller="navbar">
   <div class="container-fluid">
     <div class="d-flex flex-row pl-5">
       <%= link_to root_path, class: "navbar-brand" do %>
-        <%= image_tag 'logo2.png', width: 80, height: 72 %>
-        <%= image_tag 'logo_nome2.png', width: 288, height: 56 %>
+        <%= image_tag 'logo2.png', class: "logo-img", width: 80, height: 72 %>
+        <%= image_tag 'logo_nome2.png', class: "logo-name-img", width: 288, height: 56 %>
       <% end %>
     </div>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <button class="navbar-toggler custom-toggler" type="button" data-action="navbar#toggleMenu" data-navbar-target="toggle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" data-navbar-target="hamburgerIcon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" data-navbar-target="menu">
       <ul class="navbar-nav me-auto">
         <li class="nav-item active">
           <%= link_to "Início", root_path, class: "nav-link" %>

@@ -12,11 +12,13 @@
   color: rgba(0, 0, 0, 0.3);
   z-index: 1;
 }
+
 .footer-text {
   display: flex;
   justify-content: center;
   align-items: center;
   color: $medium-beige;
+  font-size: 1rem; /* default size for larger screens */
 }
 
 .politica-color {
@@ -27,3 +29,17 @@
   color: $orange;
 }
 
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    padding: 10px; /* reduce padding */
+    height: auto; /* to allow content to define the height */
+  }
+
+  .footer-text {
+    font-size: 0.8rem; /* reduce font size */
+    margin-bottom: 10px; /* add a little space between texts */
+  }
+}
