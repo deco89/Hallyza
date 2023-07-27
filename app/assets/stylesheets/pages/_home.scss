@@ -157,7 +157,45 @@ body {
   line-height: normal;
   letter-spacing: 5px;
   text-align: center;
+  letter-spacing: 5px;
 }
+
+/* iPhone 8 (375x667) in portrait */
+@media only screen and (max-width: 375px) {
+  .espcs {
+    font-size: 20px;
+  }
+}
+
+/* iPhone 11 (414x896) and iPhone 14 Pro Max (428x926) in portrait */
+@media only screen and (min-width: 376px) and (max-width: 428px) {
+  .espcs {
+    font-size: 22px;
+  }
+}
+
+/* MacBook Air (1440x900) and MacBook Pro (1440x900, 2560x1600, 2880x1800) */
+@media only screen and (min-width: 1024px) and (max-width: 2880px) {
+  .espcs {
+    font-size: 28px;
+  }
+}
+
+/* Dell Latitude (1920x1080) */
+@media only screen and (min-width: 1440px) and (max-width: 1920px) {
+  .espcs {
+    font-size: 30px;
+  }
+}
+
+/* iMac 24" (4480x2520) */
+@media only screen and (min-width: 2881px) {
+  .espcs {
+    font-size: 32px;
+  }
+}
+
+
 
 
 .center-todos {
@@ -202,64 +240,6 @@ li {
   text-decoration: none;
 }
 
-// /* For tablets: */
-// @media only screen and (min-width: 768px) and (max-width: 1023px) {
-//   /* Styles for tablet screens */
-//   .hal-img-container, .card-hal {
-//     max-width: 60vw;
-//     transform: translateX(0);
-//   }
-
-//   .card-hal {
-//     width: 40vw;
-//     position: relative;
-//     left: 0;
-//   }
-
-//   .card-text-hal {
-//     font-size: 1.5vw;
-//   }
-// }
-
-// /* For small desktop: */
-// @media only screen and (min-width: 1024px) and (max-width: 1199px) {
-//   /* Styles for small desktop screens */
-//   .hal-img-container, .card-hal {
-//     max-width: 50vw;
-//   }
-
-//   .card-hal {
-//     width: 35vw;
-//     position: relative;
-//     left: 0;
-//   }
-
-//   .card-text-hal {
-//     font-size: 1vw;
-//   }
-// }
-
-// /* For large desktop: */
-// @media only screen and (min-width: 1200px) {
-//   /* Styles for large desktop screens */
-//   .hal-img-container {
-//     left: 20vw;
-//     max-width: 60vw; /* Adjust this if needed */
-//     transform: translateX(0); /* removed the negative translation */
-//   }
-
-//   .card-hal {
-//     width: 30vw;
-//     position: relative;
-//     left: 10vw; /* added left offset */
-//   }
-
-//   .card-text-hal {
-//     font-size: 0.8vw;
-//   }
-// }
-
-
 .artigos {
   margin-top: 4rem;
   text-align: center;
@@ -277,9 +257,6 @@ li {
   padding: 20px;
   height: auto;
   flex-direction: row;
-  width: auto;
-  margin-left: 300px;
-  margin-right: 300px;
 }
 
 .spec-h5 {
@@ -298,35 +275,17 @@ li {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.spec1 {
+.spec {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
 }
 
-.spec2 {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-}
-
-.spec1 img {
+.spec img {
   //imagem 1 das especializações
   display: flex;
   position: relative;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  border-radius: 45px;
-  width: 270px;
-  height: 270px;
-}
-
-.spec2 img {
-  //imagem 2 das especializações
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;

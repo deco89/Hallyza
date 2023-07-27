@@ -12,7 +12,7 @@
         </div>
         <div class="article-body p-4">
           <h5 class="article-title"><%= truncate( article.name, length: 50 )%></h5>
-          <span class="article-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
+          <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
           <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
           <%= link_to "Leia Mais", article_path(article), class: "a-leia" %>
         </div>

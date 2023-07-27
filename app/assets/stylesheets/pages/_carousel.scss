@@ -83,6 +83,7 @@
 
 // carousel date and time
 .card-date-time span { // carousel
+  font-family: 'Roboto' !important;
   text-decoration: none !important;
   margin-top: 1em;
   width: 100%;  /* Updated */
@@ -122,4 +123,55 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+// responsivity carousel
+
+@media screen and (max-width: 1200px) {
+  .card-article {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card-article {
+    width: 350px;
+  }
+
+  .card-text {
+    width: 25rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-article {
+    width: 300px;
+  }
+
+  .card-text {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card-article {
+    width: 250px;
+    height: 250px;
+  }
+
+  .card-date-time {
+    display: flex;
+  }
+
+  .card-text {
+    width: 10rem;
+  }
+
+  .card-title {
+    font-size: 16px;
+  }
+
+  .a-leia {
+    font-size: 14px;
+  }
 }
