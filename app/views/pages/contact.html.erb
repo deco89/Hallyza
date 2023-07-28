@@ -2,45 +2,62 @@
   <%= image_tag "logo_instituto", crop: :fill, class: "logo" %>
 </div>
 <div class="container">
-  <h1 class="contact-header">Agente sua conulta:</h1>
+  <h1 class="contact-header">Agente sua consulta:</h1>
 </div>
 <div class="address">
-<%= image_tag "pin.png", class:"icon" %>
-<p class="p-address">Edifício Master Tower Rua José Alexandre Buaiz, 190/1008 - Enseada do Suá, Vitória - ES </p>
+  <%= image_tag "pin.png", class: "icon" %>
+  <p class="p-address">
+    <a href="https://www.google.com/maps/search/Edif%C3%ADcio%20Master%20Tower%20Rua%20Jos%C3%A9%20Alexandre%20Buaiz%2C%20190%2F1008%20-%20Enseada%20do%20Su%C3%A1%2C%20Vit%C3%B3ria%20-%20ES" target="_blank">
+      Edifício Master Tower Rua José Alexandre Buaiz, 190/1008 - Enseada do Suá, Vitória - ES
+    </a>
+  </p>
 </div>
 
 <div class="time">
-<%= image_tag "relogio.png", class:"icon" %>
-<table>
-  <tr>
-    <td>Seg - Quin</td>
-    <td>08:00 - 21:00</td>
-  </tr>
-  <tr>
-    <td>Sex</td>
-    <td>08:00 - 17: 00</td>
-  </tr>
-  <tr>
-    <td>Sáb - Dom</td>
-    <td>Fechado</td>
-  </tr>
-</table>
+  <%= image_tag "relogio.png", class:"icon" %>
+  <table>
+    <thead> <!-- This is the header row -->
+      <tr>
+      </tr>
+    </thead>
+    <tbody> <!-- This is the body of the table -->
+      <tr>
+        <td>Seg-Quin</td>
+        <td>08:00-21:00</td>
+      </tr>
+      <tr>
+        <td>Sex</td>
+        <td>08:00-17:00</td>
+      </tr>
+      <tr>
+        <td>Sáb-Dom</td>
+        <td>Fechado</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<div class="whatsapp">
+  <%= image_tag "phone.png", class: "icon" %>
+  <p class="p_whatsapp">
+    <a href="tel:+552730970976" target="_blank">+55 (27) 3097 - 0976</a>
+  </p>
 </div>
 
 <div class="whatsapp">
   <%= image_tag "whatsapp.png", class: "icon" %>
-  <p class="p_whatsapp">+55 (27) 3097 - 0976</p>
-  <p class="p_whatsapp">+55 (27) 98163 - 9230</p>
-</div>-=
+  <p class="p_whatsapp">
+    <a href="https://wa.me/5527981639230" target="_blank">+55 (27) 98163 - 9230</a>
+  </p>
+</div>
 
 <div class="contato-email">
   <%= image_tag "email.png", class: "icon" %>
-  <p class="p-email">instutomima@gmail.com</p>
+  <p class="p-email"><a href="mailto:instutomima@gmail.com">instutomima@gmail.com</a></p>
 </div>
 
-  <div class="instagram">
-<a href="https://www.instagram.com/institutomima/" target="_blank" class="instagram-link">
-    <%= image_tag "instagram.png", class: "icon" %>
-    <span class="p_instagram">@institutomima</span>
-  </div>
-</a>
+<div class="instagram">
+  <%= image_tag "instagram.png", class: "icon" %>
+  <p class="p-email"><a href="https://www.instagram.com/institutomima/" target="_blank" class="instagram-link">@institutomima</a></p>
+</div>

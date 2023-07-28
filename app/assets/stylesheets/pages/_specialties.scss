@@ -1,10 +1,5 @@
-// .specs-full {
-//   // min-height: 120vh;
-// }
-
 .specs-wrapper-full {
   max-width: 1600px;
-  // height: 1900px;
 }
 
 .spec-full-h5 {
@@ -42,7 +37,6 @@
 }
 
 .spec-full-card img {
-  //   //imagem 1 das especializações
   display: inline-block;
   border-radius: 20px;
   width: 350px;
@@ -72,3 +66,76 @@
 .voltar-btn:hover {
   text-decoration: underline;
 }
+
+/* Small devices (phones) */
+@media (max-width: 767px) {
+  .spec-full-card {
+      position: relative;
+  }
+  .spec-full-h5 {
+      font-size: 24px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      color: #B58169;
+      background: rgba(255, 255, 255, 0.8); /* Optional: if you need the text to be more visible on the image */
+  }
+
+  .spec-full-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .voltar-btn {
+      width: 100%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .spec-full-card {
+      position: relative;
+  }
+  .spec-full-h5 {
+      font-size: 34px;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      text-align: center;
+      color: #B58169;
+      background: rgba(255, 255, 255, 0.8); /* Optional: if you need the text to be more visible on the image */
+  }
+
+  .spec-full-card img {
+      width: 100%;
+      height: auto;
+  }
+
+  .voltar-btn {
+      width: 60%;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 1024px) {
+  .spec-full-h5 {
+      font-size: 46px;
+      width: 740px;
+      position: static; /* Reset to the default behavior */
+      margin-left: -175px;
+      text-align: center;
+  }
+
+  .spec-full-card img {
+      width: 350px;
+      height: 350px;
+  }
+
+  .voltar-btn {
+      width: 150px;
+  }
+}
+
