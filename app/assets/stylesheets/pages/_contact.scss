@@ -35,6 +35,11 @@
   height: 50px;
 }
 
+.logo {
+  width: auto;
+  height: auto;
+}
+
 .time {
   display: flex;
   align-items: center;
@@ -45,17 +50,58 @@
   padding: 50px;
 }
 
-table {
-  display: flex;
+.time table {
+  display: table;
   text-align: center;
-  padding-top: 10px;
+  border-collapse: collapse;
+  width: 35%;
 }
 
-td {
+.time table tr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.time thead td { /* Style for the header row */
+  font-size: 26px;
+  padding: 15px;
+  background-color: #f1f1f1; /* This is a light grey, similar to Excel */
+  border: 1px solid #000;
+  flex: 1;
+  text-align: center;
+}
+
+.time tbody tr:nth-child(odd) td { /* Style for odd rows */
+  background-color: #fff;
+}
+
+.time tbody tr:nth-child(even) td { /* Style for even rows */
+  background-color: #eee; /* This is a very light grey, similar to Excel */
+}
+
+.time td {
   font-size: 24px;
   padding: 10px;
-  padding-left: 50px;
+  min-width: 16rem;
+  margin-top: 1rem;
 }
+
+/* Styling for small and medium devices */
+@media (max-width: 767.98px) {
+  .time td {
+    font-size: 16px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .time td {
+    font-size: 20px;
+    padding: 7px;
+  }
+}
+
 
 .whatsapp {
   display: flex;
@@ -103,4 +149,94 @@ td {
 
 .p-instagram:hover {
   text-decoration: underline;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .logo {
+    width: 90%; /* sets width to 90% of parent container */
+    height: auto; /* maintains aspect ratio */
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .p-address {
+    width: 100%; /* ensures the paragraph takes up the full width of the parent container */
+    text-align: center; /* centers the text */
+    font-size: 23px; /* adjust font size to fit well within the screen */
+    padding: 0 15px; /* provides some horizontal padding so text doesn't touch the edges */
+  }
+  .p-email,
+  .p_whatsapp {
+    font-size: 18px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .logo {
+    width: 90%; /* sets width to 90% of parent container */
+    height: auto; /* maintains aspect ratio */
+  }
+
+  .icon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .p-address {
+    width: 100%; /* ensures the paragraph takes up the full width of the parent container */
+    text-align: center; /* centers the text */
+    font-size: 23px; /* adjust font size to fit well within the screen */
+    padding: 0 15px; /* provides some horizontal padding so text doesn't touch the edges */
+  }
+  .p-email,
+  .p_whatsapp {
+    font-size: 18px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .logo {
+    width: 90%; /* sets width to 90% of parent container */
+    height: auto; /* maintains aspect ratio */
+  }
+
+  .p-address {
+    width: 100%; /* ensures the paragraph takes up the full width of the parent container */
+    text-align: center; /* centers the text */
+    font-size: 18px; /* adjust font size to fit well within the screen */
+    padding: 0 15px; /* provides some horizontal padding so text doesn't touch the edges */
+  }
+  .p-email,
+  .p_whatsapp {
+    font-size: 22px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .p-address {
+    font-size: 24px;
+  }
+  .p-email,
+  .p_whatsapp {
+    font-size: 26px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .p-address {
+    font-size: 32px;
+    text-align: center;
+  }
+  .p-email,
+  .p_whatsapp {
+    font-size: 26px;
+  }
 }
