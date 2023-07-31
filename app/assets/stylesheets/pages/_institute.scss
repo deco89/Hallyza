@@ -1,158 +1,259 @@
-.about {
-  height: 50px;
-  /* flex-direction: row; */
-  color: #B58169;
-  /* text-align: justify; */
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  padding-top: 10px;
-  padding-left: 100px;
-  font-family: 'IBM Plex Sans', sans-serif;
+.img-rounded {
+  border-radius: 15px;
 }
 
 .inst-main {
-  display: flex;
-  justify-content: center;
   color: #B58169;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 900;
-  line-height: normal;
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-align: center;
+}
+
+.p-color {
+  color: #B58169;
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.institute-card-1 {
-  // mudar o css sem nestar dentro do card
-  display: flex;
-  justify-content: center;
-  padding-right: 100px;
-  padding-left: 100px;
-}
 
-.card-img-1 {
-  height: 470px;
-  width: 820px;
-  border-radius: 15px;
-  margin-left: 20px;
-}
+// .about {
+//   height: 50px;
+//   /* flex-direction: row; */
+//   color: #B58169;
+//   /* text-align: justify; */
+//   font-size: 32px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+//   padding-top: 10px;
+//   padding-left: 100px;
+//   font-family: 'IBM Plex Sans', sans-serif;
+// }
 
-.instituto-p-1 {
-  display: flex;
-  padding-right: 25px;
-  align-items: center;
-}
+// .inst-main {
+//   display: flex;
+//   justify-content: center;
+//   color: #B58169;
+//   font-size: 48px;
+//   font-style: normal;
+//   font-weight: 900;
+//   line-height: normal;
+//   font-family: 'IBM Plex Sans', sans-serif;
+// }
 
+// .institute-card-1 {
+//   // mudar o css sem nestar dentro do card
+//   display: flex;
+//   justify-content: center;
+//   padding-right: 100px;
+//   padding-left: 100px;
+// }
 
-.institute-card-2 {
-  display: flex;
-  justify-content: center;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-  flex-direction: row-reverse;
-}
+// .card-img-1 {
+//   // height: 470px;
+//   // width: 820px;
+//   width: 50%;
+//   border-radius: 15px;
+//   margin-left: 20px;
+// }
 
-.card-img-2 {
-  height: 470px;
-  width: 820px;
-  border-radius: 15px;
-  margin-right: 20px;
-}
-
-.instituto-p-2 {
-  display: flex;
-  padding-left: 25px;
-  align-items: center;
-}
-
-
-.institute-card-3 {
-  display: flex;
-  justify-content: center;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-}
-
-.card-img-3 {
-  height: 470px;
-  width: 820px;
-  border-radius: 15px;
-  margin-left: 20px;
-}
-
-.instituto-p-3 {
-  display: flex;
-  padding-right: 25px;
-  align-items: center;
-}
+// .instituto-p-1 {
+//   display: flex;
+//   padding-right: 25px;
+//   align-items: center;
+// }
 
 
-.institute-card-4 {
-  display: flex;
-  justify-content: center;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-  flex-direction: row-reverse;
-}
+// .institute-card-2 {
+//   display: flex;
+//   justify-content: center;
+//   padding-right: 100px;
+//   padding-left: 100px;
+//   padding-top: 25px;
+//   flex-direction: row-reverse;
+// }
 
-.card-img-4 {
-  height: 470px;
-  width: 820px;
-  border-radius: 15px;
-  margin-right: 20px;
-}
+// .card-img-2 {
+//   height: 470px;
+//   width: 820px;
+//   border-radius: 15px;
+//   margin-right: 20px;
+// }
 
-.instituto-p-4 {
-  display: flex;
-  padding-left: 25px;
-  align-items: center;
-}
-
-
-.institute-card-5 {
-  display: flex;
-  justify-content: center;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-}
-
-.card-img-5 {
-  height: 470px;
-  width: 820px;
-  border-radius: 15px;
-  margin-left: 20px;
-}
-
-.instituto-p-5 {
-  display: flex;
-  padding-right: 25px;
-  align-items: center;
-}
+// .instituto-p-2 {
+//   display: flex;
+//   padding-left: 25px;
+//   align-items: center;
+// }
 
 
-.institute-card-6 {
-  display: flex;
-  justify-content: center;
-  padding-right: 100px;
-  padding-left: 100px;
-  padding-top: 25px;
-  flex-direction: row-reverse;
-}
+// .institute-card-3 {
+//   display: flex;
+//   justify-content: center;
+//   padding-right: 100px;
+//   padding-left: 100px;
+//   padding-top: 25px;
+// }
 
-.card-img-6 {
-  height: 470px;
-  width: 820px;
-  border-radius: 15px;
-  margin-right: 20px;
-}
+// .card-img-3 {
+//   height: 470px;
+//   width: 820px;
+//   border-radius: 15px;
+//   margin-left: 20px;
+// }
 
-.instituto-p-6 {
-  display: flex;
-  padding-left: 25px;
-  align-items: center;
-}
+// .instituto-p-3 {
+//   display: flex;
+//   padding-right: 25px;
+//   align-items: center;
+// }
+
+
+// .institute-card-4 {
+//   display: flex;
+//   justify-content: center;
+//   padding-right: 100px;
+//   padding-left: 100px;
+//   padding-top: 25px;
+//   flex-direction: row-reverse;
+// }
+
+// .card-img-4 {
+//   height: 470px;
+//   width: 820px;
+//   border-radius: 15px;
+//   margin-right: 20px;
+// }
+
+// .instituto-p-4 {
+//   display: flex;
+//   padding-left: 25px;
+//   align-items: center;
+// }
+
+
+// .institute-card-5 {
+//   display: flex;
+//   justify-content: center;
+//   padding-right: 100px;
+//   padding-left: 100px;
+//   padding-top: 25px;
+// }
+
+// .card-img-5 {
+//   height: 470px;
+//   width: 820px;
+//   border-radius: 15px;
+//   margin-left: 20px;
+// }
+
+// .instituto-p-5 {
+//   display: flex;
+//   padding-right: 25px;
+//   align-items: center;
+// }
+
+
+// .institute-card-6 {
+//   display: flex;
+//   justify-content: center;
+//   padding-right: 100px;
+//   padding-left: 100px;
+//   padding-top: 25px;
+//   flex-direction: row-reverse;
+// }
+
+// .card-img-6 {
+//   height: 470px;
+//   width: 820px;
+//   border-radius: 15px;
+//   margin-right: 20px;
+// }
+
+// .instituto-p-6 {
+//   display: flex;
+//   padding-left: 25px;
+//   align-items: center;
+// }
+
+// // start media mequery
+
+// @media (max-width: 767px) {
+//   .institute-card-1,
+//   .institute-card-2,
+//   .institute-card-3,
+//   .institute-card-4,
+//   .institute-card-5,
+//   .institute-card-6 {
+//     flex-direction: column;
+//     align-items: flex-start; /* Aligns child elements to start. */
+//     padding: 0; /* Remove padding. */
+//   }
+
+//   .instituto-p-1,
+//   .instituto-p-2,
+//   .instituto-p-3,
+//   .instituto-p-4,
+//   .instituto-p-5,
+//   .instituto-p-6 {
+//     width: 100%; /* Takes up full width. */
+//     padding: 10px;
+//     text-align: justify; /* Justifies the text. */
+//   }
+
+//   .card-img-1,
+//   .card-img-2,
+//   .card-img-3,
+//   .card-img-4,
+//   .card-img-5,
+//   .card-img-6 {
+//     width: 100%; /* Adjusts image width to be full width. */
+//     height: auto; /* Keeps aspect ratio of the image. */
+//     margin: 10px 0;
+//   }
+// }
+
+// // @media (min-width: 768px) and (max-width: 1024px) {
+// //   .institute-card-1,
+// //   .institute-card-2,
+// //   .institute-card-3,
+// //   .institute-card-4,
+// //   .institute-card-5,
+// //   .institute-card-6 {
+// //     flex-direction: column;
+// //     align-items: flex-start; /* Aligns child elements to start. */
+// //     padding: 0; /* Remove padding. */
+// //   }
+
+// //   .instituto-p-1,
+// //   .instituto-p-2,
+// //   .instituto-p-3,
+// //   .instituto-p-4,
+// //   .instituto-p-5,
+// //   .instituto-p-6 {
+// //     width: 100%; /* Takes up full width. */
+// //     padding: 10px;
+// //     text-align: justify; /* Justifies the text. */
+// //   }
+
+// //   .card-img-1,
+// //   .card-img-2,
+// //   .card-img-3,
+// //   .card-img-4,
+// //   .card-img-5,
+// //   .card-img-6 {
+// //     width: 100%; /* Adjusts image width to be full width. */
+// //     height: auto; /* Keeps aspect ratio of the image. */
+// //     margin: 10px 0;
+// //   }
+// // }
+
+
+// // @media (min-width: 1200px) {
+// //   .instituto-p-1,
+// //   .instituto-p-2,
+// //   .instituto-p-3,
+// //   .instituto-p-4,
+// //   .instituto-p-5,
+// //   .instituto-p-6 {
+// //     font-size: 25px; /* Adjusts font size. */
+// //   }
+// // }
