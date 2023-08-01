@@ -1,81 +1,3 @@
-// /* Common styles */
-// .navbar-lewagon {
-//   width: auto;
-//   justify-content: space-between;
-//   background: #F7F2EC;
-//   padding: 20px 44px;
-// }
-
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-// }
-
-// .navbar-brand {
-//   border: 0px;
-// }
-
-// .nav-link {
-//   color: #B58169;
-//   font-size: 20px;
-//   font-weight: 400;
-// }
-
-// /* Logo images default size */
-// .logo-img {
-//   width: 80px;
-//   height: 72px;
-// }
-
-// .logo-name-img {
-//   width: 288px;
-//   height: 56px;
-// }
-
-// .custom-toggler:focus {
-//   outline: none;
-//   box-shadow: none;
-// }
-
-// .custom-toggler:focus .navbar-toggler-icon {
-//   outline: none;
-//   box-shadow: none;
-// }
-
-// .custom-toggler:focus {
-//   border-color: #B58169; /* Or any color you prefer */
-// }
-
-// .custom-toggler .navbar-toggler-icon::before,
-// .custom-toggler .navbar-toggler-icon::after {
-//   color: #B58169;
-// }
-
-
-
-// /* Adjust for small screens */
-// @media screen and (max-width: 750px) {
-//   .navbar-lewagon {
-//     padding: 10px;
-//   }
-
-//   .navbar-brand img.logo-img {
-//     width: 42px; /* adjust as needed */
-//     height: 33px; /* maintain aspect ratio */
-//   }
-
-//   .navbar-brand img.logo-name-img {
-//     width: 190px; /* adjust as needed */
-//     height: 40px; /* maintain aspect ratio */
-//   }
-
-//   .navbar-nav {
-//     text-align: center;
-//   }
-
-//   .nav-link {
-//     font-size: 16px;
-//   }
-// }
 /* Common styles */
 .navbar-lewagon {
   width: auto;
@@ -162,7 +84,131 @@
 }
 
 /* Adjust for small screens */
-@media screen and (max-width: 750px) {
+// @media screen and (max-width: 750px) {
+//   .navbar-lewagon {
+//     padding: 10px;
+//   }
+
+//   .navbar-brand img.logo-img {
+//     width: 42px; /* adjust as needed */
+//     height: 33px; /* maintain aspect ratio */
+//   }
+
+//   .navbar-brand img.logo-name-img {
+//     width: 190px; /* adjust as needed */
+//     height: 40px; /* maintain aspect ratio */
+//   }
+
+//   .navbar-nav {
+//     text-align: center;
+//   }
+
+//   .nav-link {
+//     font-size: 16px;
+//   }
+// }
+/* Adjust for extra small screens (up to 576px) */
+@media screen and (max-width: 576px) {
+  .navbar-lewagon {
+    padding: 10px;
+  }
+
+  .navbar-brand img.logo-img {
+    width: 32px; /* adjust as needed */
+    height: 26px; /* maintain aspect ratio */
+  }
+
+  .navbar-brand img.logo-name-img {
+    width: 145px; /* adjust as needed */
+    height: 30px; /* maintain aspect ratio */
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 13px;
+  }
+}
+
+/* Adjust for small screens (577px to 767px) */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .navbar-lewagon {
+    padding: 10px;
+  }
+
+  .navbar-brand img.logo-img {
+    width: 35px; /* adjust as needed */
+    height: 28px; /* maintain aspect ratio */
+  }
+
+  .navbar-brand img.logo-name-img {
+    width: 165px; /* adjust as needed */
+    height: 34px; /* maintain aspect ratio */
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}
+
+/* Adjust for medium screens (768px to 833px) */
+@media screen and (min-width: 768px) and (max-width: 833px) {
+  .navbar-lewagon {
+    padding: 10px;
+  }
+
+  .navbar-brand img.logo-img {
+    width: 37px; /* adjust as needed */
+    height: 30px; /* maintain aspect ratio */
+  }
+
+  .navbar-brand img.logo-name-img {
+    width: 180px; /* adjust as needed */
+    height: 37px; /* maintain aspect ratio */
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 15px;
+  }
+}
+
+/* Adjust for larger screens (834px to 1023px) */
+@media screen and (min-width: 834px) and (max-width: 1023px) {
+  .navbar-lewagon {
+    padding: 10px;
+  }
+
+  .navbar-brand img.logo-img {
+    width: 40px; /* adjust as needed */
+    height: 32px; /* maintain aspect ratio */
+  }
+
+  .navbar-brand img.logo-name-img {
+    width: 185px; /* adjust as needed */
+    height: 38px; /* maintain aspect ratio */
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+}
+
+/* Adjust for extra large screens (1024px and above) */
+@media screen and (min-width: 1024px) {
   .navbar-lewagon {
     padding: 10px;
   }
@@ -182,6 +228,7 @@
   }
 
   .nav-link {
-    font-size: 16px;
+    font-size: 17px;
   }
 }
+

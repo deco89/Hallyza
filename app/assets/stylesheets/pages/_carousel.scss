@@ -30,7 +30,7 @@
   transition: 0.2s;
   border-radius: 0.25rem;
   background-color: #EBE5DF;
-  height: 445px;
+  max-height: 445px;
   width: 500px;
   flex-direction: column;
   border-radius: 1.75em;
@@ -38,7 +38,18 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  /* Added these two lines to set maximum height and enable scrolling */
+  max-height: 445px;
+  overflow: auto;
+
+  /* Added scrollbar styling for Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #B58169 rgba(255,255,255,0.1);
+
+  /* Added scrollbar styling for older versions of IE */
+  -ms-overflow-style: auto;
 }
+
 
 .card-title-link {
   text-decoration: none;
@@ -135,7 +146,7 @@
 
 @media screen and (max-width: 992px) {
   .card-article {
-    width: 350px;
+    width: 512px;
   }
 
   .card-text {
@@ -145,11 +156,34 @@
 
 @media screen and (max-width: 768px) {
   .card-article {
-    width: 300px;
+    width: 512px;
   }
 
   .card-text {
     width: 20rem;
+  }
+
+  // .card-body-carousel h5,  // hiding the card title
+  .card-date-time,  // hiding the date time
+  .card-text {  // hiding the card text
+    display: none;
+  }
+
+  .card-article-image {
+    height: 100%;  // setting the image to take half of the card height
+  }
+
+  .card-date-time {
+    display: flex;
+    width: 101%;
+    left: 35%;
+    top: 56%;
+  }
+
+  .a-leia {
+    // position: absolute;  // making the button positioned absolutely
+    bottom: 0;  // positioning the button at the bottom of the card
+    width: 100%;  // making the button take the full width of the card
   }
 }
 
@@ -159,8 +193,27 @@
     height: 250px;
   }
 
+  // .card-body-carousel h5,  // hiding the card title
+  .card-date-time,  // hiding the date time
+  .card-text {  // hiding the card text
+    display: none;
+  }
+
+  .card-article-image {
+    height: 120%;  // setting the image to take half of the card height
+  }
+
+  .a-leia {
+    // position: absolute;  // making the button positioned absolutely
+    bottom: 0;  // positioning the button at the bottom of the card
+    width: 100%;  // making the button take the full width of the card
+  }
+
   .card-date-time {
     display: flex;
+    width: 101%;
+    left: 35%;
+    top: 56%;
   }
 
   .card-text {

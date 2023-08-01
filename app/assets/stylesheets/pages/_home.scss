@@ -1,5 +1,10 @@
 body {
   padding-bottom: 8rem;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 /* new card hallyza start com media queries */
@@ -7,10 +12,8 @@ body {
 .container-home {
   height: 100vh;
   width: 100vw;
-  max-height: 800px;
-  max-width: 1280px;
-  min-height: 600px;
-  min-width: 1000px;
+  max-height: 100vh;
+  max-width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +34,7 @@ body {
 
 .card0 {
   height: 600px;
-  width: 600px;
+  width: 90vw;
   background: #808080;
   border-radius: 10px;
   transition: background 0.8s;
@@ -69,24 +72,27 @@ body {
   }
 
   .card0 {
-    height: 65%;
-    width: 85%;
-    // font-size: 9px; /* Decrease font-size */
+    margin-top: -10rem;
+    height: 70%;
+    width: 86%;
   }
 
   .h2-cl {
-    font-size: 16px; /* Decrease font-size */
+    font-size: 18px; /* Decrease font-size */
     justify-content: center;
+    // text-align: center;
   }
 
   .card-text-hal-li {
     font-size: 12px; /* Decrease font-size */
     justify-content: center;
+    // text-align: center;
   }
 
   .card-text-hal {
-    font-size: 9px; /* Decrease font-size */
+    font-size: 10px; /* Decrease font-size */
     justify-content: center;
+    // text-align: center;
   }
 }
 
@@ -99,8 +105,26 @@ body {
 
   .card0 {
     height: 90%;
-    width: 70%;
+    width: 90%;
     font-size: 16px; /* Adjust font-size */
+  }
+
+  .h2-cl {
+    font-size: 32px; /* Decrease font-size */
+    // justify-content: center;
+    // text-align: center;
+  }
+
+  .card-text-hal {
+    font-size: 22px; /* Decrease font-size */
+    // justify-content: center;
+    // text-align: center;
+  }
+
+  .card-text-hal-li {
+    font-size: 24px; /* Decrease font-size */
+    // justify-content: center;
+    // text-align: center;
   }
 }
 
