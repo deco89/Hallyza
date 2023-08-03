@@ -1,71 +1,71 @@
-.specs-wrapper-full {
-  max-width: 1600px;
-}
+// .specs-wrapper-full {
+//   max-width: 1600px;
+// }
 
-.spec-full-h5 {
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  width: 740px;
-  left: 50%;
-  right: 50%;
-  top: 30%;
-  margin-left: -175px;
-  color: #B58169;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-family: IBM Plex Sans, sans-serif;
-}
+// .spec-full-h5 {
+//   display: inline-block;
+//   position: absolute;
+//   text-align: center;
+//   width: 740px;
+//   left: 50%;
+//   right: 50%;
+//   top: 30%;
+//   margin-left: -175px;
+//   color: #B58169;
+//   font-size: 46px;
+//   font-style: normal;
+//   font-weight: 500;
+//   line-height: normal;
+//   font-family: IBM Plex Sans, sans-serif;
+// }
 
-.spec-full-p {
-  font-family: 'IBM Plex Sans', sans-serif;
-  margin-top: 20px;
-  font-size: 18px;
-}
+// .spec-full-p {
+//   font-family: 'IBM Plex Sans', sans-serif;
+//   margin-top: 20px;
+//   font-size: 18px;
+// }
 
 
-.spec-full-card {
-  position: relative;
-  border-radius: 20px;
-  background: rgba(247, 245, 242,0.3);
-  margin-top: 30px;
-  padding: 40px;
-  box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.05);
-  margin-bottom: 25px;
-}
+// .spec-full-card {
+//   position: relative;
+//   border-radius: 20px;
+//   background: rgba(247, 245, 242,0.3);
+//   margin-top: 30px;
+//   padding: 40px;
+//   box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.05);
+//   margin-bottom: 25px;
+// }
 
-.spec-full-card img {
-  display: inline-block;
-  border-radius: 20px;
-  width: 350px;
-  height: 350px;
+// .spec-full-card img {
+//   display: inline-block;
+//   border-radius: 20px;
+//   width: 350px;
+//   height: 350px;
 
-}
+// }
 
-.btn-spec {
-  margin-top: 30px;
-}
+// .btn-spec {
+//   margin-top: 30px;
+// }
 
-.voltar-btn {
-  display: flex;
-  flex-direction: column;
-  border-top: 20px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 200;
-  width: 150px;
-  border-radius: 5px;
-  background: #EBE5DF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  color: #B58169;
-}
+// .voltar-btn {
+//   display: flex;
+//   flex-direction: column;
+//   border-top: 20px;
+//   text-align: center;
+//   font-size: 24px;
+//   font-weight: 200;
+//   width: 150px;
+//   border-radius: 5px;
+//   background: #EBE5DF;
+//   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+//   text-decoration: none;
+//   color: #B58169;
+// }
 
-.voltar-btn:hover {
-  text-decoration: underline;
-}
+// .voltar-btn:hover {
+//   text-decoration: underline;
+// }
 
 /* Small devices (phones) */
 @media (max-width: 767px) {
@@ -138,4 +138,3 @@
       width: 150px;
   }
 }
-

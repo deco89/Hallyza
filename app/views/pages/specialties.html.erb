@@ -1,29 +1,51 @@
-<div class="container-fluid">
-  <div class="specs-wrapper-full">
-    <div class="spec-full-card" id="ponto1">
-      <%= image_tag "foto1.jpg", crop: :fill %>
-      <h5 class="spec-full-h5">Ginecologia Regenarativa e Funcional</h5>
-      <p class="spec-full-p">Aliquam lacinia placerat ex vitae suscipit. Vivamus massa erat, mattis vel nunc non, posuere mollis libero.
+<div class="container-fluid mt-4">
+  <div class="row g-4 justify-content-center">
+    <div class="col-12">
+      <div class="card mb-3" style="max-width: 540px;" id="ponto1">
+        <div class="row g-0">
+          <div class="col-md-12 position-relative">
+            <img src="<%= asset_path 'foto1.jpg' %>" class="img-fluid rounded-start" alt="Ginecologia Regenarativa e Funcional">
+            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+              <h5 class="card-title fs-2 text-white">Ginecologia Regenarativa e Funcional</h5>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text">Aliquam lacinia placerat ex vitae suscipit. Vivamus massa erat, mattis vel nunc non, posuere mollis libero.
         Morbi nec arcu vehicula, blandit diam sit amet, dictum sem. Integer congue id justo dignissim malesuada.
         Donec dolor elit, faucibus in faucibus sit amet, elementum vitae metus. Integer quis nunc non enim consequat congue.
         Aenean porttitor vitae magna a mollis. Sed sem erat, faucibus id enim et, aliquet hendrerit tortor. Aliquam lorem mauris, sodales a euismod quis, molestie a turpis.
         Vivamus lobortis sem erat, at faucibus ligula porta et. Quisque volutpat, diam id cursus laoreet, enim mauris auctor massa, ut sodales odio turpis eu lectus.
         Pellentesque iaculis, libero a placerat pellentesque, enim enim commodo lacus, ut pulvinar enim odio ac sapien. Integer turpis ex, porttitor ac nisl in, maximus finibus libero.
-        Donec efficitur sed risus id pharetra. Aliquam efficitur porta sapien et venenatis.
+        Donec efficitur sed risus id pharetra. Aliquam efficitur porta sapien et venenatis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card mb-3" style="max-width: 540px;" id="ponto2">
+        <div class="row g-0">
+          <div class="col-md-12 position-relative">
+            <img src="<%= asset_path 'foto2.jpg' %>" class="img-fluid rounded-start" alt="Saúde Vaginal">
+            <div class="card-img-overlay d-flex align-items-center justify-content-center">
+              <h5 class="card-title fs-2 text-white">Saúde Vaginal</h5>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="card-body">
+              <p class="card-text">Donec efficitur sed risus id pharetra. Aliquam efficitur porta sapien et venenatis.
         Maecenas sit amet velit ac enim malesuada feugiat et nec nulla. Praesent in pretium erat. Pellentesque porttitor pretium orci interdum faucibus.
         Fusce rhoncus interdum neque non rutrum. Quisque a mi et erat sollicitudin iaculis. Vivamus nunc orci, mattis vitae urna vitae, convallis venenatis nisi.
         Etiam arcu nibh, molestie congue erat at, consectetur vehicula neque. Cras et mollis enim. Nam sed hendrerit nunc. Fusce lobortis enim ultrices mi dictum iaculis.
         Cras ac malesuada nunc. Integer lacinia id ipsum imperdiet vestibulum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="spec-full-card" id="ponto2">
-      <%= image_tag "foto2.jpg", crop: :fill %>
-      <h5 class="spec-full-h5">Saúde Vaginal</h5>
-      <p class="spec-full-p">Donec efficitur sed risus id pharetra. Aliquam efficitur porta sapien et venenatis.
-        Maecenas sit amet velit ac enim malesuada feugiat et nec nulla. Praesent in pretium erat. Pellentesque porttitor pretium orci interdum faucibus.
-        Fusce rhoncus interdum neque non rutrum. Quisque a mi et erat sollicitudin iaculis. Vivamus nunc orci, mattis vitae urna vitae, convallis venenatis nisi.
-        Etiam arcu nibh, molestie congue erat at, consectetur vehicula neque. Cras et mollis enim. Nam sed hendrerit nunc. Fusce lobortis enim ultrices mi dictum iaculis.
-        Cras ac malesuada nunc. Integer lacinia id ipsum imperdiet vestibulum.</p>
+    <div class="col-12">
+      <%= link_to "Voltar", root_path, class: "btn btn-primary" %>
     </div>
-      <%= link_to "Voltar", root_path, class: "voltar-btn" %>
   </div>
 </div>
