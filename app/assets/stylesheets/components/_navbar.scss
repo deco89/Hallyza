@@ -83,30 +83,6 @@
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-/* Adjust for small screens */
-// @media screen and (max-width: 750px) {
-//   .navbar-lewagon {
-//     padding: 10px;
-//   }
-
-//   .navbar-brand img.logo-img {
-//     width: 42px; /* adjust as needed */
-//     height: 33px; /* maintain aspect ratio */
-//   }
-
-//   .navbar-brand img.logo-name-img {
-//     width: 190px; /* adjust as needed */
-//     height: 40px; /* maintain aspect ratio */
-//   }
-
-//   .navbar-nav {
-//     text-align: center;
-//   }
-
-//   .nav-link {
-//     font-size: 16px;
-//   }
-// }
 /* Adjust for extra small screens (up to 576px) */
 @media screen and (max-width: 576px) {
   .navbar-lewagon {
@@ -114,13 +90,13 @@
   }
 
   .navbar-brand img.logo-img {
-    width: 32px; /* adjust as needed */
-    height: 26px; /* maintain aspect ratio */
+    width: 26px;
+    height: 26px;
   }
 
   .navbar-brand img.logo-name-img {
-    width: 145px; /* adjust as needed */
-    height: 30px; /* maintain aspect ratio */
+    width: 145px;
+    height: 30px;
   }
 
   .navbar-nav {
@@ -139,13 +115,13 @@
   }
 
   .navbar-brand img.logo-img {
-    width: 35px; /* adjust as needed */
-    height: 28px; /* maintain aspect ratio */
+    width: 28px;
+    height: 28px;
   }
 
   .navbar-brand img.logo-name-img {
-    width: 165px; /* adjust as needed */
-    height: 34px; /* maintain aspect ratio */
+    width: 165px;
+    height: 34px;
   }
 
   .navbar-nav {
@@ -164,13 +140,13 @@
   }
 
   .navbar-brand img.logo-img {
-    width: 37px; /* adjust as needed */
-    height: 30px; /* maintain aspect ratio */
+    width: 37px;
+    height: 30px;
   }
 
   .navbar-brand img.logo-name-img {
-    width: 180px; /* adjust as needed */
-    height: 37px; /* maintain aspect ratio */
+    width: 180px;
+    height: 37px;
   }
 
   .navbar-nav {
@@ -189,13 +165,13 @@
   }
 
   .navbar-brand img.logo-img {
-    width: 40px; /* adjust as needed */
-    height: 32px; /* maintain aspect ratio */
+    width: 40px;
+    height: 32px;
   }
 
   .navbar-brand img.logo-name-img {
-    width: 185px; /* adjust as needed */
-    height: 38px; /* maintain aspect ratio */
+    width: 185px;
+    height: 38px;
   }
 
   .navbar-nav {
@@ -214,13 +190,13 @@
   }
 
   .navbar-brand img.logo-img {
-    width: 42px; /* adjust as needed */
-    height: 33px; /* maintain aspect ratio */
+    width: 42px;
+    height: 33px;
   }
 
   .navbar-brand img.logo-name-img {
-    width: 190px; /* adjust as needed */
-    height: 40px; /* maintain aspect ratio */
+    width: 190px;
+    height: 40px;
   }
 
   .navbar-nav {
@@ -231,4 +207,3 @@
     font-size: 17px;
   }
 }
-

@@ -1,141 +1,136 @@
-.specs-wrapper-full {
-  max-width: 1600px;
+.eq-height .card {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
 }
 
-.spec-full-h5 {
-  display: inline-block;
-  position: absolute;
-  text-align: center;
-  width: 740px;
-  left: 50%;
-  right: 50%;
-  top: 30%;
-  margin-left: -175px;
-  color: #B58169;
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  font-family: IBM Plex Sans, sans-serif;
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.spec-full-p {
+.card-espc {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #F7F2EC;
+  box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.text-espc {
   font-family: 'IBM Plex Sans', sans-serif;
-  margin-top: 20px;
-  font-size: 18px;
+  color: #B58169;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1.8px;
 }
 
-
-.spec-full-card {
-  position: relative;
-  border-radius: 20px;
-  background: rgba(247, 245, 242,0.3);
-  margin-top: 30px;
-  padding: 40px;
-  box-shadow: 4px 4px 7px 1px rgba(0, 0, 0, 0.05);
-  margin-bottom: 25px;
+.card-text-espc {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #B58169;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
-.spec-full-card img {
-  display: inline-block;
-  border-radius: 20px;
-  width: 350px;
-  height: 350px;
-
+.card-flex {
+  flex: 1;
 }
 
-.btn-spec {
-  margin-top: 30px;
-}
-
-.voltar-btn {
+.voltar-btn-e {
   display: flex;
   flex-direction: column;
   border-top: 20px;
   text-align: center;
   font-size: 24px;
   font-weight: 200;
-  width: 150px;
   border-radius: 5px;
   background: #EBE5DF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   color: #B58169;
+  margin: 0 auto;
+  max-width: 540px;
+  width: 100%;
 }
 
-.voltar-btn:hover {
+
+.voltar-btn-e:hover {
   text-decoration: underline;
 }
 
+/* Media Queries */
+
 /* Small devices (phones) */
 @media (max-width: 767px) {
-  .spec-full-card {
-      position: relative;
-  }
-  .spec-full-h5 {
+  .text-espc {
       font-size: 24px;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      color: #B58169;
-      background: rgba(255, 255, 255, 0.8); /* Optional: if you need the text to be more visible on the image */
   }
-
-  .spec-full-card img {
-      width: 100%;
-      height: auto;
+  .card-text-espc {
+      font-size: 14px;
   }
-
   .voltar-btn {
       width: 100%;
   }
 }
 
 /* Medium devices (tablets) */
-@media (min-width: 768px) and (max-width: 1023px) {
-  .spec-full-card {
-      position: relative;
-  }
-  .spec-full-h5 {
-      font-size: 34px;
-      width: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      text-align: center;
-      color: #B58169;
-      background: rgba(255, 255, 255, 0.8); /* Optional: if you need the text to be more visible on the image */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .col-md-6 {
+    flex: 0 0 80%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
   }
 
-  .spec-full-card img {
-      width: 100%;
-      height: auto;
-  }
+  .card-espc {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
 
-  .voltar-btn {
-      width: 60%;
+  }
+  .text-espc {
+      font-size: 28px;
+  }
+  .card-text-espc {
+      font-size: 20px;
   }
 }
 
 /* Large devices (desktops) */
-@media (min-width: 1024px) {
-  .spec-full-h5 {
-      font-size: 46px;
-      width: 740px;
-      position: static; /* Reset to the default behavior */
-      margin-left: -175px;
-      text-align: center;
+@media (min-width: 1025px) and (max-width: 2559px) {
+  .text-espc {
+      font-size: 36px;
   }
-
-  .spec-full-card img {
-      width: 350px;
-      height: 350px;
-  }
-
-  .voltar-btn {
-      width: 150px;
+  .card-text-espc {
+      font-size: 22px;
   }
 }
 
+/* Extra Large devices */
+@media (min-width: 2560px) {
+  .text-espc {
+      font-size: 48px;
+  }
+  .voltar-btn {
+      font-size: 28px;
+      width: 200px;
+  }
+}
+
+/* 4K devices */
+@media (min-width: 3840px) {
+  .text-espc {
+      font-size: 56px;
+  }
+  .voltar-btn {
+      font-size: 36px;
+      width: 250px;
+  }
+}
