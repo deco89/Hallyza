@@ -1,3 +1,28 @@
+.custom-card {
+  width: 1000px;
+  border-top-left-radius: 10px; /* Adjust as needed */
+  border-top-right-radius: 10px; /* Adjust as needed */
+  border-bottom-left-radius: 10px; /* Adjust as needed */
+  border-bottom-right-radius: 10px; /* Adjust as needed */
+}
+
+.custom-card img {
+  width: 1000px;
+  height: 600px;
+  object-fit: cover;
+  display: block; /* Ensures the image takes the full width and height */
+}
+
+.trix-content,
+.card-body-article,
+.card-title-article,
+.card-subtitle-article,
+.card-text-article {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #B58169;
+  background-color: #EBE5DF;
+}
+
 .banner__titulo {
   color: white;
   font-family: IBM Plex Sans, sans-serif;
