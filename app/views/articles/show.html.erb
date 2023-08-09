@@ -1,23 +1,23 @@
 <div class="container">
-  <div class="card-show">
+  <div class="card custom-card">
     <% if @article.photos.attached? %>
-      <%= cl_image_tag @article.photos.first.key, :transformation=>[{:height=>600, :width=>1900, :crop=>"scale"}, {:color=>"#C19C96", :effect=>"colorize:70"}], class: "card-show-img" %>
+      <%= cl_image_tag @article.photos.first.key, style: "width: 1000px; height: 600px;" %>
     <% else %>
       <%= render "shared/sampleimg" %>
     <% end %>
-    <h1 class="banner__titulo"><%= @article.name %></h1>
-    <span class="card_date_time_banner"><%= @article.updated_at.strftime("%d de %B de %Y") %></span>
-    <div class="text_card">
-      <span><%= @article.rich_body%></span>
-    </div>
-    <div>
-      <%= link_to "Voltar", articles_path, class:"voltar-btn-article"%>
+    <div class="card-body-article">
+      <h1 class="card-title-article"><%= @article.name %></h1>
+      <span class="card-subtitle-article mb-2"><%= @article.updated_at.strftime("%d de %B de %Y") %></span>
+      <p class="card-text-article"><%= @article.rich_body %></p>
     </div>
   </div>
 </div>
-<% if user_signed_in? %>
-  <ul>
-    <li><%= link_to "Editar artigo", edit_article_path %></li>
-    <li><%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
-  </ul>
-<% end %>
+      <div>
+        <%= link_to "Voltar", articles_path, class: "btn btn-primary voltar-btn-article" %>
+      </div>
+  <% if user_signed_in? %>
+    <ul>
+      <li><%= link_to "Editar artigo", edit_article_path %></li>
+      <li><%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" } %></li>
+    </ul>
+  <% end %>

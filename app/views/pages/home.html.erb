@@ -32,7 +32,7 @@
                       <% end %>
                     </div>
                     <div class="card-body-carousel p-4">
-                      <h5 class="card-title"><%= truncate( article.name, length: 50 )%></h5>
+                      <h5 class="card-title"><%= truncate( article.name, length: 40 )%></h5>
                       <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
                       <p class="card-text"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
                       <%= link_to "Leia Mais", article_path(article), class: "a-leia" %>
