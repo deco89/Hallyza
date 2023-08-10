@@ -4,17 +4,16 @@
       <div class="col-12">
         <%= simple_form_for(@article) do |f| %>
           <div class="form-inputs">
-            <%= f.input :name, placeholder: "Nome do artigo" %>
+            <%= f.input :name, label: "Nome:", placeholder: "Nome do artigo" %>
           </div>
           <div class="form-inputs">
+            <%= f.label :rich_body, "Conteúdo do Artigo:" %>
             <%= f.rich_text_area :rich_body, class: "trix-custom" %>
           </div>
-          <%= f.input :photos, as: :file, input_html: { multiple: true } %>
-          <%= f.button :submit, name: "Confirm", class: "btn btn-flat" %>
+          <%= f.input :photos, as: :file, label: "Fotos:", input_html: { multiple: true } %>
+          <%= f.button :submit, "Criar Artigo", class: "btn btn-flat" %>
           <% if article.id.nil? %>
-            <%= link_to "Cancel", articles_path, method: :get, class: "btn btn-flat" %>
-          <%else %>
-            <%= link_to "Cancel", article_path, method: :get, class: "btn btn-flat" %>
+            <%= link_to "Cancelar", articles_path, method: :get, class: "btn btn-flat" %>
           <% end %>
         <% end %>
       </div>
