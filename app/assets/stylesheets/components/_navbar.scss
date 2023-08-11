@@ -3,7 +3,6 @@
   width: auto;
   justify-content: space-between;
   background: #F7F2EC;
-  padding: 20px 44px;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -104,7 +103,7 @@
   }
 
   .nav-link {
-    font-size: 13px;
+    font-size: 18px;
   }
 }
 
@@ -186,17 +185,18 @@
 /* Adjust for extra large screens (1024px and above) */
 @media screen and (min-width: 1024px) {
   .navbar-lewagon {
-    padding: 10px;
+    padding: 30px;
   }
 
   .navbar-brand img.logo-img {
-    width: 42px;
-    height: 33px;
+    width: 75px;
+    height: 60px;
   }
 
   .navbar-brand img.logo-name-img {
-    width: 190px;
-    height: 40px;
+    width: 250px;
+    height: 60px;
+    margin-left: 30px;
   }
 
   .navbar-nav {
@@ -204,6 +204,6 @@
   }
 
   .nav-link {
-    font-size: 17px;
+    font-size: 20px;
   }
 }
