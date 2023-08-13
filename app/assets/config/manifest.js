@@ -3,3 +3,4 @@
 //= link_tree ../builds
 //= link hallyza.png
 //= link application.css
+//= link manifest.json

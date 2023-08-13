@@ -40,14 +40,6 @@
   align-items: flex-start;
   /* Added these two lines to set maximum height and enable scrolling */
   max-height: 445px;
-  overflow: auto;
-
-  /* Added scrollbar styling for Firefox */
-  scrollbar-width: thin;
-  scrollbar-color: #B58169 rgba(255,255,255,0.1);
-
-  /* Added scrollbar styling for older versions of IE */
-  -ms-overflow-style: auto;
 }
 
 

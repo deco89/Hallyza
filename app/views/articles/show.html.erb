@@ -1,3 +1,7 @@
+<% content_for :meta_title, "#{@article.name} | Dra Hállyz Rodrigues" %>
+<% content_for :meta_description, @article.rich_body.to_plain_text.truncate(150) %>
+<% content_for :meta_image, cl_image_path(@article.photos.first.key) if @article.photos.attached? %>
+
 <div class="container">
   <div class="card custom-card">
     <% if @article.photos.attached? %>
@@ -25,4 +29,3 @@
     </div>
   <% end %>
 </div>
-
