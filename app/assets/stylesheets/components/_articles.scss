@@ -293,6 +293,10 @@
 
 /* iPhone 5 to iPhone 12 Pro Max */
 @media (max-width: 428px) {
+  .custom-card {
+    width: 90%;
+    height: auto;
+  }
   .article-2 {
     width: 100%;
     height: auto;
@@ -314,56 +318,3 @@
     font-size: 15px;
   }
 }
-
-
-// /* iPhone 5 */
-// @media (max-width: 320px) {
-//   .article-2 {
-//     width: 100%;
-//     height: auto;
-//   }
-
-//   .article-title-2 {
-//     font-size: 24px;
-//   }
-
-//   .card-date-time-2 {
-//     font-size: 12px;
-//     display: flex;
-//     width: 101%;
-//     left: 35%;
-//     top: 82%;
-//   }
-
-//   .article-text-2 {
-//     font-size: 20px;
-//   }
-
-//   .a-leia-2 {
-//     font-size: 15px;
-//   }
-// }
-
-// /* iPhone X */
-// @media (max-width: 375px) {
-//   .article-2 {
-//     width: 100%;
-//     height: auto;
-//   }
-// }
-
-// /* iPhone 11 */
-// @media (max-width: 414px) {
-//   .article-2 {
-//     width: 100%;
-//     height: auto;
-//   }
-// }
-
-// /* iPhone 12 Pro Max */
-// @media (max-width: 428px) {
-//   .article-2 {
-//     width: 100%;
-//     height: auto;
-//   }
-// }

@@ -1,14 +1,19 @@
 <div class="container">
   <div class="card-form">
     <div class="row justify-content-center">
-      <div class="col-12">
-        <%= simple_form_for(@article) do |f| %>
+      <div class="col-12 col-md-10 col-lg-8 custom-card">
+        <%= simple_form_for(@article, data: {controller: "emoji-picker" } ) do |f| %>
           <div class="form-inputs">
             <%= f.input :name, label: "Nome:", placeholder: "Nome do artigo" %>
           </div>
+          <%= content_tag(:div, "", class:"pickerContainer", data: {
+            emoji_picker_target: "pickerContainer"
+          })%>
           <div class="form-inputs">
             <%= f.label :rich_body, "Conteúdo do Artigo:" %>
-            <%= f.rich_text_area :rich_body, class: "trix-custom" %>
+            <%= f.rich_text_area :rich_body, data: {
+              emoji_picker_target: "trixEditor"
+            }, class: "trix-custom" %>
           </div>
           <%= f.input :photos, as: :file, label: "Fotos:", input_html: { multiple: true } %>
           <%= f.button :submit, "Criar Artigo", class: "btn btn-flat" %>
