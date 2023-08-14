@@ -112,6 +112,26 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.18.6.tgz#7b37eb2e6514fc09fedce6c1272e9a043bd26750"
   integrity sha512-9UDwkz7Wlm4N9jnv+4NL7F8vxLhSZfEkRArz2gD33HesAFfMLGIGNVXRoIHtWNw8feKsnGly9Hq1EUuRkWl0zA==
 
+"@floating-ui/core@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/core/-/core-1.4.1.tgz#0d633f4b76052668afb932492ac452f7ebe97f17"
+  integrity sha512-jk3WqquEJRlcyu7997NtR5PibI+y5bi+LS3hPmguVClypenMsCY3CBa3LAQnozRCtCrYWSEtAdiskpamuJRFOQ==
+  dependencies:
+    "@floating-ui/utils" "^0.1.1"
+
+"@floating-ui/dom@^1.0.0":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/dom/-/dom-1.5.1.tgz#88b70defd002fe851f17b4a25efb2d3c04d7a8d7"
+  integrity sha512-KwvVcPSXg6mQygvA1TjbN/gh///36kKtllIF8SUm0qpFj8+rvYrpvlYdL1JoA71SHpDqgSSdGOSoQ0Mp3uY5aw==
+  dependencies:
+    "@floating-ui/core" "^1.4.1"
+    "@floating-ui/utils" "^0.1.1"
+
+"@floating-ui/utils@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@floating-ui/utils/-/utils-0.1.1.tgz#1a5b1959a528e374e8037c4396c3e825d6cf4a83"
+  integrity sha512-m0G6wlnhm/AX0H12IOWtK8gASEMffnX08RtKkCgTdHb9JpHKGloI7icFfLg9ZmQeavcvR0PKmzxClyuFPSjKWw==
+
 "@hotwired/stimulus@^3.2.1":
   version "3.2.1"
   resolved "https://registry.yarnpkg.com/@hotwired/stimulus/-/stimulus-3.2.1.tgz#e3de23623b0c52c247aba4cd5d530d257008676b"
@@ -129,6 +149,13 @@
   version "7.3.0"
   resolved "https://registry.yarnpkg.com/@hotwired/turbo/-/turbo-7.3.0.tgz#2226000fff1aabda9fd9587474565c9929dbf15d"
   integrity sha512-Dcu+NaSvHLT7EjrDrkEmH4qET2ZJZ5IcCWmNXxNQTBwlnE5tBZfN6WxZ842n5cHV52DH/AKNirbPBtcEXDLW4g==
+
+"@picmo/popup-picker@^5.8.5":
+  version "5.8.5"
+  resolved "https://registry.yarnpkg.com/@picmo/popup-picker/-/popup-picker-5.8.5.tgz#081eb027d4fc88833642871d758665f9ec3397b2"
+  integrity sha512-s5BGZps8LnhEeO4EMU+t8Wcc05gtbzJvdD5vovulof18+uxN2tMFpX6RMpKwhh49AQMk2EK1t31PEyjAIK7UVw==
+  dependencies:
+    "@floating-ui/dom" "^1.0.0"
 
 "@popperjs/core@^2.11.8":
   version "2.11.8"
@@ -164,6 +191,11 @@ bootstrap@^5.3.0:
   resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-5.3.0.tgz#0718a7cc29040ee8dbf1bd652b896f3436a87c29"
   integrity sha512-UnBV3E3v4STVNQdms6jSGO2CvOkjUMdDAVR2V5N4uCMdaIkaQjbcEAMqRimDHIs4uqBYzDAKCQwCB+97tJgHQw==
 
+emojibase@^6.1.0:
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/emojibase/-/emojibase-6.1.0.tgz#c3bc281e998a0e06398416090c23bac8c5ed3ee8"
+  integrity sha512-1GkKJPXP6tVkYJHOBSJHoGOr/6uaDxZ9xJ6H7m6PfdGXTmQgbALHLWaVRY4Gi/qf5x/gT/NUXLPuSHYLqtLtrQ==
+
 esbuild@^0.18.6:
   version "0.18.6"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.18.6.tgz#c779d5c6cffab264bd3b95e71354536037435700"
@@ -191,6 +223,13 @@ esbuild@^0.18.6:
     "@esbuild/win32-arm64" "0.18.6"
     "@esbuild/win32-ia32" "0.18.6"
     "@esbuild/win32-x64" "0.18.6"
+
+picmo@^5.8.5:
+  version "5.8.5"
+  resolved "https://registry.yarnpkg.com/picmo/-/picmo-5.8.5.tgz#0719390979d638817d05d000a3b086cc93b71ebf"
+  integrity sha512-7I8jfuHALF9lkt3d+XCZGP+IwH7g91vYZv6XtRnJ99IDjnm92zel0L5DEo2FX0oaHUwRMBD/kn2knTZqwItudQ==
+  dependencies:
+    emojibase "^6.1.0"
 
 spark-md5@^3.0.1:
   version "3.0.2"
