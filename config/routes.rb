@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :users, only: :sessions
   root to: "pages#home"
 
   get 'privacy', to: 'pages#privacy'

@@ -1,0 +1,22 @@
+.a-leia-entrar {
+  //botão leia todos
+  display: flex;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 200;
+  width: 250px;
+  border-radius: 5px;
+  background: #EBE5DF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: #B58169;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: center
+}
+
+.a-leia-entrar:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s linear;
+}
