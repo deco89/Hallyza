@@ -64,101 +64,6 @@ body {
   transition: opacity 1s;
 }
 
-/* Extra small devices (phones, up to 600px) */
-@media only screen and (max-width: 600px) {
-  .container-home {
-    min-height: 100vh;
-    min-width: 100vw;
-  }
-
-  .card0 {
-    margin-top: -10rem;
-    height: 70%;
-    width: 86%;
-  }
-
-  .h2-cl {
-    font-size: 18px; /* Decrease font-size */
-    justify-content: center;
-    // text-align: center;
-  }
-
-  .card-text-hal-li {
-    font-size: 12px; /* Decrease font-size */
-    justify-content: center;
-    // text-align: center;
-  }
-
-  .card-text-hal {
-    font-size: 10px; /* Decrease font-size */
-    justify-content: center;
-    // text-align: center;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .container-home {
-    min-height: 800px;
-    min-width: 800px;
-  }
-
-  .card0 {
-    height: 90%;
-    width: 90%;
-    font-size: 16px; /* Adjust font-size */
-  }
-
-  .h2-cl {
-    font-size: 32px; /* Decrease font-size */
-    // justify-content: center;
-    // text-align: center;
-  }
-
-  .card-text-hal {
-    font-size: 16px; /* Decrease font-size */
-    // justify-content: center;
-    // text-align: center;
-  }
-
-  .card-text-hal-li {
-    font-size: 24px; /* Decrease font-size */
-    // justify-content: center;
-    // text-align: center;
-  }
-}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .container-home {
-    min-height: 800px;
-    min-width: 1000px;
-  }
-
-  .card0 {
-    height: 600px;
-    width: 600px;
-    font-size: 16px; /* Adjust font-size */
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .container-home {
-    max-height: 800px;
-    max-width: 1280px;
-  }
-
-  .card0 {
-    height: 700px;
-    width: 600px;
-    font-size: 18px; /* Increase font-size */
-  }
-}
-
-
-/* new card hallyza start com media queries */
-
 .artigos {
   margin-top: 4rem;
   color: rgba(181, 129, 105, 0.65);
@@ -183,50 +88,6 @@ body {
   text-align: center;
   letter-spacing: 5px;
 }
-
-/* iPhone 8 (375x667) in portrait */
-@media only screen and (max-width: 375px) {
-  .espcs {
-    font-size: 20px;
-  }
-
-  .splide__arrow { // esconde botao do carrossel
-    display: none !important;
-  }
-}
-
-/* iPhone 11 (414x896) and iPhone 14 Pro Max (428x926) in portrait */
-@media only screen and (min-width: 376px) and (max-width: 428px) {
-  .espcs {
-    font-size: 22px;
-  }
-
-  .splide__arrow { // esconde botao do carrossel
-    display: none !important;
-  }
-}
-
-/* MacBook Air (1440x900) and MacBook Pro (1440x900, 2560x1600, 2880x1800) */
-@media only screen and (min-width: 1024px) and (max-width: 2880px) {
-  .espcs {
-    font-size: 28px;
-  }
-}
-
-/* Dell Latitude (1920x1080) */
-@media only screen and (min-width: 1440px) and (max-width: 1920px) {
-  .espcs {
-    font-size: 30px;
-  }
-}
-
-/* iMac 24" (4480x2520) */
-@media only screen and (min-width: 2881px) {
-  .espcs {
-    font-size: 32px;
-  }
-}
-
 
 .center-todos {
   display: flex;
@@ -345,3 +206,55 @@ li {
   cursor: pointer;
   transition: color 0.3s linear;
 }
+
+/* Extra small devices (phones, up to 600px) */
+@media only screen and (max-width: 600px) {
+  .container-home { min-height: 100vh; min-width: 100vw; }
+  .card0 { margin-top: -10rem; height: 70%; width: 86%; }
+  .h2-cl { font-size: 18px; justify-content: center; }
+  .card-text-hal-li, .card-text-hal { font-size: 10px; justify-content: center; }
+  .espcs { font-size: 20px; }
+  .splide__arrow { display: none; }
+}
+
+/* iPhone 11 (414x896) and iPhone 14 Pro Max (428x926) in portrait */
+@media only screen and (min-width: 376px) and (max-width: 428px) {
+  .espcs { font-size: 22px; }
+}
+
+/* Small and Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .row {
+    display: flex;
+    justify-content: space-between; /* Adjust this as needed */
+  }
+
+  .col-12.col-md-6 {
+    flex: 0 0 50%; /* Takes up 50% of the container width */
+    max-width: 50%; /* Maximum width is 50% */
+  }
+
+  .container-home { min-height: 800px; min-width: 800px; }
+  .card0 { height: 90%; width: 90%; font-size: 16px; }
+  .h2-cl { font-size: 32px; }
+  .card-text-hal { font-size: 16px; }
+  .card-text-hal-li { font-size: 24px; }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .container-home { min-height: 800px; min-width: 1000px; }
+  .card0 { height: 600px; width: 600px; }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .container-home { max-height: 800px; max-width: 1280px; }
+  .card0 { height: 700px; width: 600px; font-size: 18px; }
+}
+
+/* Other specific device tweaks */
+@media only screen and (min-width: 1024px) and (max-width: 2880px) { .espcs { font-size: 28px; } }
+@media only screen and (min-width: 1440px) and (max-width: 1920px) { .espcs { font-size: 30px; } }
+@media only screen and (min-width: 2881px) { .espcs { font-size: 32px; } }

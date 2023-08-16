@@ -6,7 +6,6 @@ import { RichText } from "../classes/RichText";
 export default class extends Controller {
   static targets = ["trixEditor", "pickerContainer"];
   connect() {
-    console.log("Connected to emoji-picker");
     const buttonString = this.emojiButtonString();
     const emojiButton = this.emojiButtonTemplate(buttonString);
     let picker;
