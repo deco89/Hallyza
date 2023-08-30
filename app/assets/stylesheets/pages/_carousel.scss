@@ -25,13 +25,12 @@
 // carousel card
 .card-article { // carousel
   position: relative;  /* Added */
-  border: 1px solid #dadada;
   box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.2s;
   border-radius: 0.25rem;
   background-color: #EBE5DF;
   max-height: 445px;
-  // width: 500px;
+  width: 500px;
   flex-direction: column;
   border-radius: 1.75em;
   display: flex;
@@ -76,8 +75,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
   font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 1.8px;
+  font-size: 26px;
   width: 100%;
   white-space: normal;  /* Updated */
   overflow-wrap: break-word;  /* Updated */
@@ -111,13 +109,14 @@
 // carousel card wrapper
 .cards-wrapper {
   display: flex;
-  background: rgba(247, 245, 242, 0.8);
-  justify-content: center;
-  gap: 1rem;
-  padding-bottom: 10px;
-  padding-top: 15px;
-  width: 1900px;
-  height: 500px;
+    /* background: rgba(247, 245, 242, 0.8); */
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    width: 1610px;
+    height: 430px;
+    margin-left: 140px;
   }
 
 // carousel splide styles
