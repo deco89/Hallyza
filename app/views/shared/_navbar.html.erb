@@ -26,7 +26,7 @@
         <li>
           <%= link_to "Contato", contact_path, class: "nav-link" %>
         </li>
-       <% if current_page?(articles_path) %>
+        <% if current_page?(articles_path) %>
           <% if user_signed_in? %>
             <li class="nav-link">
               <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>

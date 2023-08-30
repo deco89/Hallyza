@@ -32,10 +32,10 @@
                       <% end %>
                     </div>
                     <div class="card-body-carousel p-4">
-                      <h5 class="card-title"><%= truncate( article.name, length: 20 )%></h5>
+                      <h5 class="card-title"><%= truncate( article.name, length: 100 )%></h5>
                       <span class="card-date-time" style="color: #B58169;"></span>
-                      <p class="card-text"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
-                      <%= link_to "Leia Mais", article_path(article), class: "a-leia" %>
+                      <p class="card-text"><%= truncate(article.rich_body.to_plain_text, length: 129) %></p>
+                      <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
                     </div>
                   </div>
                 <% end %>
@@ -53,8 +53,8 @@
 
 <h1 class="espcs text-center fs-1 fs-lg-3 fw-bold mt-5">Especializações</h1>
 
-<div class="container-fluid g-5">
-  <div class="row g-5">
+<div class="container g-5">
+  <div class="home-specialies row g-5">
     <div class="col-12 col-md-6">
       <div class="spec d-flex flex-column align-items-center">
         <%= image_tag "foto1.jpg", crop: :fill %>

@@ -20,6 +20,7 @@
   color: #B58169;
   font-family: 'IBM Plex Sans', sans-serif;
   text-align: center;
+  font-size: 32px;
   padding: 30px;
 }
 
@@ -27,23 +28,25 @@
   color: #B58169;
   font-family: 'IBM Plex Sans', sans-serif;
   margin-top: 10px;
-  text-align:justify;
+  text-align: justify;
+}
+
+.institute-h3 {
+  color: #B58169;
+    font-family: 'IBM Plex Sans', sans-serif;
+    text-align: center;
+    font-style: italic;
+    font-size: 22px;
+    font-weight: 200;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .institute-h4 {
   color: #B58169;
   font-family: 'IBM Plex Sans', sans-serif;
-  text-align:center;
-  font-style: italic;
-  font-size: 22px;
-  font-weight: 200;
-  margin-bottom: 25px;
-}
-
-.institute-h3 {
-  color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
-  text-align:center;
+  text-align: center;
   font-style: italic;
   font-size: 22px;
   font-weight: 200;
@@ -53,19 +56,32 @@
 .institute-h5 {
   color: #B58169;
   font-family: 'IBM Plex Sans', sans-serif;
-   margin-top: 10px;
+  margin-top: 10px;
 }
 
 .btn-agendamento {
   text-decoration: none;
   color: #B58169;
+  display: flex;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 600;
+  background: #EBE5DF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  height: 35px;
+  width: 275px;
+  opacity: 1;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0.8;
 }
 
 .btn-agendamento:hover {
   text-decoration: none;
   color: #B58169;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 800;
+  font-weight: 600;
+  opacity: 1;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }

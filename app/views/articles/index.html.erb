@@ -1,23 +1,25 @@
 <div class="container-fluid">
-  <% @articles.each do |article|  %>
-    <%= link_to article_path(article), class: "article-link-2" do %>
-      <div class="article-2">
-        <div class="article-image-2">
-          <% if article.photos.attached? %>
-            <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img-top-2" %>
-          <% else %>
-            <%= render "shared/sampleimg" %>
-          <% end %>
+  <div class="articles-wrap">
+    <% @articles.each do |article| %>
+      <%= link_to article_path(article) do %>
+        <div class="article-2">
+          <div class="article-image-2">
+            <% if article.photos.attached? %>
+              <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img-top-2" %>
+            <% else %>
+              <%= render "shared/sampleimg" %>
+            <% end %>
+          </div>
+          <div class="article-body-2 p-4">
+            <h5 class="article-title-2"><%= truncate( article.name, length: 100 )%></h5>
+            <span class="card-date-time-2" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
+            <p class="article-text-2"><%= truncate(article.rich_body.to_plain_text, length: 175) %></p>
+            <%= link_to "Leia Mais →", article_path(article), class: "a-leia-2" %>
+          </div>
         </div>
-        <div class="article-body-2 p-4">
-          <h5 class="article-title-2"><%= truncate( article.name, length: 20 )%></h5>
-          <span class="card-date-time-2" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
-          <p class="article-text-2"><%= truncate(article.rich_body.to_plain_text, length: 120) %></p>
-          <%= link_to "Leia Mais", article_path(article), class: "a-leia-2" %>
-        </div>
-      </div>
+      <% end %>
     <% end %>
-  <% end %>
+  </div>
 </div>
 <div class="button-container">
   <div class="top-button">

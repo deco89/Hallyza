@@ -19,6 +19,13 @@
   font-weight: 400;
 }
 
+.nav-link:hover {
+  font-weight: 400;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
 /* Logo images default size */
 .logo-img {
   width: 80px;
