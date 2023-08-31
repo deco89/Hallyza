@@ -22,12 +22,13 @@
   </div>
 </div>
 <div class="button-container">
-  <div class="top-button">
+  <%# <div class="top-button">
     <%= link_to "Voltar", root_path, class: "novo-artigo-btn" %>
-  </div>
+  <%# </div>  %>
   <% if user_signed_in? %>
     <div class="bottom-button">
       <%= link_to "Novo Artigo", new_article_path, class: "novo-artigo-btn" %>
     </div>
   <% end %>
 </div>
+<h3 class="agendamento"><a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a></h3>
