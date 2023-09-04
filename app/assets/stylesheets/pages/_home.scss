@@ -9,6 +9,12 @@ body {
 
 /* new card hallyza start com media queries */
 
+.center-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .container-home {
   height: 100vh;
   width: 100vw;
