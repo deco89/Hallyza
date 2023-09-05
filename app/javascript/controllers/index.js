@@ -19,5 +19,8 @@ application.register("hello", HelloController)
 import NavbarController from "./navbar_controller"
 application.register("navbar", NavbarController)
 
+import ScrollRevealController from "./scroll_reveal_controller"
+application.register("scroll-reveal", ScrollRevealController)
+
 import SplideController from "./splide_controller"
 application.register("splide", SplideController)
