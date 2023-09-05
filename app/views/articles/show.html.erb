@@ -22,10 +22,10 @@
   </div>
   <% if user_signed_in? %>
     <div class="middle-button">
-      <%= link_to "Editar artigo", edit_article_path, class: "novo-artigo-btn btn btn-custom" %>
+      <%= link_to "Editar artigo", edit_article_path, class: "btn-custom" %>
     </div>
     <div class="bottom-button">
-      <%= link_to "Delete", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "novo-artigo-btn btn btn-custom" %>
+      <%= link_to "Deletar Artigo", article_path(@article), data: { turbo_method: :delete, turbo_confirm: "Are you sure?" }, class: "btn-custom" %>
     </div>
   <% end %>
 </div>

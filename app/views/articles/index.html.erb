@@ -1,33 +1,30 @@
-<div class="container-fluid">
-  <div class="articles-wrap">
-    <% @articles.each do |article| %>
-      <%= link_to article_path(article) do %>
-        <div class="article-2">
-          <div class="article-image-2">
+<div class="container">
+  <div class="mx-5">
+    <div class="cards">
+      <% @articles.each_with_index do |article, index| %>
+        <%# <%= link_to article_path(article) do %>
+          <div class="card-full">
             <% if article.photos.attached? %>
-              <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img-top-2" %>
-            <% else %>
-              <%= render "shared/sampleimg" %>
+              <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img" %>
+            <%# <% else %>
+              <%# <%= render "shared/sampleimg" %>
             <% end %>
+            <div class="article-infos ">
+              <h5 class="article-title"><%= truncate( article.name, length: 100 )%></h5>
+              <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
+              <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 175) %></p>
+            </div>
+            <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
           </div>
-          <div class="article-body-2 p-4">
-            <h5 class="article-title-2"><%= truncate( article.name, length: 100 )%></h5>
-            <span class="card-date-time-2" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
-            <p class="article-text-2"><%= truncate(article.rich_body.to_plain_text, length: 175) %></p>
-            <%= link_to "Leia Mais →", article_path(article), class: "a-leia-2" %>
-          </div>
-        </div>
+        <%# <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 </div>
 <div class="button-container">
-  <%# <div class="top-button">
-    <%= link_to "Voltar", root_path, class: "novo-artigo-btn" %>
-  <%# </div>  %>
   <% if user_signed_in? %>
     <div class="bottom-button">
-      <%= link_to "Novo Artigo", new_article_path, class: "novo-artigo-btn" %>
+      <%= link_to "Novo Artigo", new_article_path, class: "btn-custom" %>
     </div>
   <% end %>
 </div>
