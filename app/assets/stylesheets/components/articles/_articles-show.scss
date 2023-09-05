@@ -67,3 +67,31 @@
   display: flex;
   justify-content: center; /* Center the buttons horizontally */
 }
+
+/* iPhone Editor dos artigos */
+@media (max-width: 428px) {
+  .custom-card {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* iPad Editor dos artigos */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px) {
+  .custom-card {
+    width: 95%;
+    height: auto;
+  }
+}
+
+/* iPad Pro Editor dos artigos */
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1366px) {
+  .custom-card {
+    width: 95%;
+    height: auto;
+  }
+}
