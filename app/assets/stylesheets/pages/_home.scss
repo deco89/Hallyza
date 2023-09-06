@@ -3,6 +3,73 @@ body {
   overflow-x: hidden;
 }
 
+/*--- Hallyza com cartao homepage ---*/
+
+.hal-first-pg {
+  //página inteira
+  min-height: 200vh;
+}
+
+.card {
+  //card com informações da Hállyza
+  width: 600px;
+  height: 650px;
+  background-color: #EBE5DF;
+  box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.05);
+  border: #B58169;
+  border-radius: 4px;
+}
+
+.hal-img-pg img {
+  //foto Hállyza
+  // margin-right: -5rem;
+  // margin-top: 8.5rem;
+  // margin-left: 6rem;
+  padding: 30px;
+  margin-left: 200px;
+  width: 670px;
+  height: 840px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  max-width: 100%;
+  max-height: 100%;
+
+  a {
+    justify-self: flex-start;
+    align-self: flex-start;
+  }
+}
+
+.card-title {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #B58169;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 1.8px;
+
+  h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  h6 {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
+
+.card-text {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #B58169;
+}
+
+/*--- Hallyza com cartao homepage ---*/
+
 * {
   box-sizing: border-box;
 }
@@ -24,6 +91,24 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  flex-direction: row;
+}
+
+.image-card {
+  width: 45%;  /* Adjust as needed */
+  height: 600px;  /* Adjust as needed */
+  background: url(image_path("hallyza.png"));
+  background-size: 100% 100%;
+  border-radius: 10px;
+  /* ... add other styles as needed ... */
+}
+
+.text-card {
+  width: 45%;  /* Adjust as needed */
+  height: 600px;  /* Adjust as needed */
+  background: #808080;
+  border-radius: 10px;
+  /* ... your existing styles ... */
 }
 
 .agendamento-home {
@@ -89,8 +174,7 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: url(image_path("hallyza.png")) left center no-repeat;
-  background-size: 100% 100%;
+
 }
 
 .card0:hover {
