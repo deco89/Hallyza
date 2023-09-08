@@ -9,15 +9,17 @@
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
   background-color: #EBE5DF;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 0 20px;
 }
 
-.card-subtitle-article {
+.article-date {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
   background-color: #EBE5DF;
   margin-left: 20px;
   margin-right: 20px;
+  font-style: italic;
+  font-size: 16px;
 }
 
 .card-text-article {
