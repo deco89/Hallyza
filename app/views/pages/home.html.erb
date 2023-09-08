@@ -1,46 +1,38 @@
-  <div class="hal-first-pg">
-  <div class="row justify-content-center">
-    <div class="col-12 col-lg-6">
-      <div class="row">
-        <div class="col-12">
-          <div class="container hal-img-pg">
-            <%= image_tag 'hallyza.png', width: 300, height: 200, quality: :auto, fetch_format: :auto, crop: :fill %>
-          </div>
-        </div>
-      </div>
+<div class="hal-first-pg">
+  <div class="card-hallyza">
+    <div class="hal-img">
+      <%= image_tag 'hallyza.png', width: 300, height: 200, quality: :auto, fetch_format: :auto, crop: :fill %>
     </div>
-    <div class="text-hal col-12 col-lg-6">
-      <div class="card">
-        <div class="card-body">
-          <div class="container card-hal-text">
-            <h5 class="card-title">Dra. Hállyza Rodriges</h5>
-            <ul class="card-text">
-              <p>Ginecologia Degenerativa e Saúde Vaginal<br>
-                CRM-ES 11.1993</p>
-              <br>
-              <li>Formada em Medicina pela MULTIVIX - Faculdade Brasileira - Vitória, Espírito Santo</li>
-              <li>Residência Médica em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</li>
-              <li>Residência Médica em Ultrassonografia em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</li>
-              <li>Membra Associada a Academia Brasileira de Ginecologia Regenerativa - ABGREF</li>
-              <li>Membra Associada da Associação Brasileira de Cosmetoginecologia - ABCGIN</li>
-              <li>Especializada em Cirurgia Íntima Hands-On da Academia Brasileira de Ginecologia Regenerativa</li>
-              <li>Especializada em Infecções Vaginais pelo Curso Ginecoacademy LTDA em associação com a Universidade Estadual Paulista - UNESP.BLOG</li>
-            </ul>
+    <div class="card-info">
+      <div class="card-body">
+        <div class="card-hal-text">
+          <h5 class="card-title">Dra. Hállyza Rodriges</h5>
+          <div class="card-text">
+            <p>Ginecologia Degenerativa e Saúde Vaginal<br>
+              CRM-ES 11.1993</p>
+            <p>Formada em Medicina pela MULTIVIX - Faculdade Brasileira - Vitória, Espírito Santo</p>
+            <p>Residência Médica em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</p>
+            <p>Residência Médica em Ultrassonografia em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo</p>
+            <p>Membra Associada a Academia Brasileira de Ginecologia Regenerativa - ABGREF</p>
+            <p>Membra Associada da Associação Brasileira de Cosmetoginecologia - ABCGIN</p>
+            <p>Especializada em Cirurgia Íntima Hands-On da Academia Brasileira de Ginecologia Regenerativa</p>
+            <p>Especializada em Infecções Vaginais pelo Curso Ginecoacademy LTDA em associação com a Universidade Estadual Paulista - UNESP.BLOG</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-<div class="container">
-  <div class="mx-5">
+  <div class="container">
+    <%# <div class="mx-5"> %>
     <div class="cards">
       <% @articles.each_with_index do |article, index| %>
         <%# <%= link_to article_path(article) do %>
           <div class="card-full">
             <% if article.photos.attached? %>
+            <div class="image_article">
               <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img" %>
-            <%# <% else %>
+              </div>
+              <%# <% else %>
               <%# <%= render "shared/sampleimg" %>
             <% end %>
             <div class="article-infos ">
@@ -50,36 +42,33 @@
             </div>
             <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
           </div>
-        <%# <% end %>
-      <% end %>
-    </div>
-  </div>
-</div>
-
-<div class="center-todos">
-  <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
-</div>
-
-<h1 class="espcs text-center fs-1 fs-lg-3 fw-bold mt-5">Especializações</h1>
-
-<div class="container g-5">
-  <div class="home-specialies row g-5">
-    <div class="col-12 col-md-6">
-      <div class="spec d-flex flex-column align-items-center">
-        <%= image_tag "foto1.jpg", crop: :fill %>
-        <h5 class="spec-h5">Ginecologia Regenarativa e Funcional</h5>
-        <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+          <%# <% end %>
+        <% end %>
       </div>
+      <%# </div> %>
     </div>
-    <div class="col-12 col-md-6">
-      <div class="spec d-flex flex-column align-items-center">
-        <%= image_tag "foto2.jpg", crop: :fill %>
-        <h5 class="spec-h5 h5-50">Saúde Vaginal</h5>
-        <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+    <div class="center-todos">
+      <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
+    </div>
+    <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Especializações</h1>
+    <div class="container g-5">
+      <div class="home-specialies row g-5">
+        <div class="col-12 col-md-6">
+          <div class="spec d-flex flex-column align-items-center">
+            <%= image_tag "foto1.jpg", crop: :fill %>
+            <h5 class="spec-h5">Ginecologia Regenarativa e Funcional</h5>
+            <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+          </div>
+        </div>
+        <div class="col-12 col-md-6">
+          <div class="spec d-flex flex-column align-items-center">
+            <%= image_tag "foto2.jpg", crop: :fill %>
+            <h5 class="spec-h5">Saúde Vaginal</h5>
+            <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+          </div>
+        </div>
       </div>
+      <h3 class="agendamento-home d-none" data-controller="scroll-reveal" data-scroll-reveal-target="link">
+        <a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a>
+      </h3>
     </div>
-  </div>
-  <h3 class="agendamento-home d-none" data-controller="scroll-reveal" data-scroll-reveal-target="link">
-    <a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a>
-  </h3>
-</div>
