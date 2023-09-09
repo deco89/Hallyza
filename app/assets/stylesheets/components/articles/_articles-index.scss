@@ -73,7 +73,6 @@
 .card-img {
   position: initial;
 }
-
 .a-leia {
   display: flex;
   position: relative;
@@ -96,6 +95,11 @@
 .cl_image {
   width: 100%;
   background-size: cover;
+}
+
+.agendamento-artigos {
+  display: flex;
+  justify-content: flex-end;
 }
 
 /* iPhone 5 to iPhone 12 Pro Max */

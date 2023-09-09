@@ -9,15 +9,17 @@
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
   background-color: #EBE5DF;
-  margin: 20px 20px 20px 20px;
+  margin: 20px 20px 0 20px;
 }
 
-.card-subtitle-article {
+.article-date {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
   background-color: #EBE5DF;
   margin-left: 20px;
   margin-right: 20px;
+  font-style: italic;
+  font-size: 16px;
 }
 
 .card-text-article {
@@ -66,4 +68,32 @@
 .bottom-button {
   display: flex;
   justify-content: center; /* Center the buttons horizontally */
+}
+
+/* iPhone Editor dos artigos */
+@media (max-width: 428px) {
+  .custom-card {
+    width: 90%;
+    height: auto;
+  }
+}
+
+/* iPad Editor dos artigos */
+@media only screen
+  and (min-width: 768px)
+  and (max-width: 1024px) {
+  .custom-card {
+    width: 95%;
+    height: auto;
+  }
+}
+
+/* iPad Pro Editor dos artigos */
+@media only screen
+  and (min-width: 1024px)
+  and (max-width: 1366px) {
+  .custom-card {
+    width: 95%;
+    height: auto;
+  }
 }

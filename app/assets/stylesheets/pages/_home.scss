@@ -74,6 +74,15 @@ body {
   box-sizing: border-box;
 }
 
+/*--- Hallyza com cartao homepage ---*/
+
+  .hal-first-pg {
+    //página inteira
+    min-height: 200vh;
+  }
+
+  /*--- Hallyza com cartao homepage ---*/
+
 /* new card hallyza start com media queries */
 
 .center-wrapper {
@@ -150,74 +159,6 @@ body {
   transform: scale(1.0);
 }
 
-.border0 {
-  height: 369px;
-  width: 290px;
-  background: transparent;
-  border-radius: 10px;
-  transition: border 1s;
-  position: relative;
-}
-.border0:hover {
-  border: 1px solid #fff;
-}
-
-.card0 {
-  height: 600px;
-  width: 90vw;
-  background: #808080;
-  border-radius: 10px;
-  transition: background 0.8s;
-  overflow: hidden;
-  background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-
-}
-
-.card0:hover {
-  background: #f7f2ec;
-}
-
-.card0:hover .h2-cl, .card0:hover .card-text-hal, .card0:hover .card-text-hal-li {
-  opacity: 1;
-}
-
-.h2-cl, .card-text-hal, .card-text-hal-li {
-  font-family: 'IBM Plex Mono', sans-serif;
-  color: #B58169;
-  margin: 20px;
-  opacity: 0;
-  transition: opacity 1s;
-}
-
-.artigos {
-  margin-top: 4rem;
-  color: rgba(181, 129, 105, 0.65);
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 5px;
-  text-align: center;
-}
-
-.espcs {
-  margin-top: 4rem;
-  color: rgba(181, 129, 105, 0.65);
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 5px;
-  text-align: center;
-  letter-spacing: 5px;
-}
-
 .center-todos {
   display: flex;
   position: relative;
@@ -249,93 +190,6 @@ body {
   transition: color 0.3s linear;
 }
 
-ul {
-  list-style: none;
-  text-decoration: none;
-}
-
-
-li {
-  list-style: none;
-  text-decoration: none;
-}
-
-.artigos {
-  margin-top: 4rem;
-  text-align: center;
-  color: #B58169;
-}
-
-.espcs {
-  text-align: center;
-  color: #B58169;
-}
-
-
-.specs-wrapper {
-  //especializações
-  padding: 20px;
-  height: auto;
-  flex-direction: row;
-}
-
-.spec-h5 {
-  display: flex;
-  justify-content: center;
-  width: 275px;
-  height: 100px;
-  flex-direction: column;
-  color: #B58169;
-  text-align: center;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-  padding-top: 10px;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-
-.spec {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-}
-
-.spec img {
-  //imagem 1 das especializações
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  border-radius: 100%;
-  width: 200px;
-  height: 200px;
-}
-
-
-.a-leia-spec {
-  display: flex;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 200;
-  width: 130px;
-  flex-direction: column;
-  border-radius: 5px;
-  background: #EBE5DF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  color: #B58169;
-  margin-top: 10px;
-}
-
-.a-leia-spec:hover {
-  text-decoration: underline;
-  cursor: pointer;
-  transition: color 0.3s linear;
-}
-
 /* Extra small devices (phones, up to 600px) */
 @media only screen and (max-width: 600px) {
   .container-home { min-height: 100vh; min-width: 100vw; }
@@ -352,6 +206,10 @@ li {
   .agendamento {right: 21%;}
 }
 
+.image_article > img {
+  width: 100%;
+  height: 150px;
+}
 /* iPhone 11 (414x896) and iPhone 14 Pro Max (428x926) in portrait */
 @media only screen and (min-width: 376px) and (max-width: 428px) {
   .espcs { font-size: 22px; }
