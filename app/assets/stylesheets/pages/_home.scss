@@ -85,41 +85,6 @@ body {
 
 /* new card hallyza start com media queries */
 
-.center-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container-home {
-  height: 100vh;
-  width: 100vw;
-  max-height: 100vh;
-  max-width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  flex-direction: row;
-}
-
-.image-card {
-  width: 45%;  /* Adjust as needed */
-  height: 600px;  /* Adjust as needed */
-  background: url(image_path("hallyza.png"));
-  background-size: 100% 100%;
-  border-radius: 10px;
-  /* ... add other styles as needed ... */
-}
-
-.text-card {
-  width: 45%;  /* Adjust as needed */
-  height: 600px;  /* Adjust as needed */
-  background: #808080;
-  border-radius: 10px;
-  /* ... your existing styles ... */
-}
-
 .agendamento-home {
   position: fixed;
   bottom: 80px;
