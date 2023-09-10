@@ -79,13 +79,11 @@ a {
 }
 
 .time tbody tr:nth-child(odd) td { /* Style for odd rows */
-  // background-color: #fff;
   background-color: rgba(181, 129, 105, 0.070);
 
 }
 
 .time tbody tr:nth-child(even) td { /* Style for even rows */
-  // background-color: #eee; /* This is a very light grey, similar to Excel */
   background-color: rgba(181, 129, 105, 0.03);
 }
 
