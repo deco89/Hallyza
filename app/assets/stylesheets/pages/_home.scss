@@ -21,10 +21,6 @@ body {
 }
 
 .hal-img-pg img {
-  //foto Hállyza
-  // margin-right: -5rem;
-  // margin-top: 8.5rem;
-  // margin-left: 6rem;
   padding: 30px;
   margin-left: 200px;
   width: 670px;
@@ -74,14 +70,6 @@ body {
   box-sizing: border-box;
 }
 
-/*--- Hallyza com cartao homepage ---*/
-
-  .hal-first-pg {
-    //página inteira
-    min-height: 200vh;
-  }
-
-  /*--- Hallyza com cartao homepage ---*/
 
 /* new card hallyza start com media queries */
 
@@ -162,7 +150,6 @@ body {
   .h2-cl { font-size: 18px; justify-content: center; }
   .card-text-hal-li, .card-text-hal { font-size: 10px; justify-content: center; }
   .espcs { font-size: 20px; }
-  .splide__arrow { display: none; }
   .btn-agendamento-all {
     width: 220px;
     height: 40px;
