@@ -3,12 +3,12 @@ class PagesController < ApplicationController
   include CloudinaryHelper
 
   def home
-    @articles = Article.all
-    @image_urls = Article.last(5).map { |article| article.photos.attached? ? cl_image_path(article.photos.first.key, width: 600, height: 400, crop: :fill) : 'img1.jpeg' }
+    @articles = Article.last(3)
+    @image_urls = Article.last(3).map { |article| article.photos.attached? ? cl_image_path(article.photos.first.key, width: 600, height: 400, crop: :fill) : 'img1.jpeg' }
   end
 
   def index
-    @articles = Article.last(5)
+    @articles = Article.last(3)
     @image_urls = @articles.map do |article|
       if article.photos.attached?
         cl_image_path(article.photos.first.key, width: 600, height: 400, crop: :fill)
