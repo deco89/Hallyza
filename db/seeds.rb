@@ -3,7 +3,6 @@ User.destroy_all
 
 puts"Creating Users"
 
-hallyza = User.create!(email: "hallyza.rodrigues@gmail.com", password: "Site-1989")
 hallyza1 = User.create!(email: "hallyza.rodrigues@hotmail.com", password: "Site-1989")
 hallyza2 = User.create!(email: "hallyza.rodrigues@gmail.com", password: "Contato@4422")
 hallyza3 = User.create!(email: "hallyza.rodrigues@myyahoo.com", password: "Gineco@2023")
