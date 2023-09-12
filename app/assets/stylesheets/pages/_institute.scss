@@ -4,21 +4,21 @@
 
 .inst-main {
   color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: $hallyza-font;
   text-align: center;
   padding: 30px;
 }
 
 .p-color {
   color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: $hallyza-font;
   text-align: justify;
   font-size: 18px;
 }
 
 .institute-h1 {
   color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: $hallyza-font;
   text-align: center;
   font-size: 32px;
   padding: 30px;
@@ -26,14 +26,14 @@
 
 .institute-h2 {
   color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: $hallyza-font;
   margin-top: 10px;
   text-align: justify;
 }
 
 .institute-h3 {
   color: #B58169;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: $hallyza-font;
     text-align: center;
     font-style: italic;
     font-size: 22px;
@@ -45,7 +45,7 @@
 
 .institute-h4 {
   color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: $hallyza-font;
   text-align: center;
   font-style: italic;
   font-size: 22px;
@@ -55,7 +55,7 @@
 
 .institute-h5 {
   color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: $hallyza-font;
   margin-top: 10px;
 }
 
