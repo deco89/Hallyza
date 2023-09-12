@@ -85,3 +85,19 @@
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
+
+.instagram-container {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .instagram-container {
+      flex-direction: column;
+  }
+  .instagram {
+      margin-bottom: 10px;
+  }
+}
