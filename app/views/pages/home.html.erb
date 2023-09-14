@@ -15,7 +15,7 @@
             <p>Residência Médica em Ultrassonografia em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo.</p>
             <p>Membra Associada a Academia Brasileira de Ginecologia Regenerativa - ABGREF.</p>
             <p>Membra Associada da Associação Brasileira de Cosmetoginecologia - ABCGIN.</p>
-            <p>Especializada em Cirurgia Íntima pela da Academia Brasileira de Ginecologia Regenerativa.</p>
+            <p>Especializada em Cirurgia Íntima pela Academia Brasileira de Ginecologia Regenerativa - ABGREF.</p>
             <p>Especializada em Infecções Vaginais pelo Curso Ginecoacademy LTDA em associação com a Universidade Estadual Paulista - UNESP.</p>
           </div>
         </div>
@@ -25,44 +25,44 @@
   <div class="container">
     <div class="cards">
       <% @articles.each_with_index do |article, index| %>
-          <div class="card-full">
-            <% if article.photos.attached? %>
+        <div class="card-full">
+          <% if article.photos.attached? %>
             <div class="image_article">
               <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img" %>
-              </div>
-            <% end %>
-            <div class="article-infos ">
-              <h5 class="article-title"><%= truncate( article.name, length: 100 )%></h5>
-              <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
-              <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 175) %></p>
             </div>
-            <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
+          <% end %>
+          <div class="article-infos ">
+            <h5 class="article-title"><%= truncate( article.name, length: 100 )%></h5>
+            <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
+            <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 250) %></p>
           </div>
-        <% end %>
-      </div>
-    </div>
-    <div class="center-todos">
-      <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
-    </div>
-    <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
-    <div class="container g-5">
-      <div class="home-specialies row g-5">
-        <div class="col-12 col-md-6">
-          <div class="spec d-flex flex-column align-items-center">
-            <%= image_tag "foto1.jpg", crop: :fill %>
-            <h5 class="spec-h5">Ginecologia Regenerativa Estética e Funcional</h5>
-            <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
-          </div>
+          <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="spec d-flex flex-column align-items-center">
-            <%= image_tag "foto2.jpg", crop: :fill %>
-            <h5 class="spec-h5">Saúde Vulvo Vaginal</h5>
-            <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
-          </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="center-todos">
+    <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
+  </div>
+  <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
+  <div class="container g-5">
+    <div class="home-specialies row g-5">
+      <div class="col-12 col-md-6">
+        <div class="spec d-flex flex-column align-items-center">
+          <%= image_tag "foto1.jpg", crop: :fill %>
+          <h5 class="spec-h5">Ginecologia Regenerativa, Estética e Funcional</h5>
+          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
         </div>
       </div>
-      <h3 class="agendamento-home d-none" data-controller="scroll-reveal" data-scroll-reveal-target="link">
-        <a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a>
-      </h3>
+      <div class="col-12 col-md-6">
+        <div class="spec d-flex flex-column align-items-center">
+          <%= image_tag "foto2.jpg", crop: :fill %>
+          <h5 class="spec-h5">Saúde Vulvo Vaginal</h5>
+          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+        </div>
+      </div>
     </div>
+    <h3 class="agendamento-home d-none" data-controller="scroll-reveal" data-scroll-reveal-target="link">
+      <a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a>
+    </h3>
+  </div>

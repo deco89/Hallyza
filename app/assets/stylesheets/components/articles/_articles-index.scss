@@ -1,20 +1,18 @@
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 25px;
+  grid-gap: 40px;
   margin-top: 25px;
 }
 
 .card-full {
   position: relative;
-  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.2s;
-  border-radius: 0.25rem;
+  box-shadow: 10px 9px 10px 0px rgba(0, 0, 0, 0.2);
   background-color: #EBE5DF;
   height: 440px; /* Fixed height */
   width: 415px; /* Fixed width */
   flex-direction: column;
-  border-radius: 1.75em;
+  border-radius: 10px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -43,10 +41,9 @@
   word-break: break-word;
   width: 100%;
   overflow: hidden;
-  font-weight: 700;
   font-size: 24px;
   justify-content: center;
-  text-align: justify;
+  text-align: initial;
 }
 .card-date-time {
   font-family: Montserrat;
@@ -68,6 +65,7 @@
   word-break: break-word;
   width: 100%;
   overflow: hidden;
+  text-align: justify;
 }
 
 .card-img {
@@ -77,8 +75,7 @@
   display: flex;
   position: relative;
   justify-content: flex-end;
-  font-size: 24px;
-  font-weight: 200;
+  font-size: 22px;
   flex-direction: row;
   border-radius: 10px;
   text-decoration: none;
