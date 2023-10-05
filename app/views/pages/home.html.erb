@@ -22,6 +22,12 @@
       </div>
     </div>
   </div>
+  <div class="spec-title">
+    <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Conteúdos educativos</h1>
+    <div class="divider">
+      <hr class="line">
+    </div>
+  </div>
   <div class="container">
     <div class="cards">
       <% @articles.each_with_index do |article, index| %>
@@ -44,23 +50,28 @@
   <div class="center-todos">
     <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
   </div>
-  <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
+  <div class="spec-title">
+    <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
+    <div class="divider">
+      <hr class="line">
+    </div>
+  </div>
   <div class="container g-5">
     <div class="home-specialies row g-5">
       <div class="col-12 col-md-6">
         <div class="spec d-flex flex-column align-items-center">
-          <%= image_tag "foto1.jpg", crop: :fill %>
+          <%= image_tag "ginecologia-regenerativa.jpg", crop: :fill %>
           <h5 class="spec-h5">Ginecologia Regenerativa, Estética e Funcional</h5>
-          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+          <%# <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="spec d-flex flex-column align-items-center">
-          <%= image_tag "foto2.jpg", crop: :fill %>
+          <%= image_tag "saude-vaginal.jpg", crop: :fill %>
           <h5 class="spec-h5">Saúde Vulvo Vaginal</h5>
-          <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
         </div>
       </div>
+      <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
     </div>
     <h3 class="agendamento-home d-none" data-controller="scroll-reveal" data-scroll-reveal-target="link">
       <a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a>
