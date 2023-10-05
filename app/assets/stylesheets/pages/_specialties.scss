@@ -1,3 +1,14 @@
+.spec-full {
+  background-color: rgb(246,246,246);
+}
+
+.spec-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+
 .card-espc {
   display: flex;
   flex-direction: column;
@@ -5,19 +16,50 @@
   overflow: hidden;
   background-color: #F7F2EC;
   box-shadow: 1px 4px 4px 1px rgba(0, 0, 0, 0.25);
+  width: 1500px;
+  height: 500px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 
-.text-espc {
+.spec-header {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.especialidade-title {
   font-family: $hallyza-font;
   color: #B58169;
-  text-align: center;
-  width: 100%;
+  font-size: 48px;
   font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 1.8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.card-text-espc {
+.spec-img {
+  width: 100%;
+  height: 100%;
+  // margin-left: 15px;
+  // margin-top: 15px;
+  position: relative;
+  // margin-bottom: 30px;
+}
+
+.spec-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.spec-text {
   font-family: $hallyza-font;
   color: #B58169;
   white-space: normal;
@@ -26,20 +68,28 @@
   text-align: justify;
   margin-left: 20px;
   margin-right: 20px;
+  bottom: 70px;
 }
+
+.spec-body {
+  padding: 50px;
+}
+
 
 /* Media Queries */
 
 /* Small devices (phones) */
 @media (max-width: 767px) {
-  .text-espc {
-      font-size: 24px;
+  .spec-title {
+    font-size: 24px;
   }
-  .card-text-espc {
-      font-size: 14px;
+
+  .spec-text {
+    font-size: 14px;
   }
+
   .voltar-btn {
-      width: 100%;
+    width: 100%;
   }
 
   .agendamento-especialidades {
@@ -67,42 +117,47 @@
     margin-right: auto;
 
   }
-  .text-espc {
-      font-size: 28px;
+
+  .spec-title {
+    font-size: 28px;
   }
-  .card-text-espc {
-      font-size: 20px;
+
+  .spec-text {
+    font-size: 20px;
   }
 }
 
 /* Large devices (desktops) */
 @media (min-width: 1025px) and (max-width: 2559px) {
-  .text-espc {
-      font-size: 36px;
+  .spec-title {
+    font-size: 36px;
   }
-  .card-text-espc {
-      font-size: 22px;
+
+  .spec-text {
+    font-size: 22px;
   }
 }
 
 /* Extra Large devices */
 @media (min-width: 2560px) {
-  .text-espc {
-      font-size: 48px;
+  .spec-title {
+    font-size: 48px;
   }
+
   .voltar-btn {
-      font-size: 28px;
-      width: 200px;
+    font-size: 28px;
+    width: 200px;
   }
 }
 
 /* 4K devices */
 @media (min-width: 3840px) {
-  .text-espc {
-      font-size: 56px;
+  .spec-title {
+    font-size: 56px;
   }
+
   .voltar-btn {
-      font-size: 36px;
-      width: 250px;
+    font-size: 36px;
+    width: 250px;
   }
 }
