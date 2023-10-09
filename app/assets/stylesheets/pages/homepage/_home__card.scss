@@ -4,6 +4,13 @@
   margin-right: -40px;
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  margin-top: 25px;
+}
+
 .card-full {
   position: relative;
   box-shadow: 10px 9px 10px 0px rgba(0, 0, 0, 0.2);
@@ -113,6 +120,10 @@
 
   .card-text {
     font-size: 12px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
   }
 }
 
