@@ -23,7 +23,7 @@
     </div>
   </div>
   <div class="spec-title">
-    <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Conteúdos educativos</h1>
+    <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Conteúdos Educativos</h1>
     <div class="divider">
       <hr class="line">
     </div>
@@ -39,7 +39,7 @@
           <% end %>
           <div class="article-infos ">
             <h5 class="article-title"><%= truncate( article.name, length: 100 )%></h5>
-            <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%d de %B de %Y") %></span>
+            <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%b. %d de %Y") %></span>
             <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 250) %></p>
           </div>
           <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
