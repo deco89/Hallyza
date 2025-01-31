@@ -1,16 +1,11 @@
 .footer {
   display: flex;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  background: #F7F2EC;
-  flex-direction: row;
+  background: #ebe5df;
   align-items: center;
-  justify-content: center; /* Center horizontally */
-  height: 5rem;
-  padding: 0px 50px;
+  justify-content: space-around; /* Center horizontally */
+  height: auto;
   color: rgba(0, 0, 0, 0.3);
-  z-index: 1;
 }
 
 .footer-text {
