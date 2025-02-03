@@ -49,6 +49,11 @@
   border-radius: 100%;
   width: 200px;
   height: 200px;
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.spec:hover img {
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
 }
 
 .a-leia-spec {
@@ -67,7 +72,7 @@
 }
 
 .a-leia-spec:hover {
-  text-decoration: underline;
+  // text-decoration: underline;
   cursor: pointer;
   transition: color 0.3s linear;
 }

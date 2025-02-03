@@ -1,82 +1,74 @@
-  <div class="card-hallyza">
-    <div class="hal-img">
-      <%= image_tag 'hallyza.png', width: 300, height: 200, quality: :auto, fetch_format: :auto, crop: :fill %>
-    </div>
-    <div class="card-info">
-      <div class="card-body">
-        <div class="card-hal-text">
-          <h5 class="card-title">Dra. Hállyza Rodrigues</h5>
-          <div class="card-text">
-            <p>Ginecologia Regenerativa Estética e Saúde Vulvo Vaginal<br>
-              CRM-ES 11.1993 | RQE 12.353</p>
-            <p>Formada em Medicina pela MULTIVIX - Faculdade Brasileira - Vitória, Espírito Santo.</p>
-            <p>Residência Médica em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo.</p>
-            <p>Residência Médica em Ultrassonografia em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo.</p>
-            <p>Membra Associada a Academia Brasileira de Ginecologia Regenerativa - ABGREF.</p>
-            <p>Membra Associada da Associação Brasileira de Cosmetoginecologia - ABCGIN.</p>
-            <p>Especializada em Cirurgia Íntima pela Academia Brasileira de Ginecologia Regenerativa - ABGREF.</p>
-            <p>Especializada em Infecções Vaginais pelo Curso Ginecoacademy LTDA em associação com a Universidade Estadual Paulista - UNESP.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="card-hallyza">
+  <div class="hal-img">
+    <%= image_tag 'hallyza.png', width: 300, height: 200, quality: :auto, fetch_format: :auto, crop: :fill %>
   </div>
-  <div class="home-spec-full">
-    <div class="spec-title">
-      <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Conteúdos Educativos</h1>
-      <div class="divider">
-        <hr class="line">
-      </div>
-    </div>
-    <div class="container">
-      <div class="cards">
-        <% @articles.each_with_index do |article, index| %>
-          <div class="card-full">
-            <% if article.photos.attached? %>
-              <div class="image_article">
-                <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img" %>
-              </div>
-            <% end %>
-            <div class="article-infos ">
-              <h5 class="article-title"><%= truncate( article.name, length: 100 )%></h5>
-              <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%b. %d de %Y") %></span>
-              <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 250) %></p>
+  <div class="main-card">
+    <h1>Dra. Hállyza Rodrigues</h1>
+    <p>Ginecologia Regenerativa Estética e Saúde Vulvo Vaginal<br>
+            CRM-ES 11.1993 | RQE 12.353</p>
+    <p>Formada em Medicina pela MULTIVIX - Faculdade Brasileira - Vitória, Espírito Santo.</p>
+    <p>Residência Médica em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo.</p>
+    <p>Residência Médica em Ultrassonografia em Ginecologia e Obstetrícia pela UFES - Universidade Federal do Espírito Santo.</p>
+    <p>Membra Associada a Academia Brasileira de Ginecologia Regenerativa - ABGREF.</p>
+    <p>Membra Associada da Associação Brasileira de Cosmetoginecologia - ABCGIN.</p>
+    <p>Especializada em Cirurgia Íntima pela Academia Brasileira de Ginecologia Regenerativa - ABGREF.</p>
+    <p>Especializada em Infecções Vaginais pelo Curso Ginecoacademy LTDA em associação com a Universidade Estadual Paulista - UNESP.</p>
+  </div>
+</div>
+
+<div class="home-carrousel">
+  <h1 class="fs-1 fs-lg-3 fw-bold mt-5">Conteúdos Educativos</h1>
+  <div class="divider">
+    <hr class="line">
+  </div>
+  <div class="container">
+    <div class="carrousel-cards">
+      <% @articles.each_with_index do |article, index| %>
+        <div class="card-full">
+          <% if article.photos.attached? %>
+            <div>
+              <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img" %>
             </div>
-            <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
+          <% end %>
+          <div class="article-infos">
+            <h5 class="article-title"><%= truncate( article.name, length: 100 )%></h5>
+            <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%b. %d de %Y") %></span>
+            <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 250) %></p>
           </div>
-        <% end %>
-      </div>
-    </div>
-    <div class="center-todos">
-      <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
-    </div>
-  </div>
-  <div class="spec-title">
-    <h1 class="spec-title text-center fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
-    <div class="divider">
-      <hr class="line">
-    </div>
-  </div>
-    <div class="home-specialties">
-      <div>
-        <div class="spec d-flex flex-column align-items-center">
-          <%= image_tag "LOGOMARCA NOVA - TEMPLATES .zip - 189", crop: :fill %>
-          <h5 class="spec-h5">Ginecologia Regenerativa, Estética e Funcional</h5>
-          <%# <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+          <%= link_to "Leia Mais", article_path(article), class: "a-leia" %>
         </div>
-      </div>
-      <div>
-        <div class="spec d-flex flex-column align-items-center">
-          <%= image_tag "LOGOMARCA NOVA - TEMPLATES .zip - 190", crop: :fill %>
-          <h5 class="spec-h5">Saúde Vulvar e Vaginal</h5>
-        </div>
-      </div>
-    </div>
-    <div class="d-flex justify-content-center align-items-center mb-5">
-      <%= link_to "Leia Mais", specialties_path, class: "a-leia-spec" %>
+      <% end %>
     </div>
   </div>
-    <%# <h3 class="agendamento-home d-none" data-controller="scroll-reveal" data-scroll-reveal-target="link">
-      <a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a>
-    </h3> %>
+  <div class="d-flex justify-content-center align-items-center">
+    <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
+  </div>
+</div>
+
+
+
+<div class="spec-title">
+  <h1 class="text-center fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
+  <div class="divider">
+    <hr class="line">
+  </div>
+</div>
+  <div class="home-specialties">
+    <div>
+      <%= link_to specialties_path, class: "spec d-flex flex-column align-items-center" do %>
+      <%= image_tag "LOGOMARCA NOVA - TEMPLATES .zip - 189", crop: :fill %>
+        <h5 class="spec-h5">Ginecologia Regenerativa, Estética e Funcional</h5>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to specialties_path, class: "spec d-flex flex-column align-items-center" do %>
+      <%= image_tag "LOGOMARCA NOVA - TEMPLATES .zip - 190", crop: :fill %>
+        <h5 class="spec-h5">Saúde Vulvar e Vaginal</h5>
+      <% end %>
+    </div>
+  </div>
+  <div class="d-flex justify-content-center align-items-center mb-5">
+    <%= link_to "Saiba Mais", specialties_path, class: "a-leia-todos" %>
+  </div>
+</div>
 </div>

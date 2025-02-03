@@ -68,9 +68,6 @@
   text-align: justify;
 }
 
-.card-img {
-  position: initial;
-}
 .a-leia {
   display: flex;
   position: relative;
@@ -86,7 +83,9 @@
 }
 
 .a-leia:hover{ //carousel
-  text-decoration: underline;
+  background: #d8cdc3; /* Tom um pouco mais escuro no hover */
+  box-shadow: 0 0 15px rgba(181, 129, 105, 0.5); /* Brilho suave no hover */
+  transform: translateY(-3px)
 }
 
 .cl_image {
