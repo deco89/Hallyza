@@ -1,0 +1,21 @@
+databases:
+  name: hallyza
+  databaseName: hallyzaDb
+  user: drahallyzawebsite
+  plan: free
+
+services:
+  type: web
+  name: hallyza
+  runtime: ruby
+  plan: free
+  buildCommand: "./bin/render-build.sh"
+  startCommand: bundle exec bin/dev
+  envVars:
+    key: DATABASE_URL
+    fromDatabase:
+      name: hallyza
+      property: connectionString
+    key: RAILS_MASTER_KEY
+      sync:false- key: WEB_CONCURRENCY
+      value: 2
