@@ -52,27 +52,25 @@
 
 .btn-custom {
   text-align: center;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 200;
-  width: 200px;
-  border-radius: 5px;
+  width: 150px;
+  padding: 8px 0;
+  border-radius: 8px;
   background: #EBE5DF;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   text-decoration: none;
   color: #B58169;
-  margin-top: 25px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
 }
 
 .btn-custom:hover {
-  text-decoration: underline;
-}
-
-.top-button,
-.middle-button,
-.bottom-button {
-  display: flex;
-  justify-content: center;
-  /* Center the buttons horizontally */
+  background: #d8cdc3; /* Tom um pouco mais escuro no hover */
+  box-shadow: 0 0 15px rgba(181, 129, 105, 0.5); /* Brilho suave no hover */
+  transform: translateY(-3px)
 }
 
 /* iPhone Editor dos artigos */

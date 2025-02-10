@@ -19,11 +19,9 @@
     </div>
   </div>
 </div>
-<div class="button-container">
+<div class="d-flex justify-content-center align-items-center m-5">
   <% if user_signed_in? %>
-    <div class="bottom-button">
       <%= link_to "Novo Artigo", new_article_path, class: "btn-custom" %>
-    </div>
   <% end %>
 </div>
 <%# <h3 class="agendamento-artigos"><a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a></h3> %>
