@@ -81,11 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: hallyzaproject
-  username: hallyzaproject_user
-  password: <%= ENV["HALLYZA_DATABASE_PASSWORD"] %>
-  host: dpg-cul1g5aj1k6c73dfp6jg-a.render.com
-  port: 5432
-  adapter: postgresql
-  encoding: unicode
+  url: <%= ENV['DATABASE_URL'] %>
   pool: 5
+  timeout: 5000
