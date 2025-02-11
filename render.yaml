@@ -1,5 +1,8 @@
 databases:
-  - name: hallyzaDb
+  - name: hallyza
+    databaseName: hallyzaDb
+    user: hallyza
+    plan: free
     ipAllowList: []
 
 services:
@@ -10,12 +13,12 @@ services:
     buildCommand: "./bin/render-build.sh"
     startCommand: bundle exec bin/dev
     envVars:
-      - key: RAILS_MASTER_KEY
-        sync: FALSE
       - key: DATABASE_URL
         fromDatabase:
           name: hallyzaDb
           property: connectionString
+      - key: RAILS_MASTER_KEY
+        sync: FALSE
   - type: redis
     name: redis
     ipAllowList: []
