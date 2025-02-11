@@ -1,5 +1,5 @@
 databases:
-  name: postgres
+  name: hallyzaDb
   ipAllowList: []
 
 services:
@@ -16,8 +16,5 @@ services:
     fromDatabase:
       name: postgres
       property: connectionString
-  type: redis
-  name: redis
   ipAllowList: []
-  plan: free
   maxmemoryPolicy: noeviction
