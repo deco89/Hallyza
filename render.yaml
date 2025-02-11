@@ -14,7 +14,7 @@ services:
         sync: FALSE
       - key: DATABASE_URL
         fromDatabase:
-          name: hallyzaService
+          name: hallyzaDb
           property: connectionString
   - type: redis
     name: redis
