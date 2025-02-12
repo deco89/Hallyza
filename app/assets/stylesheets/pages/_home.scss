@@ -3,14 +3,11 @@ html {
 }
 
 body {
-  // padding-bottom: 8rem;
-  // overflow-x: hidden;
   min-height: 100vh;
   max-width: 100vw;
   margin: 0 auto;
 }
 
-/* new card hallyza start com media queries */
 .card-hallyza {
   display: flex;
   justify-content: center;
@@ -48,13 +45,6 @@ body {
   margin-right: -40px;
 }
 
-.center-todos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 45px;
-}
-
 .divider {
   display: flex;
   justify-content: center;
@@ -68,7 +58,7 @@ body {
   color: brown;
 }
 
-.a-leia-todos {
+.cstm-btn {
   text-align: center;
   font-size: 18px;
   font-weight: 200;
@@ -85,145 +75,55 @@ body {
   overflow: hidden;
 }
 
-.a-leia-todos:hover {
-  background: #d8cdc3; /* Tom um pouco mais escuro no hover */
-  box-shadow: 0 0 15px rgba(181, 129, 105, 0.5); /* Brilho suave no hover */
+.cstm-btn:hover {
+  background: #d8cdc3;
+  box-shadow: 0 0 15px rgba(181, 129, 105, 0.5);
   transform: translateY(-3px)
 }
 
-/* Extra small devices (phones, up to 600px) */
-@media only screen and (max-width: 600px) {
-  .container-home {
-    min-height: 100vh;
-    min-width: 100vw;
-  }
-
-  .card0 {
-    margin-top: -10rem;
-    height: 70%;
-    width: 86%;
-  }
-
-  .h2-cl {
-    font-size: 18px;
-    justify-content: center;
-  }
-
-  .card-text-hal-li,
-  .card-text-hal {
-    font-size: 10px;
-    justify-content: center;
-  }
-
-  .espcs {
-    font-size: 20px;
-  }
-
-  .btn-agendamento-all {
-    width: 220px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-  .agendamento {
-    right: 21%;
-  }
-}
-
-.image_article>img {
-  width: 100%;
-  height: 150px;
-}
-
-/* iPhone 11 (414x896) and iPhone 14 Pro Max (428x926) in portrait */
-@media only screen and (min-width: 376px) and (max-width: 428px) {
-  .espcs {
-    font-size: 22px;
-  }
-}
-
-/* Small and Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  .row {
+/* Dispositivos móveis (320px - 480px) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .card-hallyza {
     display: flex;
-    justify-content: space-between;
-    /* Adjust this as needed */
+    flex-direction: column;
+    align-items: center;
   }
 
-  .col-12.col-md-6 {
-    flex: 0 0 50%;
-    /* Takes up 50% of the container width */
-    max-width: 50%;
-    /* Maximum width is 50% */
+  .hal-img {
+    display: flex;
+    justify-content: center;
   }
 
-  .container-home {
-    min-height: 800px;
-    min-width: 800px;
-  }
+  .hal-img img{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-right: 0px;
+   }
 
-  .card0 {
-    height: 90%;
-    width: 90%;
-    font-size: 16px;
-  }
+   .main-card {
+    width: 350px;
+    height: 100%;
+    margin-top: -40px;
+   }
 
-  .h2-cl {
-    font-size: 32px;
-  }
-
-  .card-text-hal {
-    font-size: 16px;
-  }
-
-  .card-text-hal-li {
-    font-size: 24px;
-  }
-}
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  .container-home {
-    min-height: 800px;
-    min-width: 1000px;
-  }
-
-  .card0 {
-    height: 600px;
-    width: 600px;
-  }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  .container-home {
-    max-height: 800px;
-    max-width: 1280px;
-  }
-
-  .card0 {
-    height: 700px;
-    width: 600px;
-    font-size: 18px;
-  }
-}
-
-/* Other specific device tweaks */
-@media only screen and (min-width: 1024px) and (max-width: 2880px) {
-  .espcs {
+   .main-card h1 {
     font-size: 28px;
-  }
+   }
+
+   .main-card p {
+      font-size: 14px;
+   }
 }
 
-@media only screen and (min-width: 1440px) and (max-width: 1920px) {
-  .espcs {
-    font-size: 30px;
-  }
-}
+/* iPads, tablets (481px - 768px) */
+@media only screen and (min-width: 481px) and (max-width: 768px) {}
 
-@media only screen and (min-width: 2881px) {
-  .espcs {
-    font-size: 32px;
-  }
-}
+/* Telas pequenas, laptops (769px - 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+
+/* Desktops, telas grandes (1025px - 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/* Telas muito grandes, TVs (1201px e acima) */
+@media only screen and (min-width: 1201px) {}

@@ -1,29 +1,34 @@
-.spec-title {
-  margin-top: 4rem;
+.home-specialties {
+  padding: 10px 0 75px 0;
+}
+
+.home-specialties h1 {
   color: rgba(181, 129, 105, 0.65);
   font-family: $hallyza-font;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 5px;
   text-align: center;
   letter-spacing: 5px;
 }
 
-.home-specialties {
+.divider {
+  display: flex;
+  justify-content: center;
+}
+
+.line {
+  display: block;
+  width: 80px;
+  border-width: 2px;
+  border-top-style: solid;
+  color: brown;
+}
+
+.specialties-card {
   display: flex;
   justify-content: space-evenly;
+
 }
 
-.spec {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-}
-
-.spec-h5 {
+.specialties-card h5 {
   display: flex;
   justify-content: center;
   width: 290px;
@@ -39,8 +44,7 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-.spec img {
-  //imagem 1 das especializações
+.specialties-card img {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -49,30 +53,9 @@
   border-radius: 100%;
   width: 200px;
   height: 200px;
-  transition: transform 0.3s ease-in-out; /* Transição suave */
+  transition: transform 0.3s ease-in-out;
 }
 
-.spec:hover img {
+.specialties-card img {
   transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
-}
-
-.a-leia-spec {
-  display: flex;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 200;
-  width: 240px;
-  flex-direction: column;
-  border-radius: 5px;
-  background: #EBE5DF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  text-decoration: none;
-  color: #B58169;
-  margin-top: 10px;
-}
-
-.a-leia-spec:hover {
-  // text-decoration: underline;
-  cursor: pointer;
-  transition: color 0.3s linear;
 }

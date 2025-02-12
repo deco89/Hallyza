@@ -16,6 +16,8 @@
   </div>
 </div>
 
+
+
 <div class="home-carrousel">
   <h1 class="fs-1 fs-lg-3 fw-bold mt-5">Conteúdos Educativos</h1>
   <div class="divider">
@@ -41,34 +43,33 @@
     </div>
   </div>
   <div class="d-flex justify-content-center align-items-center">
-    <%= link_to "Ver todos artigos", articles_path, class: "a-leia-todos" %>
+    <%= link_to "Ver todos artigos", articles_path, class: "cstm-btn" %>
   </div>
 </div>
 
 
 
-<div class="spec-title">
-  <h1 class="text-center fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
+
+<div class="home-specialties">
+  <h1 class="fs-1 fs-lg-3 fw-bold mt-5">Áreas de Atuação</h1>
   <div class="divider">
     <hr class="line">
   </div>
-</div>
-  <div class="home-specialties">
+  <div class="specialties-card">
     <div>
-      <%= link_to specialties_path, class: "spec d-flex flex-column align-items-center" do %>
+      <%= link_to specialties_path, class: "d-flex flex-column align-items-center" do %>
       <%= image_tag "LOGOMARCA NOVA - TEMPLATES .zip - 189", crop: :fill %>
-        <h5 class="spec-h5">Ginecologia Regenerativa, Estética e Funcional</h5>
+        <h5>Ginecologia Regenerativa, Estética e Funcional</h5>
       <% end %>
     </div>
     <div>
-      <%= link_to specialties_path, class: "spec d-flex flex-column align-items-center" do %>
+      <%= link_to specialties_path, class: "d-flex flex-column align-items-center" do %>
       <%= image_tag "LOGOMARCA NOVA - TEMPLATES .zip - 190", crop: :fill %>
-        <h5 class="spec-h5">Saúde Vulvar e Vaginal</h5>
+        <h5>Saúde Vulvar e Vaginal</h5>
       <% end %>
     </div>
   </div>
   <div class="d-flex justify-content-center align-items-center mb-5">
-    <%= link_to "Saiba Mais", specialties_path, class: "a-leia-todos" %>
+    <%= link_to "Saiba Mais", specialties_path, class: "cstm-btn" %>
   </div>
-</div>
 </div>
