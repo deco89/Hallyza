@@ -10,3 +10,6 @@ luiz = User.create!(email: "vapeprosper@gmail.com", password: "Pqp156ldd1")
 andre = User.create!(email: "decobf15@gmail.com", password: "Main89")
 
 puts"Users Created"
+
+# email: "hallyza.rodrigues@hotmail.com", password: minha_senha_segura
+# email: "hallyza.rodrigues@gmail.com", password: Contato@4422
