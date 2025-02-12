@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV['DATABASE_URL'] %>
+  url: <%= ENV['DATABASE_URL'] || ENV['DATABASE_URL_EXTERNAL'] %>
   pool: 5
   timeout: 5000
