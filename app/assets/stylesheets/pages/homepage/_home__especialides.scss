@@ -59,3 +59,20 @@
 .specialties-card-img:hover {
   transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .specialties-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .specialties-card-img {
+    width: 160px;
+    height: 160px;
+  }
+
+  .specialties-card-img {
+    font-size: 22px;
+  }
+}
