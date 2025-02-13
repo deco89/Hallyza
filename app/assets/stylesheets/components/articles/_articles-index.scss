@@ -1,39 +1,32 @@
-.index-cards {
+.cards-carrousel {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 25px;
   margin-top: 25px;
 }
 
-.article-card-full {
-  position: relative;
+.article-card {
   box-shadow: 10px 9px 10px 0px rgba(0, 0, 0, 0.2);
   background-color: #EBE5DF;
-  height: 440px; /* Fixed height */
-  width: 415px; /* Fixed width */
-  flex-direction: column;
-  border-radius: 10px;
+  border-radius: 8px;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: column;
   overflow: hidden; /* Hide any content that overflows */
 }
 
 .article-infos {
-  position: initial;
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: start;
   width: 100%;
   height: 100%;
   overflow-y: auto; /* Allow scrolling if content exceeds the container's height */
   overflow-x: hidden; /* Prevent horizontal scrolling */
-  padding: 10px;
-  margin: 0;
+  padding: 15px;
 }
 
-.article-title {
+.article-infos h5 {
   font-family: $hallyza-font;
   color: #B58169;
   white-space: normal;
@@ -45,7 +38,7 @@
   justify-content: center;
   text-align: initial;
 }
-.card-date-time {
+.article-infos span {
   font-family: Montserrat;
   font-style: normal;
   font-weight: 400;
@@ -55,20 +48,32 @@
   font-style: italic;
   margin-top: -5px;
   margin-bottom: 15px;
+  color: #B58169;
 }
 
-.article-text {
+.article-infos p {
   font-family: 'IBM Plex Sans', sans-serif;
   color: #B58169;
-  white-space: normal;
-  overflow-wrap: break-word;
-  word-break: break-word;
-  width: 100%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Número máximo de linhas visíveis */
+  -webkit-box-orient: vertical;
   overflow: hidden;
-  text-align: justify;
+  text-overflow: ellipsis; /* Adiciona "..." quando o texto for cortado */
 }
 
-.a-leia {
+.article-card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: all 0.4s ease-out;
+}
+
+.article-card:hover .article-card-img {
+  transform: scale(1.1); /* Dá a sensação de zoom */
+  transform-origin: center; /* Faz o zoom a partir do centro da imagem */
+}
+
+.saiba-mais-btn {
   display: flex;
   position: relative;
   justify-content: flex-end;
@@ -77,95 +82,36 @@
   border-radius: 10px;
   text-decoration: none;
   color: #B58169;
-  width: 100%;
   right: 25px;
   bottom: 15px;
 }
 
-.a-leia:hover{ //carousel
-  background: #d8cdc3; /* Tom um pouco mais escuro no hover */
-  box-shadow: 0 0 15px rgba(181, 129, 105, 0.5); /* Brilho suave no hover */
+.saiba-mais-btn:hover{ //carousel
+  // background: #d8cdc3; /* Tom um pouco mais escuro no hover */
+  // box-shadow: 0 0 15px rgba(181, 129, 105, 0.5); /* Brilho suave no hover */
   transform: translateY(-3px)
 }
 
-.cl_image {
-  width: 100%;
-  background-size: cover;
-}
-
-.agendamento-artigos {
-  display: flex;
-  justify-content: flex-end;
-}
-
-// 480-less    - phone landscape & smaller
-@media all and (max-width: 480px) {
-  .article-card-full {
-    width: 330px;
-    height: auto;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .cards-carrousel {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px;
   }
 
-  .article-infos {
-    width: 100%;
-    height: auto;
+  .article-card-img {
+    height: 160px;
   }
 
-  .article-title {
+  .article-infos h5 {
     font-size: 22px;
   }
 
-  .card-date-time {
-    display: none;
-    font-size: 12px;
-    margin-bottom: 5px;
-    font-style: italic;
+  .article-infos span {
+    font-size: 14px;
   }
 
-  .article-text {
-    font-size: 16px;
+  .saiba-mais-btn {
+    font-size: 20px
   }
-
-  .a-leia {
-    font-size: 15px;
-  }
-
-  .index-cards {
-    grid-template-columns: 1fr;
-  }
-}
-
-// 768-480     - tablet
-@media all and (min-width: 480px) and (max-width: 768px) {
-  .index-cards {
-    grid-template-columns: 1fr;
-  }
-  .article-card-full {
-    width:330px;
-    height: auto;
-  }
-}
-
-// 1024-768    - tablet landscape
-@media all and (min-width: 768px) and (max-width: 1024px) {
-  .index-cards {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .article-card-full {
-    width: 360px;
-    height: auto;
-  }
-}
-
-//  1280-1024   - desktop (default grid)
-@media all and (min-width: 1024px) and (max-width: 1280px) {
-  .index-cards {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .article-card-full {
-    width: 380px;
-    height: auto;
-  }
-
 }

@@ -1,27 +1,22 @@
-<div class="container">
-  <div class="mx-5">
-    <div class="index-cards">
+<div class="container mb-5">
+    <div class="cards-carrousel">
       <% @articles.each_with_index do |article, index| %>
-          <div class="article-card-full">
+          <div class="article-card">
             <% if article.photos.attached? %>
-            <div class="image_article">
-              <%= cl_image_tag article.photos.first.key, width: 600, height: 200, crop: :fill, class: "card-img" %>
-            </div>
+              <%= cl_image_tag article.photos.first.key, class: "article-card-img" %>
             <% end %>
-            <div class="article-infos ">
-              <h5 class="article-title"><%= truncate( article.name, length: 100 )%></h5>
-              <span class="card-date-time" style="color: #B58169;"><%= article.updated_at.strftime("%b. %d de %Y") %></span>
-              <p class="article-text"><%= truncate(article.rich_body.to_plain_text, length: 175) %></p>
+            <div class="article-infos">
+              <h5><%= truncate( article.name, length: 100 )%></h5>
+              <span><%= article.updated_at.strftime("%b. %d de %Y") %></span>
+              <p><%= article.rich_body.to_plain_text %></p>
             </div>
-            <%= link_to "Leia Mais →", article_path(article), class: "a-leia" %>
+            <%= link_to "Saiba Mais", article_path(article), class: "saiba-mais-btn" %>
           </div>
       <% end %>
     </div>
-  </div>
 </div>
 <div class="d-flex justify-content-center align-items-center m-5">
   <% if user_signed_in? %>
       <%= link_to "Novo Artigo", new_article_path, class: "btn-custom" %>
   <% end %>
 </div>
-<%# <h3 class="agendamento-artigos"><a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-all">Agende sua consulta</a></h3> %>
