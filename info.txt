@@ -27,3 +27,11 @@ VALUES ('usuario@email.com', '$2a$12$K7uXQa0GzOU8wvOiWZyS0e6b8W9O1/ObCx34wH2.UYv
 Substitua o email pelo email do usuário desejado.
 Substitua encrypted_password pelo valor gerado no Rails Console.
 As colunas id, reset_password_token, reset_password_sent_at e remember_created_at podem ser deixadas nulas, pois o Devise gerencia essas informações automaticamente.
+
+
+
+
+Credenciais de login:
+
+# email: "hallyza.rodrigues@hotmail.com", password: minha_senha_segura
+# email: "hallyza.rodrigues@gmail.com", password: Contato@4422
