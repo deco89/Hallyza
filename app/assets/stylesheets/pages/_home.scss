@@ -117,10 +117,70 @@ body {
 }
 
 /* iPads, tablets (481px - 768px) */
-@media only screen and (min-width: 481px) and (max-width: 768px) {}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .card-hallyza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hal-img {
+    width: 85%;
+  }
+
+  .hal-img img{
+    width: 100%;
+    height: auto;
+   }
+
+   .main-card {
+    width: 580px;
+    height: 100%;
+    margin-top: -40px;
+   }
+
+   .main-card h1 {
+    font-size: 30px;
+   }
+
+   .main-card p {
+      font-size: 16px;
+   }
+}
 
 /* Telas pequenas, laptops (769px - 1024px) */
-@media only screen and (min-width: 769px) and (max-width: 1024px) {}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .card-hallyza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hal-img {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hal-img img{
+    width: 80%;
+    height: auto;
+    margin-right: 0px;
+   }
+
+   .main-card {
+    width: 575px;
+    height: 100%;
+    margin-top: -40px;
+   }
+
+   .main-card h1 {
+    font-size: 28px;
+   }
+
+   .main-card p {
+      font-size: 14px;
+   }
+}
 
 /* Desktops, telas grandes (1025px - 1200px) */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {}

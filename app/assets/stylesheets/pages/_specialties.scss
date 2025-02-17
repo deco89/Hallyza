@@ -1,11 +1,11 @@
 .card-spec {
-  display: flex; /* Alinha os elementos lado a lado */
-  align-items: center; /* Centraliza verticalmente */
-  gap: 20px; /* Espaçamento entre imagem e texto */
-  border: 1px solid #ddd; /* Borda opcional */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid #ddd;
   padding-right: 40px;
-  max-width: 1200px; /* Tamanho máximo do card */
-  margin: auto; /* Centraliza na tela */
+  max-width: 1200px;
+  margin: auto;
   background: #F7F2EC;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -14,20 +14,20 @@
 }
 
 .card-img {
-  flex: 0 0 40%; /* Define um tamanho fixo para a imagem */
+  flex: 0 0 40%;
 }
 
 .card-img img {
-  width: 100%; /* Faz a imagem ocupar todo o espaço do card-img */
-  height: auto; /* Mantém a proporção */
-  border-top-left-radius: 10px; /* Apenas o canto superior esquerdo arredondado */
-  border-bottom-left-radius: 10px; /* Apenas o canto inferior esquerdo arredondado */
-  border-top-right-radius: 0; /* Remove arredondamento do lado direito */
-  border-bottom-right-radius: 0; /* Remove arredondamento do lado direito */
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .card-content {
-  flex: 1; /* Faz o texto ocupar o espaço restante */
+  flex: 1;
 }
 
 .card-content h1 {
@@ -46,34 +46,27 @@
   line-height: 1.5;
 }
 
-/* Media Queries */
-
-// *  Responsive Grid Media Queries - 1280, 1024, 768, 480
-//  *   1280-1024   - desktop (default grid)
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-  @media all and (min-width: 1024px) and (max-width: 1280px) {
     .card-spec {
-        display: flex; /* Mantém o flexbox */
-        flex-direction: row; /* Garante que a imagem e o texto fiquem lado a lado */
-        gap: 20px; /* Espaço entre a imagem e o texto */
-        padding: 20px; /* Padding para os cards */
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 20px;
     }
 
     .card-img {
-        flex: 0 0 30%; /* Imagem ocupa 30% da largura do card */
+        flex: 0 0 30%;
     }
 
     .card-content {
-        flex: 1; /* O texto ocupa o restante do espaço */
+        flex: 1;
     }
 
     .card-img img {
-        width: 100%; /* Responsividade da imagem */
-        height: auto; /* Mantém a proporção */
-        border-radius: 10px; /* Borda arredondada */
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
-}
-
 }
 
 //  *   1024-768    - tablet landscape
@@ -103,24 +96,23 @@
 //  *   768-480     - tablet
 @media (max-width: 1024px) {
   .card-spec {
-      flex-direction: column; /* Empilha a imagem e o texto */
-      text-align: center; /* Centraliza o conteúdo */
-      gap: 10px; /* Reduz o espaçamento interno */
-      padding: 15px; /* Diminui o padding */
+      flex-direction: column;
+      text-align: center;
+      gap: 10px;
+      padding: 15px;
       margin: 30px
   }
 
   .card-img {
-      flex: none; /* Remove o tamanho fixo */
-      width: 100%; /* Faz a imagem ocupar toda a largura */
-  }
+      flex: none;
+      width: 100%;
 
   .card-img img {
-      border-radius: 10px 10px 0 0; /* Arredonda apenas o topo */
+      border-radius: 10px 10px 0 0;
   }
 
   .card-content {
-      width: 100%; /* Faz o texto ocupar toda a largura */
+      width: 100%;
   }
 }
 
@@ -154,4 +146,5 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
+}
 }

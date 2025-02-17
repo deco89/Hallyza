@@ -7,7 +7,7 @@
             <% end %>
             <div class="article-infos">
               <h5><%= truncate( article.name, length: 100 )%></h5>
-              <span><%= article.updated_at.strftime("%b. %d de %Y") %></span>
+              <span><%= I18n.l(article.updated_at, format: "%d. de %b de %Y") %></span>
               <p><%= article.rich_body.to_plain_text %></p>
             </div>
             <%= link_to "Saiba Mais", article_path(article), class: "saiba-mais-btn" %>

@@ -113,3 +113,25 @@
     font-size: 20px
   }
 }
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .cards-carrousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .cards-carrousel {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+  }
+}
+
+/* Desktops, telas grandes (1025px - 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
+
+/* Telas muito grandes, TVs (1201px e acima) */
+@media only screen and (min-width: 1201px) {}
