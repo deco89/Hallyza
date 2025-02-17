@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
+    @article = Article.find_by!(slug: params[:slug])
     @image_urls = @article.photos.map { |photo| cl_image_path(photo.key, width: 600, height: 400, crop: :fill) }
   end
 
@@ -19,16 +19,24 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     @article.user = current_user
-    @article.save
-    redirect_to article_path(@article)
+    @article.slug = @article.title.parameterize if @article.title.present?
+    if @article.save
+      redirect_to article_path(@article)
+    else
+      render :new
+    end
   end
 
   def edit
   end
 
   def update
-    @article.update(article_params) # update the article with the params from the form
-    redirect_to article_path(@article) # redirect to the show page
+    if @article.update(article_params)
+      @article.update(slug: @article.title.parameterize) if @article.title_changed?
+      redirect_to artigo_path(@article)
+    else
+      render :edit
+    end
   end
 
   def destroy
@@ -44,6 +52,6 @@ class ArticlesController < ApplicationController
   end
 
   def set_article
-    @article = Article.find(params[:id])
+    @article = Article.find_by!(slug: params[:slug])
   end
 end

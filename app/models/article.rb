@@ -3,4 +3,21 @@ class Article < ApplicationRecord
   validates :name, presence: true
   has_many_attached :photos
   has_rich_text :rich_body
+  before_save :generate_slug
+
+  before_validation :generate_slug, on: [:create, :update]
+
+  validates :slug, presence: true, uniqueness: true
+
+
+  def to_param
+    slug
+  end
+
+  private
+
+  def generate_slug
+    self.slug = title.parameterize if slug.blank? && title.present?
+  end
+
 end
