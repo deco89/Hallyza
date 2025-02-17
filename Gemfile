@@ -6,6 +6,8 @@ ruby "3.2.0"
 #cloudinary
 gem "cloudinary"
 
+gem 'rails-i18n', '~> 7.0'
+
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.5"
 

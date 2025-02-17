@@ -16,9 +16,9 @@
             }, class: "trix-custom" %>
           </div>
           <%= f.input :photos, as: :file, label: "Fotos:", input_html: { multiple: true } %>
-          <%= f.button :submit, "Criar Artigo", class: "btn btn-flat" %>
+          <%= f.button :submit, "Criar Artigo", class: "btn btn-success mt-1 mb-1" %>
           <% if article.id.nil? %>
-            <%= link_to "Cancelar", articles_path, method: :get, class: "btn btn-flat" %>
+            <%= link_to "Cancelar", articles_path, method: :get, class: "btn btn-danger mt-1 mb-1" %>
           <% end %>
         <% end %>
       </div>
