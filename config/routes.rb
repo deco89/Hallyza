@@ -10,14 +10,11 @@ Rails.application.routes.draw do
 
   get 'contato', to: 'pages#contact'
 
-  # Lista de todos os artigos
-  get 'artigos', to: 'articles#index'
+  get 'artigos', to: 'articles#index', as: 'articles'
 
-
-  # Form para criação de artigos
   get 'artigo/novo', to: 'articles#new', as: 'new_article'
 
-  resources :articles, path: "artigo", param: :slug
+  resources :articles, path: "artigo", param: :slug, except: [:index]
 
 
   # # Form para criação de artigos
