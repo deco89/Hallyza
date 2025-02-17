@@ -2,20 +2,20 @@ Rails.application.routes.draw do
   devise_for :users, only: :sessions
   root to: "pages#home"
 
-  get 'privacy', to: 'pages#privacy'
+  get 'politicas-de-privacidade', to: 'pages#privacy'
 
-  get 'specialties', to: 'pages#specialties'
+  get 'areas-de-atuacao', to: 'pages#specialties'
 
-  get 'institute', to: 'pages#institute'
+  get 'local-de-atendimento', to: 'pages#institute'
 
-  get 'contact', to: 'pages#contact'
+  get 'contato', to: 'pages#contact'
 
   # Lista de todos os artigos
-  get 'articles', to: 'articles#index'
+  get 'artigos', to: 'articles#index'
 
 
   # Form para criação de artigos
-  get 'articles/new', to: 'articles#new', as: 'new_article'
+  get 'artigo/novo', to: 'articles#new', as: 'new_article'
 
   resources :articles, path: "artigo", param: :slug
 
