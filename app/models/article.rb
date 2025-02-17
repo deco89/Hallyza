@@ -17,7 +17,7 @@ class Article < ApplicationRecord
   private
 
   def generate_slug
-    self.slug = title.parameterize if slug.blank? && title.present?
+    self.slug = name.parameterize if slug.blank? && name.present?
   end
 
 end
