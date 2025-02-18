@@ -1,72 +1,26 @@
-.img-rounded {
-  border-radius: 15px;
-}
 
-.inst-main {
+.institute h1 {
   color: #B58169;
   font-family: $hallyza-font;
   text-align: center;
   padding: 30px;
 }
 
-.p-color {
+.institute p {
   color: #B58169;
   font-family: $hallyza-font;
   text-align: justify;
   font-size: 18px;
 }
 
-.institute-h1 {
-  color: #B58169;
-  font-family: $hallyza-font;
-  text-align: center;
-  font-size: 32px;
-  padding: 30px;
+.institute-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
-.institute-h2 {
-  color: #B58169;
-  font-family: $hallyza-font;
-  margin-top: 10px;
-  text-align: justify;
-}
-
-.institute-h3 {
-  color: #B58169;
-    font-family: $hallyza-font;
-    text-align: center;
-    font-style: italic;
-    font-size: 22px;
-    font-weight: 200;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.institute-h4 {
-  color: #B58169;
-  font-family: $hallyza-font;
-  text-align: center;
-  font-style: italic;
-  font-size: 22px;
-  font-weight: 200;
-  margin-bottom: 25px;
-}
-
-.institute-h5 {
-  color: #B58169;
-  font-family: $hallyza-font;
-  margin-top: 10px;
-}
-
-.institute-h6 {
-  color: #B58169;
-  font-family: $hallyza-font;
-  text-align: center;
-  font-style: italic;
-  font-size: 22px;
-  font-weight: 200;
-  margin-top: 25px;
+.institute-img img {
+  border-radius: 15px;
 }
 
 .btn-agendamento {
@@ -94,13 +48,6 @@
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
-}
-
-.instagram-container {
-  overflow: hidden;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: start;
 }
 
 @media (max-width: 768px) {
