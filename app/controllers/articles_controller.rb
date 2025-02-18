@@ -19,7 +19,7 @@ class ArticlesController < ApplicationController
   def create
     @article = Article.new(article_params)
     @article.user = current_user
-    @article.slug = @article.title.parameterize if @article.title.present?
+    @article.slug = @article.name.parameterize if @article.name.present?
     if @article.save
       redirect_to article_path(@article)
     else
@@ -32,7 +32,7 @@ class ArticlesController < ApplicationController
 
   def update
     if @article.update(article_params)
-      @article.update(slug: @article.title.parameterize) if @article.title_changed?
+      @article.update(slug: @article.name.parameterize) if @article.name_changed?
       redirect_to artigo_path(@article)
     else
       render :edit
@@ -48,7 +48,7 @@ class ArticlesController < ApplicationController
 
   # Strong params: white list of sanitized input that can be used to update database records.
   def article_params
-    params.require(:article).permit(:name, :text, :title, :rich_body, :description, :body, photos: [])
+    params.require(:article).permit(:name, :text, :name, :rich_body, :description, :body, photos: [])
   end
 
   def set_article

@@ -1,24 +1,25 @@
-<div class="container">
-  <%= image_tag "logo_instituto", crop: :fill, class: "logo" %>
-</div>
-<div class="container">
-  <h1 class="contact-header">Agende sua consulta</h1>
-</div>
-<div class="address">
-  <%= image_tag "building.svg", class: "icon" %>
-  <p class="p-address">
-    <a href="https://www.google.com/maps/search/Edif%C3%ADcio%20Master%20Tower%20Rua%20Jos%C3%A9%20Alexandre%20Buaiz%2C%20190%2F1008%20-%20Enseada%20do%20Su%C3%A1%2C%20Vit%C3%B3ria%20-%20ES" target="_blank">
-      <p class="p-address">Edifício Master Tower</p>
-      <p class="p-address">Rua José Alexandre Buaiz, 190 - 10º andar - sala 1008 - Enseada do Suá, Vitória - ES</p>
-    </a>
-  </p>
+<div class="contact-page">
+  <div class="contact-card">
+    <%= image_tag "logo_instituto", crop: :fill, class: "logo" %>
+    <h1>Instituto Mima</h1>
+    <div class="contact-card-address">
+      <%= image_tag "building.svg" , class: "icon" %>
+      <a href="https://www.google.com/maps/search/Edif%C3%ADcio%20Master%20Tower%20Rua%20Jos%C3%A9%20Alexandre%20Buaiz%2C%20190%2F1008%20-%20Enseada%20do%20Su%C3%A1%2C%20Vit%C3%B3ria%20-%20ES" target="_blank">
+        <p>Edifício Master Tower</p>
+        <p>Rua José Alexandre Buaiz, 190 - 10º andar - sala 1008 - Enseada do Suá, Vitória - ES</p>
+      </a>
+    </div>
+    <div class="contact-card-whatsapp">
+      <%= image_tag "whatsapp-square.svg", class: "icon" %>
+      <p class="p_whatsapp">
+      <h3 class="institute-h3"><a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-contato">Agende via whatsapp</a></h3>
+      </p>
+    </div>
+  </div>
 </div>
 
 <div class="whatsapp">
-  <%= image_tag "whatsapp-square.svg", class: "icon" %>
-  <p class="p_whatsapp">
-  <h3 class="institute-h3"><a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-contato">Agende via whatsapp</a></h3>
-  </p>
+
 </div>
 
 <div class="whatsapp">
