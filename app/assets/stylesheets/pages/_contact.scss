@@ -1,34 +1,38 @@
-.container {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding: 10px;
+.contact-card {
+  align-items: center;
+  text-align: center;
+  margin: 30px 0 30px 0;
 }
 
-.contact-header {
+.contact-card h1 {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   color: rgba(181, 129, 105, 0.651);
   font-family: $hallyza-font;
   font-size: 36px;
-  letter-spacing: 1.8px;
 }
 
-.address {
+.contact-card-address {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
   text-align: justify;
-  position: relative;
   padding: 50px;
+  width: 70%;
+  justify-content: space-evenly;
 }
 
-.p-address {
+.contact-card-whatsapp {
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 50px;
+  width: 70%;
+  justify-content: space-evenly;
+}
+
+.contact-card-address p {
   width: 570px;
-  font-size: 28px;
-  letter-spacing: 1.8px;
+  font-size: 18px;
 }
 
 a {
@@ -37,63 +41,12 @@ a {
 }
 
 .icon {
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
 }
 
 .logo {
-  width: auto;
-  height: auto;
-}
-
-.time {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: justify;
-  position: relative;
-  padding: 50px;
-}
-
-.time table {
-  display: table;
-  text-align: center;
-  border-collapse: collapse;
-  width: 35%;
-}
-
-.time table tr {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.time thead td { /* Style for the header row */
-  font-size: 26px;
-  padding: 15px;
-  background-color: #f1f1f1; /* This is a light grey, similar to Excel */
-  border: 1px solid #000;
-  flex: 1;
-  text-align: center;
-}
-
-.time tbody tr:nth-child(odd) td { /* Style for odd rows */
-  background-color: rgba(181, 129, 105, 0.070);
-
-}
-
-.time tbody tr:nth-child(even) td { /* Style for even rows */
-  background-color: rgba(181, 129, 105, 0.03);
-}
-
-.time td {
-  font-size: 24px;
-  padding: 10px;
-  min-width: 9rem;
-  margin-top: 1rem;
-  width: 180px;
-  color: rgba(181, 129, 105, 0.651);
+  width: 20%;
 }
 
 #map {

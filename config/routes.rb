@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   get 'artigo/novo', to: 'articles#new', as: 'new_article'
 
-  resources :articles, path: "artigo", param: :slug, except: [:index]
+  resources :articles, path: "artigos", param: :slug, except: [:index]
 
 
   # # Form para criação de artigos
