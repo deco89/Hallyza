@@ -1,42 +1,34 @@
 <div class="contact-page">
-  <div class="contact-card">
-    <%= image_tag "logo_instituto", crop: :fill, class: "logo" %>
-    <h1>Instituto Mima</h1>
-    <div class="contact-card-address">
-      <%= image_tag "building.svg" , class: "icon" %>
-      <a href="https://www.google.com/maps/search/Edif%C3%ADcio%20Master%20Tower%20Rua%20Jos%C3%A9%20Alexandre%20Buaiz%2C%20190%2F1008%20-%20Enseada%20do%20Su%C3%A1%2C%20Vit%C3%B3ria%20-%20ES" target="_blank">
-        <p>Edifício Master Tower</p>
-        <p>Rua José Alexandre Buaiz, 190 - 10º andar - sala 1008 - Enseada do Suá, Vitória - ES</p>
-      </a>
+  <div class="contact-page-logo">
+    <%= image_tag "logo_instituto", crop: :fill %>
+  </div>
+  <div class="contact-page-full">
+  <div class="contact-cards">
+    <div class="inst-mima">
+      <h1>Instituto Mima</h1>
     </div>
-    <div class="contact-card-whatsapp">
+    <div class="contact-information">
+      <%= image_tag "building.svg" , class: "icon" %>
+        <p><strong>Edifício Master Tower</strong><br>
+        Rua José Alexandre Buaiz, 190 - 10º andar - sala 1008 - Enseada do Suá, Vitória - ES</p>
+    </div>
+    <div class="contact-information">
       <%= image_tag "whatsapp-square.svg", class: "icon" %>
-      <p class="p_whatsapp">
-      <h3 class="institute-h3"><a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-contato">Agende via whatsapp</a></h3>
-      </p>
+      <a href="https://wa.me/5527998516085" target="_blank" class="btn-agendamento-contato">Agende via whatsapp</a>
+    </div>
+    <div class="contact-information">
+      <%= image_tag "telephone-in-talk.svg", class: "icon" %>
+      <a href="tel:+552730970976" target="_blank">(27) 99851-6085</a>
+    </div>
+    <div class="contact-information">
+      <%= image_tag "email-line.svg", class: "icon" %>
+      <a href="mailto:instutomima@gmail.com">instutomima@gmail.com</a>
+    </div>
+    <div class="contact-information">
+      <%= image_tag "instagram.svg", class: "icon" %>
+      <a href="https://www.instagram.com/institutomima/" target="_blank" class="instagram-link">@institutomima</a>
     </div>
   </div>
+    <div id="map"></div>
+    </div>
 </div>
-
-<div class="whatsapp">
-
-</div>
-
-<div class="whatsapp">
-  <%= image_tag "telephone-in-talk.svg", class: "icon" %>
-  <p class="p_whatsapp">
-  <h3 class="institute-h3"><a href="tel:+552730970976" target="_blank" class="btn-agendamento-contato">Clique para ligar</a></h3>
-  </p>
-</div>
-
-<div class="contato-email">
-  <%= image_tag "email-line.svg", class: "icon" %>
-  <p class="p-email"><a href="mailto:instutomima@gmail.com">instutomima@gmail.com</a></p>
-</div>
-
-<div class="instagram">
-  <%= image_tag "instagram.svg", class: "icon" %>
-  <p class="p-email"><a href="https://www.instagram.com/institutomima/" target="_blank" class="instagram-link">@institutomima</a></p>
-</div>
-
-<div id="map"></div>

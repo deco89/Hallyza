@@ -1,56 +1,89 @@
-.contact-card {
-  align-items: center;
-  text-align: center;
-  margin: 30px 0 30px 0;
+.contact-page-full {
+  display: flex;
+  margin: 40px 80px 80px 40px;
 }
 
-.contact-card h1 {
+.contact-cards {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  width: 50%;
+  justify-content: space-between;
+}
+
+.contact-page-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-page-logo img {
+  width: 15%;
+  margin-top: 20px;
+}
+
+.inst-mima {
+  width: 100%;
+}
+
+.inst-mima h1 {
   color: rgba(181, 129, 105, 0.651);
   font-family: $hallyza-font;
   font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-.contact-card-address {
+.contact-information {
   display: flex;
   align-items: center;
   text-align: justify;
-  padding: 50px;
-  width: 70%;
-  justify-content: space-evenly;
+  width: 65%;
 }
 
-.contact-card-whatsapp {
-  display: flex;
-  align-items: center;
-  text-align: justify;
-  padding: 50px;
-  width: 70%;
-  justify-content: space-evenly;
-}
-
-.contact-card-address p {
-  width: 570px;
+.contact-information p {
   font-size: 18px;
+  text-decoration: none;
+  color:rgba(181, 129, 105, 0.651);
+  align-items: center;
 }
 
-a {
+.contact-information a {
   text-decoration: none;
-  color:rgba(181, 129, 105, 0.651)
+  color:rgba(181, 129, 105, 0.651);
 }
 
 .icon {
   width: 35px;
   height: 35px;
+  margin-right: 80px;
 }
 
-.logo {
-  width: 20%;
+
+.btn-agendamento-contato {
+  text-decoration: none;
+  color: #B58169;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background: #EBE5DF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  align-items: center;
+  font-size: 18px;
+  padding: 10px 25px 10px 25px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-agendamento-contato:hover {
+  background: #d8cdc3; /* Tom um pouco mais escuro no hover */
+  box-shadow: 0 0 15px rgba(181, 129, 105, 0.5); /* Brilho suave no hover */
+  transform: translateY(-3px)
 }
 
 #map {
-  width: 100%;
+  width: 50%;
   height: 400px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -71,80 +104,6 @@ a {
   }
 }
 
-.btn-agendamento-contato {
-  text-decoration: none;
-  color: #B58169;
-  display: flex;
-  font-family: 'IBM Plex Sans', sans-serif;
-  background: #EBE5DF;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 50px;
-  height: 65px;
-  width: 275px;
-  opacity: 1;
-  justify-content: space-evenly;
-  align-items: center;
-  opacity: 0.8;
-}
-
-.btn-agendamento-contato:hover {
-  text-decoration: none;
-  color: #B58169;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-weight: 600;
-  opacity: 1;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-.whatsapp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: justify;
-  position: relative;
-  padding: 50px;
-}
-
-.p_whatsapp {
-  font-size: 24px;
-}
-
-.contato-email {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: justify;
-  position: relative;
-  padding: 50px;
-}
-
-.p-email {
-  font-size: 28px;
-}
-
-.instagram {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: justify;
-  position: relative;
-  padding: 50px;
-}
-
-.p_instagram {
-  font-size: 28px;
-  text-decoration: none;
-  color: black;
-}
-
-.p-instagram:hover {
-  text-decoration: underline;
-}
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575px) {
