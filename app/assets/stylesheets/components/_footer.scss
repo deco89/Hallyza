@@ -16,12 +16,32 @@
   font-size: 1rem; /* default size for larger screens */
 }
 
+.instagram {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.instagram a {
+  text-decoration: none;
+  color:rgba(181, 129, 105, 0.651);
+  font-weight: 500;
+  font-size: 22px;
+}
+
 .politica-color {
   color: $medium-beige;
 }
 
 .politica-color:hover {
   color: $orange;
+}
+
+
+.instagram-icon {
+  width: 35px;
+  height: 35px;
 }
 
 /* Responsive styles */
