@@ -29,7 +29,7 @@
 .inst-mima h1 {
   color: rgba(181, 129, 105, 0.651);
   font-family: $hallyza-font;
-  font-size: 36px;
+  font-size: 42px;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -89,115 +89,60 @@
 }
 
 
-/* Styling for small and medium devices */
-@media (max-width: 767.98px) {
-  .time td {
-    font-size: 16px;
-    padding: 5px;
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .contact-page-logo {
+    display: none;
+  }
+
+  .contact-page-full {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .contact-cards {
+    width: 100%;
+    align-items: start;
+  }
+
+  .contact-information {
+    width: 100%;
+    margin: 5px 0 5px 0;
+  }
+
+  #map {
+    width: 100%;
+    margin-top: 20px;
   }
 }
 
-@media (max-width: 991.98px) {
-  .time td {
-    font-size: 20px;
-    padding: 7px;
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .contact-page-full {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .contact-cards {
+    align-items: start;
+    width: 100%;
+    margin: 30px;
+  }
+
+  .contact-information {
+    margin: 5px 0 5px 0;
+  }
+
+  #map {
+    width: 100%;
   }
 }
 
+/* Desktops, telas grandes (1025px - 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {}
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575px) {
-  .logo {
-    width: 90%; /* sets width to 90% of parent container */
-    height: auto; /* maintains aspect ratio */
-  }
-
-  .icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .p-address {
-    width: 100%; /* ensures the paragraph takes up the full width of the parent container */
-    text-align: center; /* centers the text */
-    font-size: 23px; /* adjust font size to fit well within the screen */
-    padding: 0 15px; /* provides some horizontal padding so text doesn't touch the edges */
-  }
-  .p-email,
-  .p_whatsapp {
-    font-size: 18px;
-  }
-
-  .agendamento-contato {
-    position: fixed;
-    bottom: 100px;
-    right: 10px;
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767px) {
-  .logo {
-    width: 90%; /* sets width to 90% of parent container */
-    height: auto; /* maintains aspect ratio */
-  }
-
-  .icon {
-    width: 60px;
-    height: 60px;
-  }
-
-  .p-address {
-    width: 100%; /* ensures the paragraph takes up the full width of the parent container */
-    text-align: center; /* centers the text */
-    font-size: 23px; /* adjust font size to fit well within the screen */
-    padding: 0 15px; /* provides some horizontal padding so text doesn't touch the edges */
-  }
-  .p-email,
-  .p_whatsapp {
-    font-size: 18px;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .logo {
-    width: 90%; /* sets width to 90% of parent container */
-    height: auto; /* maintains aspect ratio */
-  }
-
-  .p-address {
-    width: 100%; /* ensures the paragraph takes up the full width of the parent container */
-    text-align: center; /* centers the text */
-    font-size: 18px; /* adjust font size to fit well within the screen */
-    padding: 0 15px; /* provides some horizontal padding so text doesn't touch the edges */
-  }
-  .p-email,
-  .p_whatsapp {
-    font-size: 22px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .p-address {
-    font-size: 24px;
-  }
-  .p-email,
-  .p_whatsapp {
-    font-size: 26px;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .p-address {
-    font-size: 28px;
-    text-align: center;
-    width: 650px;
-  }
-  .p-email,
-  .p_whatsapp {
-    font-size: 26px;
-  }
-}
+/* Telas muito grandes, TVs (1201px e acima) */
+@media only screen and (min-width: 1201px) {}
