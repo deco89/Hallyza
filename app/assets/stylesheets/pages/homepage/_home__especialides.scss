@@ -7,6 +7,9 @@
   font-family: $hallyza-font;
   text-align: center;
   letter-spacing: 5px;
+  font-weight: 700;
+  font-size: 46px;
+  margin-top: 40px;
 }
 
 .divider {
@@ -66,9 +69,18 @@ a {
 
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
+  .home-specialties h1 {
+    font-size: 42px;
+    letter-spacing: 3px;
+  }
+
   .specialties-card {
     display: flex;
     flex-direction: column;
+  }
+
+  .specialties-card h5 {
+    font-size: 20px;
   }
 
   .specialties-card-img {

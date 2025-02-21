@@ -1,9 +1,13 @@
-
+.institute {
+  max-width: 1280px;
+}
 .institute h1 {
   color: #B58169;
   font-family: $hallyza-font;
   text-align: center;
   padding: 32px;
+  font-size: 52px;
+  letter-spacing: 5px;
 }
 
 .institute p {
@@ -48,11 +52,19 @@
   transform: translateY(-3px)
 }
 
-@media (max-width: 768px) {
-  .instagram-container {
-      flex-direction: column;
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .institute h1 {
+    font-size: 38px;
+    padding: 20px;
+    letter-spacing: 2px;
   }
-  .instagram {
-      margin-bottom: 10px;
+
+  .institute p {
+    font-size: 20px;
+  }
+
+  .btn-agendamento {
+    width: 280px;
   }
 }

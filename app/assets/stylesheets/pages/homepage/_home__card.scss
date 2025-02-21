@@ -4,16 +4,19 @@
 }
 
 .home-carrousel h1 {
-  color: rgba(181, 129, 105, 0.65);
-  font-family: $hallyza-font;
-  text-align: center;
-  letter-spacing: 5px;
+    color: rgba(181, 129, 105, 0.65);
+    font-family: $hallyza-font;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 700;
+    font-size: 46px;
+    margin-top: 40px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-  // .home-carrousel h1 { //precisa voltar e alterar
-  //   font-size: 18px;
-  // }
+  .home-carrousel h1 {
+    font-size: 42px;
+  }
 }
 
 /* iPads, tablets (481px - 768px) */
